@@ -44,7 +44,6 @@
         [_labelText drawAtPoint:(CGPoint){center.x - size.width/2, center.y - size.height/2} withAttributes:attributes];
     }
 
-
     CGFloat startAngle = -M_PI_2;
     CGFloat endAngle = startAngle;
 
