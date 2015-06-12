@@ -2,7 +2,7 @@
 
 @interface YOGraphBarChartImage : NSObject
 
-@property (assign) CGFloat strokeWidth;
+@property CGFloat strokeWidth;
 
 @property UIColor __nullable *barFillColor;
 

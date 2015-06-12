@@ -3,7 +3,7 @@
 
 @interface YOGraphPieChartImage : NSObject
 
-@property (assign) CGFloat lineWidth;
+@property CGFloat lineWidth;
 
 @property NSString __nullable *labelText;
 
