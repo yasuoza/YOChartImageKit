@@ -3,9 +3,22 @@
 @implementation YOSimplePieChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    CGFloat value = 0.4f;
-    CGFloat lineWidth = 10.0f;
-    UIColor *strokeColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
+    // Sample data
+    NSMutableArray *data = [@[@40.0f, @50.0f, @10.0f] mutableCopy];
+    NSMutableArray *colors = [NSMutableArray array];
+    for (int i = 0; i < data.count; i++) {
+        CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
+        CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
+        CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
+        [colors addObject:[UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1]];
+    }
+
+    // Normalize values
+    CGFloat totalValue = [[data valueForKeyPath:@"@sum.self"] floatValue];
+    for (int i = 0; i < data.count; i++) {
+        CGFloat value = [data[i] floatValue];
+        data[i] = [NSNumber numberWithFloat:value/totalValue];
+    }
 
     CGPoint center = {
         frame.size.width / 2,
@@ -13,7 +26,7 @@
     };
 
     CGFloat maxLength = MIN(frame.size.width, frame.size.height);
-    CGFloat radius = maxLength / 2 - lineWidth / 2;
+    CGFloat radius = maxLength / 2 - _lineWidth / 2;
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
@@ -24,33 +37,36 @@
                                      NSForegroundColorAttributeName: _labelColor,
                                      NSFontAttributeName: _labelFont,
                                      };
-        CGSize size = [self.labelText boundingRectWithSize:CGSizeMake(frame.size.width, CGFLOAT_MAX)
+        CGSize size = [self.labelText boundingRectWithSize:CGSizeMake(maxLength, CGFLOAT_MAX)
                                          options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine
                                       attributes:attributes
                                          context:nil].size;
         [_labelText drawAtPoint:(CGPoint){center.x - size.width/2, center.y - size.height/2} withAttributes:attributes];
     }
 
-    UIBezierPath *backGroundPath = [UIBezierPath bezierPathWithArcCenter:center
-                                                                  radius:radius
-                                                              startAngle:-M_PI_2
-                                                                endAngle:M_PI_2 * 3
-                                                               clockwise:YES];
-    backGroundPath.lineWidth = lineWidth;
 
-    [[[UIColor whiteColor] colorWithAlphaComponent:0.4] setStroke];
-    [backGroundPath stroke];
+    CGFloat startAngle = -M_PI_2;
+    CGFloat endAngle = startAngle;
 
-    CGFloat endAngle = -M_PI_2 + 2.0 * M_PI * value;
-    UIBezierPath *valuePath = [UIBezierPath bezierPathWithArcCenter:center
-                                                             radius:radius
-                                                         startAngle:-M_PI_2
-                                                           endAngle:endAngle
-                                                          clockwise:YES];
-    valuePath.lineWidth = lineWidth;
+    CGFloat value;
+    UIColor *strokeColor;
 
-    [strokeColor setStroke];
-    [valuePath stroke];
+    for (int i = 0; i < data.count; i++) {
+        value = [data[i] floatValue];
+        strokeColor = colors[i];
+
+        endAngle = startAngle + 2.0 * M_PI * value;
+        UIBezierPath *backGroundPath = [UIBezierPath bezierPathWithArcCenter:center
+                                                                      radius:radius
+                                                                  startAngle:startAngle
+                                                                    endAngle:endAngle
+                                                                   clockwise:YES];
+        backGroundPath.lineWidth = _lineWidth;
+        [strokeColor setStroke];
+        [backGroundPath stroke];
+
+        startAngle = endAngle;
+    }
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

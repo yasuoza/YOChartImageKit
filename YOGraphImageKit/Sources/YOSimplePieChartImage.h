@@ -3,6 +3,8 @@
 
 @interface YOSimplePieChartImage : NSObject
 
+@property (assign) CGFloat lineWidth;
+
 @property NSString *labelText;
 
 @property UIColor *labelColor;

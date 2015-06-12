@@ -20,9 +20,10 @@ class ViewController: UIViewController {
 
         let scale = UIScreen.mainScreen().scale
 
-        let image = YOSimpleLineChartImage().drawImage(imageView.frame, scale: scale)
+        let image = YOSimplePieChartImage()
+        image.lineWidth = 16.0
 
-        imageView.image = image
+        imageView.image = image.drawImage(imageView.frame, scale: scale)
     }
 
 
