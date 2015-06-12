@@ -21,15 +21,32 @@ class InterfaceController: WKInterfaceController {
         let frame = CGRectMake(0, 0, contentFrame.width, contentFrame.height / 2.3)
         let scale = WKInterfaceDevice.currentDevice().screenScale
 
-        let image = YOSimpleLineChartImage()
-        image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
-
-        self.imageView.setImage(image.drawImage(frame, scale: scale))
+        self.imageView.setImage(lineChartImage().drawImage(frame, scale: scale))
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+
+    func pieChartImage() -> YOSimplePieChartImage {
+        let image = YOSimplePieChartImage()
+        image.lineWidth = 8.0
+        image.labelText = "10.0%"
+        image.labelColor = UIColor.whiteColor()
+        return image
+    }
+
+    func barChartImage() -> YOSimpleBarChartImage {
+        let image = YOSimpleBarChartImage()
+        image.barFillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
+        return image
+    }
+
+    func lineChartImage() -> YOSimpleLineChartImage {
+        let image = YOSimpleLineChartImage()
+        image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
+        return image
     }
 
 }
