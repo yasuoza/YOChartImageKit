@@ -3,7 +3,6 @@ import Foundation
 import UIKit
 import YOGraphImageKit
 
-
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var imageView: WKInterfaceImage!
@@ -21,7 +20,7 @@ class InterfaceController: WKInterfaceController {
         let frame = CGRectMake(0, 0, contentFrame.width, contentFrame.height / 2.3)
         let scale = WKInterfaceDevice.currentDevice().screenScale
 
-        self.imageView.setImage(lineChartImage().drawImage(frame, scale: scale))
+        self.imageView.setImage(pieChartImage().drawImage(frame, scale: scale))
     }
 
     override func didDeactivate() {

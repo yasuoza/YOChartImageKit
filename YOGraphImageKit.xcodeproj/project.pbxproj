@@ -14,15 +14,15 @@
 		A8154ABB1B2A594B001B3024 /* YOGraphBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */; };
 		A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8154ABD1B2A594B001B3024 /* YOGraphLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */; };
-		A8154ABE1B2A5993001B3024 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; };
-		A8154ABF1B2A5993001B3024 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A8C0FF981B29B34300BA4E81 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF961B29B34300BA4E81 /* Interface.storyboard */; };
-		A8C0FF9A1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF991B29B34300BA4E81 /* Assets.xcassets */; };
-		A8C0FFA11B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A8C0FFA61B29B34300BA4E81 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA51B29B34300BA4E81 /* InterfaceController.swift */; };
-		A8C0FFA81B29B34300BA4E81 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */; };
-		A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */; };
-		A8C0FFAE1B29B34300BA4E81 /* YOGraphImageKit Demo App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */; };
+		A81AB5701B2B074000FE8B93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81AB56E1B2B074000FE8B93 /* Interface.storyboard */; };
+		A81AB5721B2B074000FE8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81AB5711B2B074000FE8B93 /* Assets.xcassets */; };
+		A81AB5791B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A81AB5781B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A81AB57E1B2B074100FE8B93 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AB57D1B2B074100FE8B93 /* InterfaceController.swift */; };
+		A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */; };
+		A81AB5821B2B074100FE8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81AB5811B2B074100FE8B93 /* Assets.xcassets */; };
+		A81AB5861B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS).app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A81AB56C1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS).app */; };
+		A81AB5931B2B080200FE8B93 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; };
+		A81AB5941B2B080200FE8B93 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
@@ -40,26 +40,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A8154AC01B2A5993001B3024 /* PBXContainerItemProxy */ = {
+		A81AB57A1B2B074100FE8B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81AB5771B2B074100FE8B93;
+			remoteInfo = "YOGraphImageKit Demo App (watchOS) Extension";
+		};
+		A81AB5841B2B074100FE8B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81AB56B1B2B074000FE8B93;
+			remoteInfo = "YOGraphImageKit Demo App (watchOS)";
+		};
+		A81AB5951B2B080200FE8B93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A8154AAF1B2A5917001B3024;
 			remoteInfo = "YOGraphImageKit (watchOS)";
-		};
-		A8C0FFA21B29B34300BA4E81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C0FF9F1B29B34300BA4E81;
-			remoteInfo = "Watch App Extension";
-		};
-		A8C0FFAC1B29B34300BA4E81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C0FF931B29B34300BA4E81;
-			remoteInfo = "Watch App";
 		};
 		A8C876BD1B2AAA930092E5FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -71,26 +71,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A8154AC21B2A5993001B3024 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A8154ABF1B2A5993001B3024 /* YOGraphImageKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FFB21B29B34300BA4E81 /* Embed App Extensions */ = {
+		A81AB58A1B2B074100FE8B93 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A8C0FFA11B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex in Embed App Extensions */,
+				A81AB5791B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81AB5971B2B080300FE8B93 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A81AB5941B2B080200FE8B93 /* YOGraphImageKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A8C0FFB61B29B34300BA4E81 /* Embed Watch Content */ = {
@@ -99,7 +99,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				A8C0FFAE1B29B34300BA4E81 /* YOGraphImageKit Demo App.app in Embed Watch Content */,
+				A81AB5861B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS).app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,26 +121,24 @@
 		A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8154AB21B2A5917001B3024 /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOGraphImageKit.h; sourceTree = "<group>"; };
 		A8154AB41B2A5917001B3024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81AB56C1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOGraphImageKit Demo App (watchOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81AB56F1B2B074000FE8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A81AB5711B2B074000FE8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A81AB5731B2B074000FE8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81AB5781B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YOGraphImageKit Demo App (watchOS) Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81AB57D1B2B074100FE8B93 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A81AB5811B2B074100FE8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A81AB5831B2B074100FE8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphPieChartImage.h; path = Sources/YOGraphPieChartImage.h; sourceTree = "<group>"; };
 		A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphPieChartImage.m; path = Sources/YOGraphPieChartImage.m; sourceTree = "<group>"; };
 		A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphBarChartImage.h; path = Sources/YOGraphBarChartImage.h; sourceTree = "<group>"; };
 		A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphBarChartImage.m; path = Sources/YOGraphBarChartImage.m; sourceTree = "<group>"; };
 		A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphLineChartImage.h; path = Sources/YOGraphLineChartImage.h; sourceTree = "<group>"; };
 		A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphLineChartImage.m; path = Sources/YOGraphLineChartImage.m; sourceTree = "<group>"; };
-		A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOGraphImageKit Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C0FF971B29B34300BA4E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		A8C0FF991B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8C0FF9B1B29B34300BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YOGraphImageKit Demo App Watch Extention.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C0FFA51B29B34300BA4E81 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8C0FFAB1B29B34300BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOGraphImageKit.h; sourceTree = "<group>"; };
 		A8C876971B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOGraphImageKit__iOS_Tests.m; sourceTree = "<group>"; };
-		A8C876A51B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D9D61C1B28703400E4BCEC /* YOGraphImageKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOGraphImageKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D9D6211B28703400E4BCEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,11 +156,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF9D1B29B34300BA4E81 /* Frameworks */ = {
+		A81AB5751B2B074100FE8B93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8154ABE1B2A5993001B3024 /* YOGraphImageKit.framework in Frameworks */,
+				A81AB5931B2B080200FE8B93 /* YOGraphImageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +191,27 @@
 			path = "YOGraphImageKit (watchOS)";
 			sourceTree = "<group>";
 		};
+		A81AB56D1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */ = {
+			isa = PBXGroup;
+			children = (
+				A81AB56E1B2B074000FE8B93 /* Interface.storyboard */,
+				A81AB5711B2B074000FE8B93 /* Assets.xcassets */,
+				A81AB5731B2B074000FE8B93 /* Info.plist */,
+			);
+			path = "YOGraphImageKit Demo App (watchOS)";
+			sourceTree = SOURCE_ROOT;
+		};
+		A81AB57C1B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A81AB57D1B2B074100FE8B93 /* InterfaceController.swift */,
+				A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */,
+				A81AB5811B2B074100FE8B93 /* Assets.xcassets */,
+				A81AB5831B2B074100FE8B93 /* Info.plist */,
+			);
+			path = "YOGraphImageKit Demo App (watchOS) Extension";
+			sourceTree = SOURCE_ROOT;
+		};
 		A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,27 +226,6 @@
 			path = YOGraphImageKit;
 			sourceTree = "<group>";
 		};
-		A8C0FF951B29B34300BA4E81 /* Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				A8C0FF961B29B34300BA4E81 /* Interface.storyboard */,
-				A8C0FF991B29B34300BA4E81 /* Assets.xcassets */,
-				A8C0FF9B1B29B34300BA4E81 /* Info.plist */,
-			);
-			path = "Watch App";
-			sourceTree = "<group>";
-		};
-		A8C0FFA41B29B34300BA4E81 /* Watch App Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A8C0FFA51B29B34300BA4E81 /* InterfaceController.swift */,
-				A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */,
-				A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */,
-				A8C0FFAB1B29B34300BA4E81 /* Info.plist */,
-			);
-			path = "Watch App Extension";
-			sourceTree = "<group>";
-		};
 		A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,25 +235,15 @@
 			path = "YOGraphImageKit (iOS)";
 			sourceTree = "<group>";
 		};
-		A8C876A21B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */,
-				A8C876A51B2AAA050092E5FF /* Info.plist */,
-			);
-			path = "YOGraphImageKit (iOS)Tests";
-			sourceTree = "<group>";
-		};
 		A8D9D6131B28703300E4BCEC = {
 			isa = PBXGroup;
 			children = (
 				A8D9D61E1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
 				A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
 				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */,
-				A8C0FF951B29B34300BA4E81 /* Watch App */,
-				A8C0FFA41B29B34300BA4E81 /* Watch App Extension */,
+				A81AB56D1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */,
+				A81AB57C1B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */,
 				A8154AB11B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
-				A8C876A21B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */,
 				A8D9D61D1B28703400E4BCEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -264,10 +252,10 @@
 			isa = PBXGroup;
 			children = (
 				A8D9D61C1B28703400E4BCEC /* YOGraphImageKit Demo.app */,
-				A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */,
-				A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */,
 				A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */,
 				A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */,
+				A81AB56C1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS).app */,
+				A81AB5781B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,40 +319,40 @@
 			productReference = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */ = {
+		A81AB56B1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */;
+			buildConfigurationList = A81AB58B1B2B074100FE8B93 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */;
 			buildPhases = (
-				A8C0FF921B29B34300BA4E81 /* Resources */,
-				A8C0FFB21B29B34300BA4E81 /* Embed App Extensions */,
+				A81AB56A1B2B074000FE8B93 /* Resources */,
+				A81AB58A1B2B074100FE8B93 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8C0FFA31B29B34300BA4E81 /* PBXTargetDependency */,
+				A81AB57B1B2B074100FE8B93 /* PBXTargetDependency */,
 			);
 			name = "YOGraphImageKit Demo App (watchOS)";
-			productName = "Watch App";
-			productReference = A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */;
+			productName = "YOGraphImageKit Demo App (watchOS)";
+			productReference = A81AB56C1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS).app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */ = {
+		A81AB5771B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App Watch Extention" */;
+			buildConfigurationList = A81AB5871B2B074100FE8B93 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS) Extension" */;
 			buildPhases = (
-				A8C0FF9C1B29B34300BA4E81 /* Sources */,
-				A8C0FF9D1B29B34300BA4E81 /* Frameworks */,
-				A8C0FF9E1B29B34300BA4E81 /* Resources */,
-				A8154AC21B2A5993001B3024 /* Embed Frameworks */,
+				A81AB5741B2B074100FE8B93 /* Sources */,
+				A81AB5751B2B074100FE8B93 /* Frameworks */,
+				A81AB5761B2B074100FE8B93 /* Resources */,
+				A81AB5971B2B080300FE8B93 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8154AC11B2A5993001B3024 /* PBXTargetDependency */,
+				A81AB5961B2B080200FE8B93 /* PBXTargetDependency */,
 			);
-			name = "YOGraphImageKit Demo App Watch Extention";
-			productName = "Watch App Extension";
-			productReference = A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */;
+			name = "YOGraphImageKit Demo App (watchOS) Extension";
+			productName = "YOGraphImageKit Demo App (watchOS) Extension";
+			productReference = A81AB5781B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
@@ -398,8 +386,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A8C0FFAD1B29B34300BA4E81 /* PBXTargetDependency */,
 				A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */,
+				A81AB5851B2B074100FE8B93 /* PBXTargetDependency */,
 			);
 			name = "YOGraphImageKit Demo App (iOS)";
 			productName = "YOGraphImageKit Demo App";
@@ -418,10 +406,10 @@
 					A8154AAF1B2A5917001B3024 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A8C0FF931B29B34300BA4E81 = {
+					A81AB56B1B2B074000FE8B93 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A8C0FF9F1B29B34300BA4E81 = {
+					A81AB5771B2B074100FE8B93 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					A8C876921B2AAA050092E5FF = {
@@ -447,8 +435,8 @@
 			targets = (
 				A8D9D61B1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
 				A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
-				A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */,
-				A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */,
+				A81AB56B1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */,
+				A81AB5771B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */,
 				A8154AAF1B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
 			);
 		};
@@ -462,20 +450,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF921B29B34300BA4E81 /* Resources */ = {
+		A81AB56A1B2B074000FE8B93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C0FF9A1B29B34300BA4E81 /* Assets.xcassets in Resources */,
-				A8C0FF981B29B34300BA4E81 /* Interface.storyboard in Resources */,
+				A81AB5721B2B074000FE8B93 /* Assets.xcassets in Resources */,
+				A81AB5701B2B074000FE8B93 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF9E1B29B34300BA4E81 /* Resources */ = {
+		A81AB5761B2B074100FE8B93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */,
+				A81AB5821B2B074100FE8B93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,12 +497,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF9C1B29B34300BA4E81 /* Sources */ = {
+		A81AB5741B2B074100FE8B93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C0FFA81B29B34300BA4E81 /* ExtensionDelegate.swift in Sources */,
-				A8C0FFA61B29B34300BA4E81 /* InterfaceController.swift in Sources */,
+				A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */,
+				A81AB57E1B2B074100FE8B93 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,20 +528,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A8154AC11B2A5993001B3024 /* PBXTargetDependency */ = {
+		A81AB57B1B2B074100FE8B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81AB5771B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */;
+			targetProxy = A81AB57A1B2B074100FE8B93 /* PBXContainerItemProxy */;
+		};
+		A81AB5851B2B074100FE8B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81AB56B1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */;
+			targetProxy = A81AB5841B2B074100FE8B93 /* PBXContainerItemProxy */;
+		};
+		A81AB5961B2B080200FE8B93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8154AAF1B2A5917001B3024 /* YOGraphImageKit (watchOS) */;
-			targetProxy = A8154AC01B2A5993001B3024 /* PBXContainerItemProxy */;
-		};
-		A8C0FFA31B29B34300BA4E81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */;
-			targetProxy = A8C0FFA21B29B34300BA4E81 /* PBXContainerItemProxy */;
-		};
-		A8C0FFAD1B29B34300BA4E81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */;
-			targetProxy = A8C0FFAC1B29B34300BA4E81 /* PBXContainerItemProxy */;
+			targetProxy = A81AB5951B2B080200FE8B93 /* PBXContainerItemProxy */;
 		};
 		A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -563,10 +551,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8C0FF961B29B34300BA4E81 /* Interface.storyboard */ = {
+		A81AB56E1B2B074000FE8B93 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A8C0FF971B29B34300BA4E81 /* Base */,
+				A81AB56F1B2B074000FE8B93 /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -636,11 +624,11 @@
 			};
 			name = Release;
 		};
-		A8C0FFB01B29B34300BA4E81 /* Debug */ = {
+		A81AB5881B2B074100FE8B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Watch App Extension/Info.plist";
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -651,11 +639,11 @@
 			};
 			name = Debug;
 		};
-		A8C0FFB11B29B34300BA4E81 /* Release */ = {
+		A81AB5891B2B074100FE8B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "Watch App Extension/Info.plist";
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -666,16 +654,16 @@
 			};
 			name = Release;
 		};
-		A8C0FFB41B29B34300BA4E81 /* Debug */ = {
+		A81AB58C1B2B074100FE8B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = Watch_App_Extension;
-				INFOPLIST_FILE = "Watch App/Info.plist";
+				IBSC_MODULE = YOGraphImageKit_Demo_App__watchOS__Extension;
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (watchOS)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
-				PRODUCT_NAME = "YOGraphImageKit Demo App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -683,16 +671,16 @@
 			};
 			name = Debug;
 		};
-		A8C0FFB51B29B34300BA4E81 /* Release */ = {
+		A81AB58D1B2B074100FE8B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = Watch_App_Extension;
-				INFOPLIST_FILE = "Watch App/Info.plist";
+				IBSC_MODULE = YOGraphImageKit_Demo_App__watchOS__Extension;
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (watchOS)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
-				PRODUCT_NAME = "YOGraphImageKit Demo App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -857,20 +845,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App Watch Extention" */ = {
+		A81AB5871B2B074100FE8B93 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS) Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8C0FFB01B29B34300BA4E81 /* Debug */,
-				A8C0FFB11B29B34300BA4E81 /* Release */,
+				A81AB5881B2B074100FE8B93 /* Debug */,
+				A81AB5891B2B074100FE8B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */ = {
+		A81AB58B1B2B074100FE8B93 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8C0FFB41B29B34300BA4E81 /* Debug */,
-				A8C0FFB51B29B34300BA4E81 /* Release */,
+				A81AB58C1B2B074100FE8B93 /* Debug */,
+				A81AB58D1B2B074100FE8B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
