@@ -4,10 +4,10 @@
 
 @property (assign) CGFloat strokeWidth;
 
-@property UIColor *strokeColor;
+@property UIColor __nullable *strokeColor;
 
-@property UIColor *fillColor;
+@property UIColor __nullable *fillColor;
 
-- (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
+- (UIImage __nonnull *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end

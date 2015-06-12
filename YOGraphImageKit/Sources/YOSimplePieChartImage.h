@@ -5,12 +5,12 @@
 
 @property (assign) CGFloat lineWidth;
 
-@property NSString *labelText;
+@property NSString __nullable *labelText;
 
-@property UIColor *labelColor;
+@property UIColor __nullable *labelColor;
 
-@property UIFont *labelFont;
+@property UIFont __nonnull *labelFont;
 
-- (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
+- (UIImage __nonnull *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end
