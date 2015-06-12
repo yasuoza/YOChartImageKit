@@ -1,6 +1,6 @@
-#import "YOSimplePieChartImage.h"
+#import "YOGraphPieChartImage.h"
 
-@implementation YOSimplePieChartImage
+@implementation YOGraphPieChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     // Sample data

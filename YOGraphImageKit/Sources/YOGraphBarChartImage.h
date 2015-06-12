@@ -1,12 +1,12 @@
 @import UIKit;
 
-@interface YOSimpleLineChartImage : NSObject
+@interface YOGraphBarChartImage : NSObject
 
 @property (assign) CGFloat strokeWidth;
 
-@property UIColor __nullable *strokeColor;
+@property UIColor __nullable *barFillColor;
 
-@property UIColor __nullable *fillColor;
+@property UIColor __nullable *barStrokeColor;
 
 - (UIImage __nonnull *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 

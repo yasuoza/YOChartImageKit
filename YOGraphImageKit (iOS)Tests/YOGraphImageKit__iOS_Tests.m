@@ -1,18 +1,18 @@
 //
-//  SimpleGraphKitTests.m
-//  SimpleGraphKitTests
+//  YOGraphImageKit__iOS_Tests.m
+//  YOGraphImageKit (iOS)Tests
 //
-//  Created by Yasuharu Ozaki on 6/11/15.
+//  Created by Yasuharu Ozaki on 6/12/15.
 //  Copyright © 2015 yasuoza.com. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SimpleGraphKitTests : XCTestCase
+@interface YOGraphImageKit__iOS_Tests : XCTestCase
 
 @end
 
-@implementation SimpleGraphKitTests
+@implementation YOGraphImageKit__iOS_Tests
 
 - (void)setUp {
     [super setUp];

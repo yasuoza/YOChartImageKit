@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
         let scale = UIScreen.mainScreen().scale
 
-        let image = YOSimpleLineChartImage()
+        let image = YOGraphLineChartImage()
         image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
         image.strokeColor = UIColor.whiteColor()
         image.strokeWidth = 2.0

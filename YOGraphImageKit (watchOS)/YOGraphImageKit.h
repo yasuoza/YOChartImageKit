@@ -7,6 +7,6 @@ FOUNDATION_EXPORT double YOGraphImageKit__watchOS_VersionNumber;
 //! Project version string for YOGraphImageKit (watchOS).
 FOUNDATION_EXPORT const unsigned char YOGraphImageKit__watchOS_VersionString[];
 
-#import <YOGraphImageKit/YOSimplePieChartImage.h>
-#import <YOGraphImageKit/YOSimpleBarChartImage.h>
-#import <YOGraphImageKit/YOSimpleLineChartImage.h>
+#import <YOGraphImageKit/YOGraphPieChartImage.h>
+#import <YOGraphImageKit/YOGraphBarChartImage.h>
+#import <YOGraphImageKit/YOGraphLineChartImage.h>

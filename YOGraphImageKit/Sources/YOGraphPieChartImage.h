@@ -1,7 +1,7 @@
 @import UIKit;
 @import CoreGraphics;
 
-@interface YOSimplePieChartImage : NSObject
+@interface YOGraphPieChartImage : NSObject
 
 @property (assign) CGFloat lineWidth;
 

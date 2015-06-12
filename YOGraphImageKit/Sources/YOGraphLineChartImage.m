@@ -1,6 +1,6 @@
-#import "YOSimpleLineChartImage.h"
+#import "YOGraphLineChartImage.h"
 
-@implementation YOSimpleLineChartImage
+@implementation YOGraphLineChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     // Data population

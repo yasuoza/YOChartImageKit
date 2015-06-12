@@ -29,22 +29,22 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    func pieChartImage() -> YOSimplePieChartImage {
-        let image = YOSimplePieChartImage()
+    func pieChartImage() -> YOGraphPieChartImage {
+        let image = YOGraphPieChartImage()
         image.lineWidth = 8.0
         image.labelText = "10.0%"
         image.labelColor = UIColor.whiteColor()
         return image
     }
 
-    func barChartImage() -> YOSimpleBarChartImage {
-        let image = YOSimpleBarChartImage()
+    func barChartImage() -> YOGraphBarChartImage {
+        let image = YOGraphBarChartImage()
         image.barFillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
         return image
     }
 
-    func lineChartImage() -> YOSimpleLineChartImage {
-        let image = YOSimpleLineChartImage()
+    func lineChartImage() -> YOGraphLineChartImage {
+        let image = YOGraphLineChartImage()
         image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
         return image
     }

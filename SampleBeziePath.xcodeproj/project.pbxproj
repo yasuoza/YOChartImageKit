@@ -7,30 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8154AA91B29B701001B3024 /* BeziePathCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D64D1B28704700E4BCEC /* BeziePathCircleView.swift */; };
 		A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8154AB21B2A5917001B3024 /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154AB81B2A594B001B3024 /* YOSimplePieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOSimplePieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154AB91B2A594B001B3024 /* YOSimplePieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOSimplePieChartImage.m */; };
-		A8154ABA1B2A594B001B3024 /* YOSimpleBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOSimpleBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154ABB1B2A594B001B3024 /* YOSimpleBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOSimpleBarChartImage.m */; };
-		A8154ABC1B2A594B001B3024 /* YOSimpleLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOSimpleLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154ABD1B2A594B001B3024 /* YOSimpleLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOSimpleLineChartImage.m */; };
+		A8154AB81B2A594B001B3024 /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8154AB91B2A594B001B3024 /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
+		A8154ABA1B2A594B001B3024 /* YOGraphBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8154ABB1B2A594B001B3024 /* YOGraphBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */; };
+		A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8154ABD1B2A594B001B3024 /* YOGraphLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */; };
 		A8154ABE1B2A5993001B3024 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; };
 		A8154ABF1B2A5993001B3024 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A8C0FF531B2982F700BA4E81 /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF521B2982F700BA4E81 /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C0FF5A1B2982F800BA4E81 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */; };
-		A8C0FF611B2982F800BA4E81 /* SimpleGraphKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF601B2982F800BA4E81 /* SimpleGraphKitTests.m */; };
-		A8C0FF651B2982F800BA4E81 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */; };
-		A8C0FF661B2982F800BA4E81 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A8C0FF701B29831E00BA4E81 /* YOSimplePieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOSimplePieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C0FF711B29831E00BA4E81 /* YOSimplePieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOSimplePieChartImage.m */; };
-		A8C0FF721B29831E00BA4E81 /* YOSimplePieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOSimplePieChartImage.m */; };
-		A8C0FF751B29888E00BA4E81 /* YOSimpleBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOSimpleBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C0FF761B29888E00BA4E81 /* YOSimpleBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOSimpleBarChartImage.m */; };
-		A8C0FF771B29888E00BA4E81 /* YOSimpleBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOSimpleBarChartImage.m */; };
-		A8C0FF7A1B29A02C00BA4E81 /* YOSimpleLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOSimpleLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C0FF7B1B29A02C00BA4E81 /* YOSimpleLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOSimpleLineChartImage.m */; };
-		A8C0FF7C1B29A02C00BA4E81 /* YOSimpleLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOSimpleLineChartImage.m */; };
 		A8C0FF981B29B34300BA4E81 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF961B29B34300BA4E81 /* Interface.storyboard */; };
 		A8C0FF9A1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF991B29B34300BA4E81 /* Assets.xcassets */; };
 		A8C0FFA11B29B34300BA4E81 /* Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -38,6 +23,17 @@
 		A8C0FFA81B29B34300BA4E81 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */; };
 		A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */; };
 		A8C0FFAE1B29B34300BA4E81 /* Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8C0FF941B29B34300BA4E81 /* Watch App.app */; };
+		A8C876961B2AAA050092E5FF /* YOGraphImageKit (iOS).h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C8769D1B2AAA050092E5FF /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */; };
+		A8C876A41B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */; };
+		A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
+		A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C876B31B2AAA5F0092E5FF /* YOGraphBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */; };
+		A8C876B41B2AAA5F0092E5FF /* YOGraphLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C876B51B2AAA5F0092E5FF /* YOGraphLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */; };
+		A8C876BB1B2AAA930092E5FF /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */; };
+		A8C876BC1B2AAA930092E5FF /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8D9D6201B28703400E4BCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */; };
 		A8D9D6221B28703400E4BCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D6211B28703400E4BCEC /* ViewController.swift */; };
 		A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6231B28703400E4BCEC /* Main.storyboard */; };
@@ -55,27 +51,6 @@
 			remoteGlobalIDString = A8154AAF1B2A5917001B3024;
 			remoteInfo = "YOGraphImageKit (watchOS)";
 		};
-		A8C0FF5B1B2982F800BA4E81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C0FF4F1B2982F700BA4E81;
-			remoteInfo = SimpleGraphKit;
-		};
-		A8C0FF5D1B2982F800BA4E81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8D9D61B1B28703400E4BCEC;
-			remoteInfo = SampleBeziePath;
-		};
-		A8C0FF631B2982F800BA4E81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C0FF4F1B2982F700BA4E81;
-			remoteInfo = SimpleGraphKit;
-		};
 		A8C0FFA21B29B34300BA4E81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
@@ -89,6 +64,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = A8C0FF931B29B34300BA4E81;
 			remoteInfo = "Watch App";
+		};
+		A8C8769E1B2AAA050092E5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8C876921B2AAA050092E5FF;
+			remoteInfo = "YOGraphImageKit (iOS)";
+		};
+		A8C876A01B2AAA050092E5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D9D61B1B28703400E4BCEC;
+			remoteInfo = SampleBeziePath;
+		};
+		A8C876BD1B2AAA930092E5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8C876921B2AAA050092E5FF;
+			remoteInfo = "YOGraphImageKit (iOS)";
 		};
 		A8D9D6311B28703400E4BCEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -118,17 +114,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF6A1B2982F800BA4E81 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A8C0FF661B2982F800BA4E81 /* YOGraphImageKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8C0FFB21B29B34300BA4E81 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,26 +136,29 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8C876BF1B2AAA930092E5FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8C876BC1B2AAA930092E5FF /* YOGraphImageKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8154AB21B2A5917001B3024 /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOGraphImageKit.h; sourceTree = "<group>"; };
 		A8154AB41B2A5917001B3024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C0FF521B2982F700BA4E81 /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YOGraphImageKit.h; path = ../YOGraphImageKit/YOGraphImageKit.h; sourceTree = "<group>"; };
-		A8C0FF541B2982F700BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../YOGraphImageKit/Info.plist; sourceTree = "<group>"; };
-		A8C0FF591B2982F800BA4E81 /* SimpleGraphKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGraphKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C0FF601B2982F800BA4E81 /* SimpleGraphKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGraphKitTests.m; sourceTree = "<group>"; };
-		A8C0FF621B2982F800BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C0FF6E1B29831E00BA4E81 /* YOSimplePieChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSimplePieChartImage.h; path = ../YOGraphImageKit/Sources/YOSimplePieChartImage.h; sourceTree = "<group>"; };
-		A8C0FF6F1B29831E00BA4E81 /* YOSimplePieChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSimplePieChartImage.m; path = ../YOGraphImageKit/Sources/YOSimplePieChartImage.m; sourceTree = "<group>"; };
-		A8C0FF731B29888E00BA4E81 /* YOSimpleBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSimpleBarChartImage.h; path = ../YOGraphImageKit/Sources/YOSimpleBarChartImage.h; sourceTree = "<group>"; };
-		A8C0FF741B29888E00BA4E81 /* YOSimpleBarChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSimpleBarChartImage.m; path = ../YOGraphImageKit/Sources/YOSimpleBarChartImage.m; sourceTree = "<group>"; };
-		A8C0FF781B29A02C00BA4E81 /* YOSimpleLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOSimpleLineChartImage.h; path = ../YOGraphImageKit/Sources/YOSimpleLineChartImage.h; sourceTree = "<group>"; };
-		A8C0FF791B29A02C00BA4E81 /* YOSimpleLineChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOSimpleLineChartImage.m; path = ../YOGraphImageKit/Sources/YOSimpleLineChartImage.m; sourceTree = "<group>"; };
-		A8C0FF841B29B0C700BA4E81 /* YOSimpleGraphKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOSimpleGraphKit.h; sourceTree = "<group>"; };
-		A8C0FF861B29B0C700BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphPieChartImage.h; path = Sources/YOGraphPieChartImage.h; sourceTree = "<group>"; };
+		A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphPieChartImage.m; path = Sources/YOGraphPieChartImage.m; sourceTree = "<group>"; };
+		A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphBarChartImage.h; path = Sources/YOGraphBarChartImage.h; sourceTree = "<group>"; };
+		A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphBarChartImage.m; path = Sources/YOGraphBarChartImage.m; sourceTree = "<group>"; };
+		A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphLineChartImage.h; path = Sources/YOGraphLineChartImage.h; sourceTree = "<group>"; };
+		A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphLineChartImage.m; path = Sources/YOGraphLineChartImage.m; sourceTree = "<group>"; };
 		A8C0FF941B29B34300BA4E81 /* Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C0FF971B29B34300BA4E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A8C0FF991B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +168,12 @@
 		A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8C0FFAB1B29B34300BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YOGraphImageKit (iOS).h"; sourceTree = "<group>"; };
+		A8C876971B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YOGraphImageKit (iOS)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOGraphImageKit__iOS_Tests.m; sourceTree = "<group>"; };
+		A8C876A51B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D9D61C1B28703400E4BCEC /* SampleBeziePath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBeziePath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D9D6211B28703400E4BCEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,9 +187,6 @@
 		A8D9D63B1B28703400E4BCEC /* SampleBeziePathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBeziePathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9D63F1B28703400E4BCEC /* SampleBeziePathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBeziePathUITests.swift; sourceTree = "<group>"; };
 		A8D9D6411B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8D9D64D1B28704700E4BCEC /* BeziePathCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeziePathCircleView.swift; sourceTree = "<group>"; };
-		A8D9D64F1B28F4EA00E4BCEC /* BeziePathRectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeziePathRectangleView.swift; sourceTree = "<group>"; };
-		A8D9D6511B29083E00E4BCEC /* BeziePathLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeziePathLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,21 +194,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF4C1B2982F700BA4E81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF561B2982F800BA4E81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C0FF5A1B2982F800BA4E81 /* YOGraphImageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,11 +205,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8C8768F1B2AAA050092E5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C876991B2AAA050092E5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C8769D1B2AAA050092E5FF /* YOGraphImageKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8D9D6191B28703400E4BCEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C0FF651B2982F800BA4E81 /* YOGraphImageKit.framework in Frameworks */,
+				A8C876BB1B2AAA930092E5FF /* YOGraphImageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,16 +245,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A8154AAA1B2A4ACE001B3024 /* Kit */ = {
-			isa = PBXGroup;
-			children = (
-				A8D9D64D1B28704700E4BCEC /* BeziePathCircleView.swift */,
-				A8D9D64F1B28F4EA00E4BCEC /* BeziePathRectangleView.swift */,
-				A8D9D6511B29083E00E4BCEC /* BeziePathLineView.swift */,
-			);
-			name = Kit;
-			sourceTree = "<group>";
-		};
 		A8154AB11B2A5917001B3024 /* YOGraphImageKit (watchOS) */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,37 +254,17 @@
 			path = "YOGraphImageKit (watchOS)";
 			sourceTree = "<group>";
 		};
-		A8C0FF511B2982F700BA4E81 /* YOGraphImageKit */ = {
+		A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */ = {
 			isa = PBXGroup;
 			children = (
-				A8C0FF521B2982F700BA4E81 /* YOGraphImageKit.h */,
-				A8C0FF541B2982F700BA4E81 /* Info.plist */,
-				A8C0FF6E1B29831E00BA4E81 /* YOSimplePieChartImage.h */,
-				A8C0FF6F1B29831E00BA4E81 /* YOSimplePieChartImage.m */,
-				A8C0FF731B29888E00BA4E81 /* YOSimpleBarChartImage.h */,
-				A8C0FF741B29888E00BA4E81 /* YOSimpleBarChartImage.m */,
-				A8C0FF781B29A02C00BA4E81 /* YOSimpleLineChartImage.h */,
-				A8C0FF791B29A02C00BA4E81 /* YOSimpleLineChartImage.m */,
+				A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */,
+				A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */,
+				A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */,
+				A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */,
+				A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */,
+				A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */,
 			);
-			path = YOGraphImageKit;
-			sourceTree = "<group>";
-		};
-		A8C0FF5F1B2982F800BA4E81 /* SimpleGraphKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				A8C0FF601B2982F800BA4E81 /* SimpleGraphKitTests.m */,
-				A8C0FF621B2982F800BA4E81 /* Info.plist */,
-			);
-			path = SimpleGraphKitTests;
-			sourceTree = "<group>";
-		};
-		A8C0FF831B29B0C700BA4E81 /* YOSimpleGraphKit */ = {
-			isa = PBXGroup;
-			children = (
-				A8C0FF841B29B0C700BA4E81 /* YOSimpleGraphKit.h */,
-				A8C0FF861B29B0C700BA4E81 /* Info.plist */,
-			);
-			name = YOSimpleGraphKit;
+			name = "YOGraphImageKit (Common)";
 			path = YOGraphImageKit;
 			sourceTree = "<group>";
 		};
@@ -328,18 +289,36 @@
 			path = "Watch App Extension";
 			sourceTree = "<group>";
 		};
+		A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */,
+				A8C876971B2AAA050092E5FF /* Info.plist */,
+			);
+			path = "YOGraphImageKit (iOS)";
+			sourceTree = "<group>";
+		};
+		A8C876A21B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */,
+				A8C876A51B2AAA050092E5FF /* Info.plist */,
+			);
+			path = "YOGraphImageKit (iOS)Tests";
+			sourceTree = "<group>";
+		};
 		A8D9D6131B28703300E4BCEC = {
 			isa = PBXGroup;
 			children = (
 				A8D9D61E1B28703400E4BCEC /* SampleBeziePath */,
 				A8D9D6331B28703400E4BCEC /* SampleBeziePathTests */,
 				A8D9D63E1B28703400E4BCEC /* SampleBeziePathUITests */,
-				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit */,
-				A8C0FF5F1B2982F800BA4E81 /* SimpleGraphKitTests */,
-				A8C0FF831B29B0C700BA4E81 /* YOSimpleGraphKit */,
+				A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
+				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */,
 				A8C0FF951B29B34300BA4E81 /* Watch App */,
 				A8C0FFA41B29B34300BA4E81 /* Watch App Extension */,
 				A8154AB11B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
+				A8C876A21B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */,
 				A8D9D61D1B28703400E4BCEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -350,11 +329,11 @@
 				A8D9D61C1B28703400E4BCEC /* SampleBeziePath.app */,
 				A8D9D6301B28703400E4BCEC /* SampleBeziePathTests.xctest */,
 				A8D9D63B1B28703400E4BCEC /* SampleBeziePathUITests.xctest */,
-				A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */,
-				A8C0FF591B2982F800BA4E81 /* SimpleGraphKitTests.xctest */,
 				A8C0FF941B29B34300BA4E81 /* Watch App.app */,
 				A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */,
 				A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */,
+				A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */,
+				A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,7 +347,6 @@
 				A8D9D6261B28703400E4BCEC /* Assets.xcassets */,
 				A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */,
 				A8D9D62B1B28703400E4BCEC /* Info.plist */,
-				A8154AAA1B2A4ACE001B3024 /* Kit */,
 			);
 			path = SampleBeziePath;
 			sourceTree = "<group>";
@@ -398,21 +376,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8154ABC1B2A594B001B3024 /* YOSimpleLineChartImage.h in Headers */,
-				A8154AB81B2A594B001B3024 /* YOSimplePieChartImage.h in Headers */,
-				A8154ABA1B2A594B001B3024 /* YOSimpleBarChartImage.h in Headers */,
+				A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */,
+				A8154AB81B2A594B001B3024 /* YOGraphPieChartImage.h in Headers */,
+				A8154ABA1B2A594B001B3024 /* YOGraphBarChartImage.h in Headers */,
 				A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0FF4D1B2982F700BA4E81 /* Headers */ = {
+		A8C876901B2AAA050092E5FF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C0FF531B2982F700BA4E81 /* YOGraphImageKit.h in Headers */,
-				A8C0FF701B29831E00BA4E81 /* YOSimplePieChartImage.h in Headers */,
-				A8C0FF751B29888E00BA4E81 /* YOSimpleBarChartImage.h in Headers */,
-				A8C0FF7A1B29A02C00BA4E81 /* YOSimpleLineChartImage.h in Headers */,
+				A8C876961B2AAA050092E5FF /* YOGraphImageKit (iOS).h in Headers */,
+				A8C876B41B2AAA5F0092E5FF /* YOGraphLineChartImage.h in Headers */,
+				A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */,
+				A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,43 +414,6 @@
 			productName = "YOGraphImageKit (watchOS)";
 			productReference = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		A8C0FF4F1B2982F700BA4E81 /* YOGraphImageKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FF671B2982F800BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit" */;
-			buildPhases = (
-				A8C0FF4B1B2982F700BA4E81 /* Sources */,
-				A8C0FF4C1B2982F700BA4E81 /* Frameworks */,
-				A8C0FF4D1B2982F700BA4E81 /* Headers */,
-				A8C0FF4E1B2982F700BA4E81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YOGraphImageKit;
-			productName = SimpleGraphKit;
-			productReference = A8C0FF501B2982F700BA4E81 /* YOGraphImageKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A8C0FF581B2982F800BA4E81 /* SimpleGraphKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FF6B1B2982F800BA4E81 /* Build configuration list for PBXNativeTarget "SimpleGraphKitTests" */;
-			buildPhases = (
-				A8C0FF551B2982F800BA4E81 /* Sources */,
-				A8C0FF561B2982F800BA4E81 /* Frameworks */,
-				A8C0FF571B2982F800BA4E81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8C0FF5C1B2982F800BA4E81 /* PBXTargetDependency */,
-				A8C0FF5E1B2982F800BA4E81 /* PBXTargetDependency */,
-			);
-			name = SimpleGraphKitTests;
-			productName = SimpleGraphKitTests;
-			productReference = A8C0FF591B2982F800BA4E81 /* SimpleGraphKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A8C0FF931B29B34300BA4E81 /* Watch App */ = {
 			isa = PBXNativeTarget;
@@ -510,6 +451,43 @@
 			productReference = A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C876AA1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)" */;
+			buildPhases = (
+				A8C8768E1B2AAA050092E5FF /* Sources */,
+				A8C8768F1B2AAA050092E5FF /* Frameworks */,
+				A8C876901B2AAA050092E5FF /* Headers */,
+				A8C876911B2AAA050092E5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YOGraphImageKit (iOS)";
+			productName = "YOGraphImageKit (iOS)";
+			productReference = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8C8769B1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C876AD1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)Tests" */;
+			buildPhases = (
+				A8C876981B2AAA050092E5FF /* Sources */,
+				A8C876991B2AAA050092E5FF /* Frameworks */,
+				A8C8769A1B2AAA050092E5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C8769F1B2AAA050092E5FF /* PBXTargetDependency */,
+				A8C876A11B2AAA050092E5FF /* PBXTargetDependency */,
+			);
+			name = "YOGraphImageKit (iOS)Tests";
+			productName = "YOGraphImageKit (iOS)Tests";
+			productReference = A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A8D9D61B1B28703400E4BCEC /* SampleBeziePath */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D9D6441B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePath" */;
@@ -517,14 +495,14 @@
 				A8D9D6181B28703400E4BCEC /* Sources */,
 				A8D9D6191B28703400E4BCEC /* Frameworks */,
 				A8D9D61A1B28703400E4BCEC /* Resources */,
-				A8C0FF6A1B2982F800BA4E81 /* Embed Frameworks */,
 				A8C0FFB61B29B34300BA4E81 /* Embed Watch Content */,
+				A8C876BF1B2AAA930092E5FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8C0FF641B2982F800BA4E81 /* PBXTargetDependency */,
 				A8C0FFAD1B29B34300BA4E81 /* PBXTargetDependency */,
+				A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */,
 			);
 			name = SampleBeziePath;
 			productName = SampleBeziePath;
@@ -579,18 +557,18 @@
 					A8154AAF1B2A5917001B3024 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A8C0FF4F1B2982F700BA4E81 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					A8C0FF581B2982F800BA4E81 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A8D9D61B1B28703400E4BCEC;
-					};
 					A8C0FF931B29B34300BA4E81 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					A8C0FF9F1B29B34300BA4E81 = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					A8C876921B2AAA050092E5FF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A8C8769B1B2AAA050092E5FF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A8D9D61B1B28703400E4BCEC;
 					};
 					A8D9D61B1B28703400E4BCEC = {
 						CreatedOnToolsVersion = 7.0;
@@ -621,8 +599,8 @@
 				A8D9D61B1B28703400E4BCEC /* SampleBeziePath */,
 				A8D9D62F1B28703400E4BCEC /* SampleBeziePathTests */,
 				A8D9D63A1B28703400E4BCEC /* SampleBeziePathUITests */,
-				A8C0FF4F1B2982F700BA4E81 /* YOGraphImageKit */,
-				A8C0FF581B2982F800BA4E81 /* SimpleGraphKitTests */,
+				A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
+				A8C8769B1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */,
 				A8C0FF931B29B34300BA4E81 /* Watch App */,
 				A8C0FF9F1B29B34300BA4E81 /* Watch App Extension */,
 				A8154AAF1B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
@@ -632,20 +610,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		A8154AAE1B2A5917001B3024 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF4E1B2982F700BA4E81 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF571B2982F800BA4E81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -666,6 +630,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C876911B2AAA050092E5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C8769A1B2AAA050092E5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,30 +678,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8154ABB1B2A594B001B3024 /* YOSimpleBarChartImage.m in Sources */,
-				A8154ABD1B2A594B001B3024 /* YOSimpleLineChartImage.m in Sources */,
-				A8154AB91B2A594B001B3024 /* YOSimplePieChartImage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF4B1B2982F700BA4E81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C0FF711B29831E00BA4E81 /* YOSimplePieChartImage.m in Sources */,
-				A8C0FF7B1B29A02C00BA4E81 /* YOSimpleLineChartImage.m in Sources */,
-				A8C0FF761B29888E00BA4E81 /* YOSimpleBarChartImage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C0FF551B2982F800BA4E81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C0FF611B2982F800BA4E81 /* SimpleGraphKitTests.m in Sources */,
-				A8C0FF771B29888E00BA4E81 /* YOSimpleBarChartImage.m in Sources */,
-				A8C0FF721B29831E00BA4E81 /* YOSimplePieChartImage.m in Sources */,
-				A8C0FF7C1B29A02C00BA4E81 /* YOSimpleLineChartImage.m in Sources */,
+				A8154ABB1B2A594B001B3024 /* YOGraphBarChartImage.m in Sources */,
+				A8154ABD1B2A594B001B3024 /* YOGraphLineChartImage.m in Sources */,
+				A8154AB91B2A594B001B3024 /* YOGraphPieChartImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,13 +693,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8C8768E1B2AAA050092E5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */,
+				A8C876B51B2AAA5F0092E5FF /* YOGraphLineChartImage.m in Sources */,
+				A8C876B31B2AAA5F0092E5FF /* YOGraphBarChartImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C876981B2AAA050092E5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C876A41B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8D9D6181B28703400E4BCEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A8D9D6221B28703400E4BCEC /* ViewController.swift in Sources */,
 				A8D9D6201B28703400E4BCEC /* AppDelegate.swift in Sources */,
-				A8154AA91B29B701001B3024 /* BeziePathCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,21 +744,6 @@
 			target = A8154AAF1B2A5917001B3024 /* YOGraphImageKit (watchOS) */;
 			targetProxy = A8154AC01B2A5993001B3024 /* PBXContainerItemProxy */;
 		};
-		A8C0FF5C1B2982F800BA4E81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C0FF4F1B2982F700BA4E81 /* YOGraphImageKit */;
-			targetProxy = A8C0FF5B1B2982F800BA4E81 /* PBXContainerItemProxy */;
-		};
-		A8C0FF5E1B2982F800BA4E81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8D9D61B1B28703400E4BCEC /* SampleBeziePath */;
-			targetProxy = A8C0FF5D1B2982F800BA4E81 /* PBXContainerItemProxy */;
-		};
-		A8C0FF641B2982F800BA4E81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C0FF4F1B2982F700BA4E81 /* YOGraphImageKit */;
-			targetProxy = A8C0FF631B2982F800BA4E81 /* PBXContainerItemProxy */;
-		};
 		A8C0FFA31B29B34300BA4E81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8C0FF9F1B29B34300BA4E81 /* Watch App Extension */;
@@ -794,6 +753,21 @@
 			isa = PBXTargetDependency;
 			target = A8C0FF931B29B34300BA4E81 /* Watch App */;
 			targetProxy = A8C0FFAC1B29B34300BA4E81 /* PBXContainerItemProxy */;
+		};
+		A8C8769F1B2AAA050092E5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */;
+			targetProxy = A8C8769E1B2AAA050092E5FF /* PBXContainerItemProxy */;
+		};
+		A8C876A11B2AAA050092E5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D9D61B1B28703400E4BCEC /* SampleBeziePath */;
+			targetProxy = A8C876A01B2AAA050092E5FF /* PBXContainerItemProxy */;
+		};
+		A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */;
+			targetProxy = A8C876BD1B2AAA930092E5FF /* PBXContainerItemProxy */;
 		};
 		A8D9D6321B28703400E4BCEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -879,70 +853,6 @@
 			};
 			name = Release;
 		};
-		A8C0FF681B2982F800BA4E81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YOGraphImageKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.mobileframework.YOSimpleGraphKit;
-				PRODUCT_NAME = YOGraphImageKit;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A8C0FF691B2982F800BA4E81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = YOGraphImageKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.mobileframework.YOSimpleGraphKit;
-				PRODUCT_NAME = YOGraphImageKit;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A8C0FF6C1B2982F800BA4E81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SimpleGraphKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.mobileframework.SimpleGraphKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
-			};
-			name = Debug;
-		};
-		A8C0FF6D1B2982F800BA4E81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SimpleGraphKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.mobileframework.SimpleGraphKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
-			};
-			name = Release;
-		};
 		A8C0FFB01B29B34300BA4E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1004,6 +914,70 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A8C876AB1B2AAA060092E5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YOGraphImageKit (iOS)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-";
+				PRODUCT_NAME = YOGraphImageKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8C876AC1B2AAA060092E5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YOGraphImageKit (iOS)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-";
+				PRODUCT_NAME = YOGraphImageKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8C876AE1B2AAA060092E5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "YOGraphImageKit (iOS)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
+			};
+			name = Debug;
+		};
+		A8C876AF1B2AAA060092E5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "YOGraphImageKit (iOS)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
 			};
 			name = Release;
 		};
@@ -1170,24 +1144,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C0FF671B2982F800BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8C0FF681B2982F800BA4E81 /* Debug */,
-				A8C0FF691B2982F800BA4E81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8C0FF6B1B2982F800BA4E81 /* Build configuration list for PBXNativeTarget "SimpleGraphKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8C0FF6C1B2982F800BA4E81 /* Debug */,
-				A8C0FF6D1B2982F800BA4E81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "Watch App Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1205,6 +1161,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A8C876AA1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C876AB1B2AAA060092E5FF /* Debug */,
+				A8C876AC1B2AAA060092E5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8C876AD1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C876AE1B2AAA060092E5FF /* Debug */,
+				A8C876AF1B2AAA060092E5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "SampleBeziePath" */ = {
 			isa = XCConfigurationList;
