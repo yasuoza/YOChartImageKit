@@ -23,7 +23,7 @@
 		A8C0FFA81B29B34300BA4E81 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */; };
 		A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */; };
 		A8C0FFAE1B29B34300BA4E81 /* Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8C0FF941B29B34300BA4E81 /* Watch App.app */; };
-		A8C876961B2AAA050092E5FF /* YOGraphImageKit (iOS).h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C8769D1B2AAA050092E5FF /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */; };
 		A8C876A41B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */; };
 		A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,7 +169,7 @@
 		A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8C0FFAB1B29B34300BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YOGraphImageKit (iOS).h"; sourceTree = "<group>"; };
+		A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOGraphImageKit.h; sourceTree = "<group>"; };
 		A8C876971B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YOGraphImageKit (iOS)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOGraphImageKit__iOS_Tests.m; sourceTree = "<group>"; };
@@ -292,7 +292,7 @@
 		A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
 			isa = PBXGroup;
 			children = (
-				A8C876951B2AAA050092E5FF /* YOGraphImageKit (iOS).h */,
+				A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */,
 				A8C876971B2AAA050092E5FF /* Info.plist */,
 			);
 			path = "YOGraphImageKit (iOS)";
@@ -376,10 +376,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */,
 				A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */,
 				A8154AB81B2A594B001B3024 /* YOGraphPieChartImage.h in Headers */,
 				A8154ABA1B2A594B001B3024 /* YOGraphBarChartImage.h in Headers */,
-				A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +387,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C876961B2AAA050092E5FF /* YOGraphImageKit (iOS).h in Headers */,
+				A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */,
 				A8C876B41B2AAA5F0092E5FF /* YOGraphLineChartImage.h in Headers */,
 				A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */,
 				A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */,
@@ -1169,6 +1169,7 @@
 				A8C876AC1B2AAA060092E5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8C876AD1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)Tests" */ = {
 			isa = XCConfigurationList;
@@ -1177,6 +1178,7 @@
 				A8C876AF1B2AAA060092E5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "SampleBeziePath" */ = {
 			isa = XCConfigurationList;

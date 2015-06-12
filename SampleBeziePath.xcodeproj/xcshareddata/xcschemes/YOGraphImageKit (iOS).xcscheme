@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-               BuildableName = "YOGraphImageKit (iOS).framework"
+               BuildableName = "YOGraphImageKit.framework"
                BlueprintName = "YOGraphImageKit (iOS)"
                ReferencedContainer = "container:SampleBeziePath.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-            BuildableName = "YOGraphImageKit (iOS).framework"
+            BuildableName = "YOGraphImageKit.framework"
             BlueprintName = "YOGraphImageKit (iOS)"
             ReferencedContainer = "container:SampleBeziePath.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-            BuildableName = "YOGraphImageKit (iOS).framework"
+            BuildableName = "YOGraphImageKit.framework"
             BlueprintName = "YOGraphImageKit (iOS)"
             ReferencedContainer = "container:SampleBeziePath.xcodeproj">
          </BuildableReference>
