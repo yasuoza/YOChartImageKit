@@ -3,9 +3,6 @@
 @implementation YOSimpleLineChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    CGFloat lineWidth = 0.0f;
-    UIColor *strokeColor = [UIColor whiteColor];
-
     // Data population
     NSMutableArray *data = [NSMutableArray array];
     for (int i = 0; i < 10; i++) {
@@ -32,9 +29,9 @@
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
     UIBezierPath *path = [self quadCurvedPathWithPoints:points frame:frame];
-    path.lineWidth = lineWidth;
+    path.lineWidth = _strokeWidth;
 
-    [strokeColor setStroke];
+    [_strokeColor setStroke];
     [path stroke];
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -80,7 +77,7 @@
         p1 = p2;
     }
 
-    [[[UIColor whiteColor] colorWithAlphaComponent:0.6] setFill];
+    [_fillColor setFill];
     [fillBottom fill];
 
     return linePath;
