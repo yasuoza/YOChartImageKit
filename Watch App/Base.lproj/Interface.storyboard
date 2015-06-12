@@ -10,7 +10,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_App" customModuleProvider="target">
                     <items>
-                        <imageView alignment="left" id="Fst-AR-mdu"/>
+                        <label alignment="center" text="01/01-01/31" id="MgG-ji-dpe"/>
+                        <label alignment="center" text="1.2 GB" textAlignment="center" id="6C8-04-37x">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <imageView alignment="left" verticalAlignment="bottom" id="Fst-AR-mdu"/>
+                        <group width="1" height="0.16" alignment="left" verticalAlignment="bottom" id="CLe-73-u3V">
+                            <items>
+                                <button height="1" alignment="center" verticalAlignment="center" title="Button" id="UMe-Bg-TzL"/>
+                                <button height="1" alignment="center" verticalAlignment="center" title="Button" id="CDu-Mh-8qp"/>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="Fst-AR-mdu" id="Jsu-dQ-bNK"/>
