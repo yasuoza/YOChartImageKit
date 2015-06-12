@@ -18,14 +18,12 @@
 		A8154ABF1B2A5993001B3024 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8C0FF981B29B34300BA4E81 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF961B29B34300BA4E81 /* Interface.storyboard */; };
 		A8C0FF9A1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FF991B29B34300BA4E81 /* Assets.xcassets */; };
-		A8C0FFA11B29B34300BA4E81 /* Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8C0FFA11B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A8C0FFA61B29B34300BA4E81 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA51B29B34300BA4E81 /* InterfaceController.swift */; };
 		A8C0FFA81B29B34300BA4E81 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */; };
 		A8C0FFAA1B29B34300BA4E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */; };
-		A8C0FFAE1B29B34300BA4E81 /* Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8C0FF941B29B34300BA4E81 /* Watch App.app */; };
+		A8C0FFAE1B29B34300BA4E81 /* YOGraphImageKit Demo App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */; };
 		A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C8769D1B2AAA050092E5FF /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */; };
-		A8C876A41B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */; };
 		A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
 		A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,8 +37,6 @@
 		A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6231B28703400E4BCEC /* Main.storyboard */; };
 		A8D9D6271B28703400E4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6261B28703400E4BCEC /* Assets.xcassets */; };
 		A8D9D62A1B28703400E4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */; };
-		A8D9D6351B28703400E4BCEC /* SampleBeziePathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D6341B28703400E4BCEC /* SampleBeziePathTests.swift */; };
-		A8D9D6401B28703400E4BCEC /* SampleBeziePathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D63F1B28703400E4BCEC /* SampleBeziePathUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,40 +61,12 @@
 			remoteGlobalIDString = A8C0FF931B29B34300BA4E81;
 			remoteInfo = "Watch App";
 		};
-		A8C8769E1B2AAA050092E5FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C876921B2AAA050092E5FF;
-			remoteInfo = "YOGraphImageKit (iOS)";
-		};
-		A8C876A01B2AAA050092E5FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8D9D61B1B28703400E4BCEC;
-			remoteInfo = SampleBeziePath;
-		};
 		A8C876BD1B2AAA930092E5FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A8C876921B2AAA050092E5FF;
 			remoteInfo = "YOGraphImageKit (iOS)";
-		};
-		A8D9D6311B28703400E4BCEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8D9D61B1B28703400E4BCEC;
-			remoteInfo = SampleBeziePath;
-		};
-		A8D9D63C1B28703400E4BCEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D9D6141B28703300E4BCEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8D9D61B1B28703400E4BCEC;
-			remoteInfo = SampleBeziePath;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -120,7 +88,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A8C0FFA11B29B34300BA4E81 /* Watch App Extension.appex in Embed App Extensions */,
+				A8C0FFA11B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +99,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				A8C0FFAE1B29B34300BA4E81 /* Watch App.app in Embed Watch Content */,
+				A8C0FFAE1B29B34300BA4E81 /* YOGraphImageKit Demo App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,11 +127,11 @@
 		A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphBarChartImage.m; path = Sources/YOGraphBarChartImage.m; sourceTree = "<group>"; };
 		A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOGraphLineChartImage.h; path = Sources/YOGraphLineChartImage.h; sourceTree = "<group>"; };
 		A8C0FF791B29A02C00BA4E81 /* YOGraphLineChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOGraphLineChartImage.m; path = Sources/YOGraphLineChartImage.m; sourceTree = "<group>"; };
-		A8C0FF941B29B34300BA4E81 /* Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOGraphImageKit Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C0FF971B29B34300BA4E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A8C0FF991B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8C0FF9B1B29B34300BA4E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YOGraphImageKit Demo App Watch Extention.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C0FFA51B29B34300BA4E81 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A8C0FFA71B29B34300BA4E81 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A8C0FFA91B29B34300BA4E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,22 +139,15 @@
 		A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOGraphImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOGraphImageKit.h; sourceTree = "<group>"; };
 		A8C876971B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YOGraphImageKit (iOS)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C876A31B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOGraphImageKit__iOS_Tests.m; sourceTree = "<group>"; };
 		A8C876A51B2AAA050092E5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8D9D61C1B28703400E4BCEC /* SampleBeziePath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBeziePath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D9D61C1B28703400E4BCEC /* YOGraphImageKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOGraphImageKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D9D6211B28703400E4BCEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8D9D6241B28703400E4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8D9D6261B28703400E4BCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D9D6291B28703400E4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8D9D62B1B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8D9D6301B28703400E4BCEC /* SampleBeziePathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBeziePathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8D9D6341B28703400E4BCEC /* SampleBeziePathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBeziePathTests.swift; sourceTree = "<group>"; };
-		A8D9D6361B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8D9D63B1B28703400E4BCEC /* SampleBeziePathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleBeziePathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8D9D63F1B28703400E4BCEC /* SampleBeziePathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBeziePathUITests.swift; sourceTree = "<group>"; };
-		A8D9D6411B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,33 +173,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C876991B2AAA050092E5FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C8769D1B2AAA050092E5FF /* YOGraphImageKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8D9D6191B28703400E4BCEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A8C876BB1B2AAA930092E5FF /* YOGraphImageKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D62D1B28703400E4BCEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D6381B28703400E4BCEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +249,7 @@
 		A8D9D6131B28703300E4BCEC = {
 			isa = PBXGroup;
 			children = (
-				A8D9D61E1B28703400E4BCEC /* SampleBeziePath */,
-				A8D9D6331B28703400E4BCEC /* SampleBeziePathTests */,
-				A8D9D63E1B28703400E4BCEC /* SampleBeziePathUITests */,
+				A8D9D61E1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
 				A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
 				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */,
 				A8C0FF951B29B34300BA4E81 /* Watch App */,
@@ -326,19 +263,16 @@
 		A8D9D61D1B28703400E4BCEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8D9D61C1B28703400E4BCEC /* SampleBeziePath.app */,
-				A8D9D6301B28703400E4BCEC /* SampleBeziePathTests.xctest */,
-				A8D9D63B1B28703400E4BCEC /* SampleBeziePathUITests.xctest */,
-				A8C0FF941B29B34300BA4E81 /* Watch App.app */,
-				A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */,
+				A8D9D61C1B28703400E4BCEC /* YOGraphImageKit Demo.app */,
+				A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */,
+				A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */,
 				A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */,
 				A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */,
-				A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A8D9D61E1B28703400E4BCEC /* SampleBeziePath */ = {
+		A8D9D61E1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */ = {
 			isa = PBXGroup;
 			children = (
 				A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */,
@@ -348,25 +282,7 @@
 				A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */,
 				A8D9D62B1B28703400E4BCEC /* Info.plist */,
 			);
-			path = SampleBeziePath;
-			sourceTree = "<group>";
-		};
-		A8D9D6331B28703400E4BCEC /* SampleBeziePathTests */ = {
-			isa = PBXGroup;
-			children = (
-				A8D9D6341B28703400E4BCEC /* SampleBeziePathTests.swift */,
-				A8D9D6361B28703400E4BCEC /* Info.plist */,
-			);
-			path = SampleBeziePathTests;
-			sourceTree = "<group>";
-		};
-		A8D9D63E1B28703400E4BCEC /* SampleBeziePathUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A8D9D63F1B28703400E4BCEC /* SampleBeziePathUITests.swift */,
-				A8D9D6411B28703400E4BCEC /* Info.plist */,
-			);
-			path = SampleBeziePathUITests;
+			path = "YOGraphImageKit Demo App (iOS)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,9 +331,9 @@
 			productReference = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A8C0FF931B29B34300BA4E81 /* Watch App */ = {
+		A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "Watch App" */;
+			buildConfigurationList = A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */;
 			buildPhases = (
 				A8C0FF921B29B34300BA4E81 /* Resources */,
 				A8C0FFB21B29B34300BA4E81 /* Embed App Extensions */,
@@ -427,14 +343,14 @@
 			dependencies = (
 				A8C0FFA31B29B34300BA4E81 /* PBXTargetDependency */,
 			);
-			name = "Watch App";
+			name = "YOGraphImageKit Demo App (watchOS)";
 			productName = "Watch App";
-			productReference = A8C0FF941B29B34300BA4E81 /* Watch App.app */;
+			productReference = A8C0FF941B29B34300BA4E81 /* YOGraphImageKit Demo App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		A8C0FF9F1B29B34300BA4E81 /* Watch App Extension */ = {
+		A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "Watch App Extension" */;
+			buildConfigurationList = A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App Watch Extention" */;
 			buildPhases = (
 				A8C0FF9C1B29B34300BA4E81 /* Sources */,
 				A8C0FF9D1B29B34300BA4E81 /* Frameworks */,
@@ -446,9 +362,9 @@
 			dependencies = (
 				A8154AC11B2A5993001B3024 /* PBXTargetDependency */,
 			);
-			name = "Watch App Extension";
+			name = "YOGraphImageKit Demo App Watch Extention";
 			productName = "Watch App Extension";
-			productReference = A8C0FFA01B29B34300BA4E81 /* Watch App Extension.appex */;
+			productReference = A8C0FFA01B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */ = {
@@ -469,28 +385,9 @@
 			productReference = A8C876931B2AAA050092E5FF /* YOGraphImageKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A8C8769B1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */ = {
+		A8D9D61B1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8C876AD1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)Tests" */;
-			buildPhases = (
-				A8C876981B2AAA050092E5FF /* Sources */,
-				A8C876991B2AAA050092E5FF /* Frameworks */,
-				A8C8769A1B2AAA050092E5FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8C8769F1B2AAA050092E5FF /* PBXTargetDependency */,
-				A8C876A11B2AAA050092E5FF /* PBXTargetDependency */,
-			);
-			name = "YOGraphImageKit (iOS)Tests";
-			productName = "YOGraphImageKit (iOS)Tests";
-			productReference = A8C8769C1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A8D9D61B1B28703400E4BCEC /* SampleBeziePath */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8D9D6441B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePath" */;
+			buildConfigurationList = A8D9D6441B28703400E4BCEC /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (iOS)" */;
 			buildPhases = (
 				A8D9D6181B28703400E4BCEC /* Sources */,
 				A8D9D6191B28703400E4BCEC /* Frameworks */,
@@ -504,46 +401,10 @@
 				A8C0FFAD1B29B34300BA4E81 /* PBXTargetDependency */,
 				A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */,
 			);
-			name = SampleBeziePath;
-			productName = SampleBeziePath;
-			productReference = A8D9D61C1B28703400E4BCEC /* SampleBeziePath.app */;
+			name = "YOGraphImageKit Demo App (iOS)";
+			productName = "YOGraphImageKit Demo App";
+			productReference = A8D9D61C1B28703400E4BCEC /* YOGraphImageKit Demo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A8D9D62F1B28703400E4BCEC /* SampleBeziePathTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8D9D6471B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePathTests" */;
-			buildPhases = (
-				A8D9D62C1B28703400E4BCEC /* Sources */,
-				A8D9D62D1B28703400E4BCEC /* Frameworks */,
-				A8D9D62E1B28703400E4BCEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8D9D6321B28703400E4BCEC /* PBXTargetDependency */,
-			);
-			name = SampleBeziePathTests;
-			productName = SampleBeziePathTests;
-			productReference = A8D9D6301B28703400E4BCEC /* SampleBeziePathTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A8D9D63A1B28703400E4BCEC /* SampleBeziePathUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8D9D64A1B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePathUITests" */;
-			buildPhases = (
-				A8D9D6371B28703400E4BCEC /* Sources */,
-				A8D9D6381B28703400E4BCEC /* Frameworks */,
-				A8D9D6391B28703400E4BCEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8D9D63D1B28703400E4BCEC /* PBXTargetDependency */,
-			);
-			name = SampleBeziePathUITests;
-			productName = SampleBeziePathUITests;
-			productReference = A8D9D63B1B28703400E4BCEC /* SampleBeziePathUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -566,24 +427,12 @@
 					A8C876921B2AAA050092E5FF = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A8C8769B1B2AAA050092E5FF = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A8D9D61B1B28703400E4BCEC;
-					};
 					A8D9D61B1B28703400E4BCEC = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A8D9D62F1B28703400E4BCEC = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A8D9D61B1B28703400E4BCEC;
-					};
-					A8D9D63A1B28703400E4BCEC = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A8D9D61B1B28703400E4BCEC;
-					};
 				};
 			};
-			buildConfigurationList = A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "SampleBeziePath" */;
+			buildConfigurationList = A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOGraphImageKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -596,13 +445,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8D9D61B1B28703400E4BCEC /* SampleBeziePath */,
-				A8D9D62F1B28703400E4BCEC /* SampleBeziePathTests */,
-				A8D9D63A1B28703400E4BCEC /* SampleBeziePathUITests */,
+				A8D9D61B1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
 				A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
-				A8C8769B1B2AAA050092E5FF /* YOGraphImageKit (iOS)Tests */,
-				A8C0FF931B29B34300BA4E81 /* Watch App */,
-				A8C0FF9F1B29B34300BA4E81 /* Watch App Extension */,
+				A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */,
+				A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */,
 				A8154AAF1B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
 			);
 		};
@@ -640,13 +486,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C8769A1B2AAA050092E5FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8D9D61A1B28703400E4BCEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,20 +493,6 @@
 				A8D9D62A1B28703400E4BCEC /* LaunchScreen.storyboard in Resources */,
 				A8D9D6271B28703400E4BCEC /* Assets.xcassets in Resources */,
 				A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D62E1B28703400E4BCEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D6391B28703400E4BCEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,36 +528,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C876981B2AAA050092E5FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C876A41B2AAA050092E5FF /* YOGraphImageKit__iOS_Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8D9D6181B28703400E4BCEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A8D9D6221B28703400E4BCEC /* ViewController.swift in Sources */,
 				A8D9D6201B28703400E4BCEC /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D62C1B28703400E4BCEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8D9D6351B28703400E4BCEC /* SampleBeziePathTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D9D6371B28703400E4BCEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8D9D6401B28703400E4BCEC /* SampleBeziePathUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,38 +547,18 @@
 		};
 		A8C0FFA31B29B34300BA4E81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A8C0FF9F1B29B34300BA4E81 /* Watch App Extension */;
+			target = A8C0FF9F1B29B34300BA4E81 /* YOGraphImageKit Demo App Watch Extention */;
 			targetProxy = A8C0FFA21B29B34300BA4E81 /* PBXContainerItemProxy */;
 		};
 		A8C0FFAD1B29B34300BA4E81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A8C0FF931B29B34300BA4E81 /* Watch App */;
+			target = A8C0FF931B29B34300BA4E81 /* YOGraphImageKit Demo App (watchOS) */;
 			targetProxy = A8C0FFAC1B29B34300BA4E81 /* PBXContainerItemProxy */;
-		};
-		A8C8769F1B2AAA050092E5FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */;
-			targetProxy = A8C8769E1B2AAA050092E5FF /* PBXContainerItemProxy */;
-		};
-		A8C876A11B2AAA050092E5FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8D9D61B1B28703400E4BCEC /* SampleBeziePath */;
-			targetProxy = A8C876A01B2AAA050092E5FF /* PBXContainerItemProxy */;
 		};
 		A8C876BE1B2AAA930092E5FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8C876921B2AAA050092E5FF /* YOGraphImageKit (iOS) */;
 			targetProxy = A8C876BD1B2AAA930092E5FF /* PBXContainerItemProxy */;
-		};
-		A8D9D6321B28703400E4BCEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8D9D61B1B28703400E4BCEC /* SampleBeziePath */;
-			targetProxy = A8D9D6311B28703400E4BCEC /* PBXContainerItemProxy */;
-		};
-		A8D9D63D1B28703400E4BCEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8D9D61B1B28703400E4BCEC /* SampleBeziePath */;
-			targetProxy = A8D9D63C1B28703400E4BCEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -812,6 +593,7 @@
 		A8154AB61B2A5917001B3024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -834,6 +616,7 @@
 		A8154AB71B2A5917001B3024 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -859,7 +642,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -874,7 +657,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -891,8 +674,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Watch_App_Extension;
 				INFOPLIST_FILE = "Watch App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
+				PRODUCT_NAME = "YOGraphImageKit Demo App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -908,8 +691,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Watch_App_Extension;
 				INFOPLIST_FILE = "Watch App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
+				PRODUCT_NAME = "YOGraphImageKit Demo App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -929,7 +712,7 @@
 				INFOPLIST_FILE = "YOGraphImageKit (iOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.iosframework.YOGraphImageKit--iOS-";
 				PRODUCT_NAME = YOGraphImageKit;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -950,34 +733,12 @@
 				INFOPLIST_FILE = "YOGraphImageKit (iOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.iosframework.YOGraphImageKit--iOS-";
 				PRODUCT_NAME = YOGraphImageKit;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A8C876AE1B2AAA060092E5FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "YOGraphImageKit (iOS)Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
-			};
-			name = Debug;
-		};
-		A8C876AF1B2AAA060092E5FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "YOGraphImageKit (iOS)Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--iOS-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
 			};
 			name = Release;
 		};
@@ -1066,10 +827,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SampleBeziePath/Info.plist;
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit;
+				PRODUCT_NAME = "YOGraphImageKit Demo";
 			};
 			name = Debug;
 		};
@@ -1077,58 +838,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SampleBeziePath/Info.plist;
+				INFOPLIST_FILE = "YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePath;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A8D9D6481B28703400E4BCEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SampleBeziePathTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePathTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
-			};
-			name = Debug;
-		};
-		A8D9D6491B28703400E4BCEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SampleBeziePathTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePathTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleBeziePath.app/SampleBeziePath";
-			};
-			name = Release;
-		};
-		A8D9D64B1B28703400E4BCEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SampleBeziePathUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePathUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SampleBeziePath;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		A8D9D64C1B28703400E4BCEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SampleBeziePathUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.sandbox.SampleBeziePathUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SampleBeziePath;
-				USES_XCTRUNNER = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit;
+				PRODUCT_NAME = "YOGraphImageKit Demo";
 			};
 			name = Release;
 		};
@@ -1144,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "Watch App Extension" */ = {
+		A8C0FFAF1B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App Watch Extention" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8C0FFB01B29B34300BA4E81 /* Debug */,
@@ -1153,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "Watch App" */ = {
+		A8C0FFB31B29B34300BA4E81 /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (watchOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8C0FFB41B29B34300BA4E81 /* Debug */,
@@ -1171,16 +884,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8C876AD1B2AAA060092E5FF /* Build configuration list for PBXNativeTarget "YOGraphImageKit (iOS)Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8C876AE1B2AAA060092E5FF /* Debug */,
-				A8C876AF1B2AAA060092E5FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "SampleBeziePath" */ = {
+		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOGraphImageKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8D9D6421B28703400E4BCEC /* Debug */,
@@ -1189,29 +893,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8D9D6441B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePath" */ = {
+		A8D9D6441B28703400E4BCEC /* Build configuration list for PBXNativeTarget "YOGraphImageKit Demo App (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8D9D6451B28703400E4BCEC /* Debug */,
 				A8D9D6461B28703400E4BCEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8D9D6471B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePathTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8D9D6481B28703400E4BCEC /* Debug */,
-				A8D9D6491B28703400E4BCEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8D9D64A1B28703400E4BCEC /* Build configuration list for PBXNativeTarget "SampleBeziePathUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8D9D64B1B28703400E4BCEC /* Debug */,
-				A8D9D64C1B28703400E4BCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

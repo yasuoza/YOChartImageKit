@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
                BuildableName = "YOGraphImageKit.framework"
                BlueprintName = "YOGraphImageKit (watchOS)"
-               ReferencedContainer = "container:SampleBeziePath.xcodeproj">
+               ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
             BuildableName = "YOGraphImageKit.framework"
             BlueprintName = "YOGraphImageKit (watchOS)"
-            ReferencedContainer = "container:SampleBeziePath.xcodeproj">
+            ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +66,7 @@
             BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
             BuildableName = "YOGraphImageKit.framework"
             BlueprintName = "YOGraphImageKit (watchOS)"
-            ReferencedContainer = "container:SampleBeziePath.xcodeproj">
+            ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -3,6 +3,9 @@
 @implementation YOGraphPieChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
+    NSAssert(_values.count > 1, @"YOGraphPieChartImage // must assign values property which is an array of NSNumber");
+    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
+
     CGFloat totalValue = [[_values valueForKeyPath:@"@sum.self"] floatValue];
     CGPoint center = {
         frame.size.width / 2,

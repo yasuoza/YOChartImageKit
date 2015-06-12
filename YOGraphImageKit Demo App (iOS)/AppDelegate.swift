@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SampleBeziePath
-//
-//  Created by Yasuharu Ozaki on 6/10/15.
-//  Copyright © 2015 yasuoza.com. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
