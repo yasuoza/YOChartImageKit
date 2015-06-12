@@ -2,6 +2,8 @@
 
 @implementation YOGraphBarChartImage
 
+const CGFloat kBarPadding = 50.0f;
+
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     // Data population
     NSMutableArray *data = [NSMutableArray array];
@@ -18,7 +20,7 @@
     }
 
     CGFloat dataCount = (CGFloat)data.count;
-    CGFloat barPadding = ceil(1.0/dataCount * 50.0f);
+    CGFloat barPadding = ceil(1.0/dataCount * kBarPadding);
     CGFloat totalPadding = (dataCount - 1.0f) * barPadding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
 
