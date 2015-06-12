@@ -3,9 +3,6 @@
 @implementation YOSimpleBarChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    CGFloat lineWidth = 0;
-    UIColor *barColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
-
     // Data population
     NSMutableArray *data = [NSMutableArray array];
     for (int i = 0; i < 15; i++) {
@@ -25,6 +22,9 @@
     CGFloat totalPadding = (dataCount - 1.0f) * barPadding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
 
+    self.barFillColor = _barFillColor ? _barFillColor : [UIColor whiteColor];
+    self.barStrokeColor = _barStrokeColor ? _barStrokeColor : [UIColor clearColor];
+
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
     for (int i = 0; i < data.count; i++) {
@@ -36,9 +36,12 @@
             frame.size.height / value
         };
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
-        path.lineWidth = lineWidth;
-        [barColor setFill];
+        path.lineWidth = _strokeWidth;
+        [_barFillColor setFill];
         [path fill];
+
+        [_barStrokeColor setStroke];
+        [path stroke];
     }
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();

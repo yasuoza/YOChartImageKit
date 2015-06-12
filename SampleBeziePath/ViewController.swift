@@ -20,8 +20,10 @@ class ViewController: UIViewController {
 
         let scale = UIScreen.mainScreen().scale
 
-        let image = YOSimplePieChartImage()
-        image.lineWidth = 16.0
+        let image = YOSimpleBarChartImage()
+        image.barFillColor = UIColor.redColor().colorWithAlphaComponent(0.8)
+        image.barStrokeColor = UIColor.whiteColor()
+        image.strokeWidth = 1.0
 
         imageView.image = image.drawImage(imageView.frame, scale: scale)
     }
