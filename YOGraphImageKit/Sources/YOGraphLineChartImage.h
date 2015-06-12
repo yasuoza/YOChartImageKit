@@ -2,14 +2,14 @@
 
 @interface YOGraphLineChartImage : NSObject
 
-@property NSArray __nonnull *values;
+@property (nonnull) NSArray<NSNumber *> *values;
 
 @property CGFloat strokeWidth;
 
-@property UIColor __nullable *strokeColor;
+@property (nullable) UIColor *strokeColor;
 
-@property UIColor __nullable *fillColor;
+@property (nullable) UIColor *fillColor;
 
-- (UIImage __nonnull *)drawImage:(CGRect)frame scale:(CGFloat)scale;
+- (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end

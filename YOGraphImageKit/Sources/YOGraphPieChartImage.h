@@ -3,18 +3,18 @@
 
 @interface YOGraphPieChartImage : NSObject
 
-@property NSArray __nonnull *values;
+@property (nonnull) NSArray<NSNumber *> *values;
 
-@property NSArray __nonnull *colors;
+@property (nonnull) NSArray<UIColor *> *colors;
 
 @property CGFloat lineWidth;
 
-@property NSString __nullable *labelText;
+@property (nonnull) NSString *labelText;
 
-@property UIColor __nullable *labelColor;
+@property (nonnull) UIColor *labelColor;
 
-@property UIFont __nonnull *labelFont;
+@property (nonnull) UIFont *labelFont;
 
-- (UIImage __nonnull *)drawImage:(CGRect)frame scale:(CGFloat)scale;
+- (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end
