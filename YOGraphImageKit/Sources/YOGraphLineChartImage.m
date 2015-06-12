@@ -3,28 +3,19 @@
 @implementation YOGraphLineChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    // Data population
-    NSMutableArray *data = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
-        CGFloat value = arc4random_uniform(50);
-        [data addObject:[NSNumber numberWithFloat:value]];
-    }
-    for (int i = 1; i < data.count; i++) {
-        data[i] = [NSNumber numberWithFloat:[data[i - 1] floatValue] + [data[i] floatValue]];
-    }
-
-    CGFloat pointX = frame.size.width / (data.count - 1);
+    NSUInteger valuesCount = _values.count;
+    CGFloat pointX = frame.size.width / (valuesCount - 1);
     NSMutableArray *points = [NSMutableArray array];
-    CGFloat maxValue = [[data valueForKeyPath:@"@max.floatValue"] floatValue];
-    for (int i = 0; i < data.count; i++) {
-        CGFloat ratioY = [data[i] floatValue] / maxValue;
+    CGFloat maxValue = [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
 
+    [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
+        CGFloat ratioY = number.floatValue / maxValue;
         NSValue *pointValue = [NSValue valueWithCGPoint:(CGPoint){
-            (float)i * pointX,
+            (float)idx * pointX,
             frame.size.height * (1 - ratioY)
         }];
         [points addObject:pointValue];
-    }
+    }];
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
@@ -50,7 +41,7 @@
     [fillBottom moveToPoint:endPoint];
     [fillBottom addLineToPoint:startPoint];
 
-    CGPoint p1 = [points[0] CGPointValue];
+    __block CGPoint p1 = [points[0] CGPointValue];
     [linePath moveToPoint:p1];
 
     [fillBottom addLineToPoint:p1];
@@ -61,8 +52,7 @@
         return linePath;
     }
 
-    for (int i = 0; i < points.count; i++) {
-        NSValue *value = points[i];
+    [points enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL *_) {
         CGPoint p2 = value.CGPointValue;
 
         CGFloat deltaX = p2.x - p1.x;
@@ -75,7 +65,7 @@
         [fillBottom addCurveToPoint:p2 controlPoint1:controlPoint1 controlPoint2:controlPoint2];
 
         p1 = p2;
-    }
+    }];
 
     [_fillColor setFill];
     [fillBottom fill];

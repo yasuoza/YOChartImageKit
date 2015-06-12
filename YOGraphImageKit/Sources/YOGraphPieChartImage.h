@@ -3,6 +3,10 @@
 
 @interface YOGraphPieChartImage : NSObject
 
+@property NSArray __nonnull *values;
+
+@property NSArray __nonnull *colors;
+
 @property CGFloat lineWidth;
 
 @property NSString __nullable *labelText;

@@ -5,21 +5,9 @@
 const CGFloat kBarPadding = 50.0f;
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    // Data population
-    NSMutableArray *data = [NSMutableArray array];
-    for (int i = 0; i < 15; i++) {
-        CGFloat value = arc4random_uniform(50) + 1;
-        [data addObject:[NSNumber numberWithFloat:value]];
-    }
-
-    // Normalize values
-    CGFloat maxValue = [[data valueForKeyPath:@"@max.floatValue"] floatValue];
-    for (int i = 0; i < data.count; i++) {
-        CGFloat value = [data[i] floatValue];
-        data[i] = [NSNumber numberWithFloat:value/maxValue];
-    }
-
-    CGFloat dataCount = (CGFloat)data.count;
+    NSUInteger valuesCount = _values.count;
+    CGFloat maxValue = [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat dataCount = (CGFloat)valuesCount;
     CGFloat barPadding = ceil(1.0/dataCount * kBarPadding);
     CGFloat totalPadding = (dataCount - 1.0f) * barPadding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
@@ -29,13 +17,13 @@ const CGFloat kBarPadding = 50.0f;
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
-    for (int i = 0; i < data.count; i++) {
-        CGFloat value = [data[i] floatValue];
+    [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
+        CGFloat normalizedValue = number.floatValue / maxValue;
         CGRect rect = {
-            (CGFloat)i * (barWidth + barPadding),
-            frame.size.height * (1.0 - value),
+            (CGFloat)idx * (barWidth + barPadding),
+            frame.size.height * (1.0 - normalizedValue),
             barWidth,
-            frame.size.height / value
+            frame.size.height / normalizedValue
         };
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
         path.lineWidth = _strokeWidth;
@@ -44,7 +32,7 @@ const CGFloat kBarPadding = 50.0f;
 
         [_barStrokeColor setStroke];
         [path stroke];
-    }
+    }];
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
