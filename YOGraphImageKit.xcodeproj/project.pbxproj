@@ -215,6 +215,26 @@
 			path = "Example/YOGraphImageKit Demo App (watchOS) Extension";
 			sourceTree = SOURCE_ROOT;
 		};
+		A87B33911B2BC3670025F6C5 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9D61E1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
+				A81AB56D1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */,
+				A81AB57C1B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		A87B33921B2BC38E0025F6C5 /* YOGraphImageKit */ = {
+			isa = PBXGroup;
+			children = (
+				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */,
+				A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
+				A8154AB11B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
+			);
+			name = YOGraphImageKit;
+			sourceTree = "<group>";
+		};
 		A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,12 +262,8 @@
 		A8D9D6131B28703300E4BCEC = {
 			isa = PBXGroup;
 			children = (
-				A8D9D61E1B28703400E4BCEC /* YOGraphImageKit Demo App (iOS) */,
-				A8C876941B2AAA050092E5FF /* YOGraphImageKit (iOS) */,
-				A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */,
-				A81AB56D1B2B074000FE8B93 /* YOGraphImageKit Demo App (watchOS) */,
-				A81AB57C1B2B074100FE8B93 /* YOGraphImageKit Demo App (watchOS) Extension */,
-				A8154AB11B2A5917001B3024 /* YOGraphImageKit (watchOS) */,
+				A87B33911B2BC3670025F6C5 /* Examples */,
+				A87B33921B2BC38E0025F6C5 /* YOGraphImageKit */,
 				A8D9D61D1B28703400E4BCEC /* Products */,
 			);
 			sourceTree = "<group>";

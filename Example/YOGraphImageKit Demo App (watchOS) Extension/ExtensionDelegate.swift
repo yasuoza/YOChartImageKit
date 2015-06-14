@@ -1,11 +1,3 @@
-//
-//  ExtensionDelegate.swift
-//  YOGraphImageKit Demo App (watchOS) Extension
-//
-//  Created by Yasuharu Ozaki on 6/12/15.
-//  Copyright © 2015 yasuoza.com. All rights reserved.
-//
-
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {

@@ -1,6 +1,5 @@
 import WatchKit
 import Foundation
-import UIKit
 import YOGraphImageKit
 
 class InterfaceController: WKInterfaceController {
