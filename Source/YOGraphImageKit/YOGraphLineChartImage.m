@@ -3,7 +3,7 @@
 @implementation YOGraphLineChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    NSAssert(_values.count > 1, @"YOGraphBarChartImage // must assign values property which is an array of NSNumber");
+    NSAssert(_values.count > 0, @"YOGraphBarChartImage // must assign values property which is an array of NSNumber");
     
     NSUInteger valuesCount = _values.count;
     CGFloat pointX = frame.size.width / (valuesCount - 1);
