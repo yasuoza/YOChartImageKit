@@ -16,10 +16,10 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 
-        let frame = CGRectMake(0, 0, contentFrame.width, contentFrame.height / 2.3)
+        let frame = CGRectMake(0, 0, contentFrame.width, contentFrame.height / 1.5)
         let scale = WKInterfaceDevice.currentDevice().screenScale
 
-        self.imageView.setImage(pieChartImage().drawImage(frame, scale: scale))
+        self.imageView.setImage(barChartImage().drawImage(frame, scale: scale))
     }
 
     override func didDeactivate() {
@@ -30,7 +30,7 @@ class InterfaceController: WKInterfaceController {
     func pieChartImage() -> YOGraphPieChartImage {
         let image = YOGraphPieChartImage()
         image.lineWidth = 8.0
-        image.labelText = "10.0%"
+        image.labelText = "LABEL"
         image.labelColor = UIColor.whiteColor()
         image.values = [10.0, 20.0, 70.0]
         image.colors = (0..<3).map { _ in
