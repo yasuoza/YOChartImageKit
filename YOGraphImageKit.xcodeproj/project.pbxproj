@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8154AB21B2A5917001B3024 /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154AB81B2A594B001B3024 /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8154AB91B2A594B001B3024 /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
+		A8154AB81B2A594B001B3024 /* YOGraphDonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8154AB91B2A594B001B3024 /* YOGraphDonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */; };
 		A8154ABA1B2A594B001B3024 /* YOGraphBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8154ABB1B2A594B001B3024 /* YOGraphBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */; };
 		A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,8 +24,8 @@
 		A81AB5931B2B080200FE8B93 /* YOGraphImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; };
 		A81AB5941B2B080200FE8B93 /* YOGraphImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOGraphImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */; };
+		A8C876B01B2AAA5F0092E5FF /* YOGraphDonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C876B11B2AAA5F0092E5FF /* YOGraphDonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */; };
 		A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B31B2AAA5F0092E5FF /* YOGraphBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */; };
 		A8C876B41B2AAA5F0092E5FF /* YOGraphLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,8 +130,8 @@
 		A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A81AB5811B2B074100FE8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81AB5831B2B074100FE8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphPieChartImage.h; sourceTree = "<group>"; };
-		A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGraphPieChartImage.m; sourceTree = "<group>"; };
+		A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphDonutChartImage.h; sourceTree = "<group>"; };
+		A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGraphDonutChartImage.m; sourceTree = "<group>"; };
 		A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphBarChartImage.h; sourceTree = "<group>"; };
 		A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGraphBarChartImage.m; sourceTree = "<group>"; };
 		A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphLineChartImage.h; sourceTree = "<group>"; };
@@ -238,8 +238,8 @@
 		A8C0FF511B2982F700BA4E81 /* YOGraphImageKit (Common) */ = {
 			isa = PBXGroup;
 			children = (
-				A8C0FF6E1B29831E00BA4E81 /* YOGraphPieChartImage.h */,
-				A8C0FF6F1B29831E00BA4E81 /* YOGraphPieChartImage.m */,
+				A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */,
+				A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */,
 				A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */,
 				A8C0FF741B29888E00BA4E81 /* YOGraphBarChartImage.m */,
 				A8C0FF781B29A02C00BA4E81 /* YOGraphLineChartImage.h */,
@@ -303,7 +303,7 @@
 			files = (
 				A8154AB31B2A5917001B3024 /* YOGraphImageKit.h in Headers */,
 				A8154ABC1B2A594B001B3024 /* YOGraphLineChartImage.h in Headers */,
-				A8154AB81B2A594B001B3024 /* YOGraphPieChartImage.h in Headers */,
+				A8154AB81B2A594B001B3024 /* YOGraphDonutChartImage.h in Headers */,
 				A8154ABA1B2A594B001B3024 /* YOGraphBarChartImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +315,7 @@
 				A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */,
 				A8C876B41B2AAA5F0092E5FF /* YOGraphLineChartImage.h in Headers */,
 				A8C876B21B2AAA5F0092E5FF /* YOGraphBarChartImage.h in Headers */,
-				A8C876B01B2AAA5F0092E5FF /* YOGraphPieChartImage.h in Headers */,
+				A8C876B01B2AAA5F0092E5FF /* YOGraphDonutChartImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +514,7 @@
 			files = (
 				A8154ABB1B2A594B001B3024 /* YOGraphBarChartImage.m in Sources */,
 				A8154ABD1B2A594B001B3024 /* YOGraphLineChartImage.m in Sources */,
-				A8154AB91B2A594B001B3024 /* YOGraphPieChartImage.m in Sources */,
+				A8154AB91B2A594B001B3024 /* YOGraphDonutChartImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C876B11B2AAA5F0092E5FF /* YOGraphPieChartImage.m in Sources */,
+				A8C876B11B2AAA5F0092E5FF /* YOGraphDonutChartImage.m in Sources */,
 				A8C876B51B2AAA5F0092E5FF /* YOGraphLineChartImage.m in Sources */,
 				A8C876B31B2AAA5F0092E5FF /* YOGraphBarChartImage.m in Sources */,
 			);

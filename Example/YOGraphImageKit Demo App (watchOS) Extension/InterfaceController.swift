@@ -27,8 +27,8 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    func pieChartImage() -> YOGraphPieChartImage {
-        let image = YOGraphPieChartImage()
+    func pieChartImage() -> YOGraphDonutChartImage {
+        let image = YOGraphDonutChartImage()
         image.lineWidth = 8.0
         image.labelText = "LABEL"
         image.labelColor = UIColor.whiteColor()

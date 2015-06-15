@@ -6,6 +6,6 @@ FOUNDATION_EXPORT double YOGraphImageKit__iOS_VersionNumber;
 //! Project version string for YOGraphImageKit (iOS).
 FOUNDATION_EXPORT const unsigned char YOGraphImageKit__iOS_VersionString[];
 
-#import <YOGraphImageKit/YOGraphPieChartImage.h>
+#import <YOGraphImageKit/YOGraphDonutChartImage.h>
 #import <YOGraphImageKit/YOGraphBarChartImage.h>
 #import <YOGraphImageKit/YOGraphLineChartImage.h>

@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         imageView.image = pieChartImage().drawImage(imageView.frame, scale: scale)
     }
 
-    func pieChartImage() -> YOGraphPieChartImage {
-        let image = YOGraphPieChartImage()
+    func pieChartImage() -> YOGraphDonutChartImage {
+        let image = YOGraphDonutChartImage()
         image.lineWidth = 8.0
         image.labelText = "10.0%"
         image.labelColor = UIColor.whiteColor()
