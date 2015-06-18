@@ -5,19 +5,49 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Line Chart Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS_" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="LineChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
                     <items>
                         <imageView alignment="center" verticalAlignment="center" id="Fst-AR-mdu"/>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="Fst-AR-mdu" id="Jsu-dQ-bNK"/>
+                        <segue destination="4qn-9b-EgK" kind="relationship" relationship="nextPage" id="kQx-Dz-BYg"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="467" y="331"/>
+            <point key="canvasLocation" x="216" y="331"/>
+        </scene>
+        <!--Bar Chart Interface Controller-->
+        <scene sceneID="3hH-ra-Oq4">
+            <objects>
+                <controller id="4qn-9b-EgK" customClass="BarChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="2Yv-Av-ZCt"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="2Yv-Av-ZCt" id="1c8-k5-JJq"/>
+                        <segue destination="bTT-pO-Kfx" kind="relationship" relationship="nextPage" id="4XP-ww-ey0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="537" y="331"/>
+        </scene>
+        <!--Donut Chart Interface Controller-->
+        <scene sceneID="8jP-0f-amr">
+            <objects>
+                <controller id="bTT-pO-Kfx" customClass="DonutChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="bwX-ff-TQu"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="bwX-ff-TQu" id="hsx-0k-2na"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="331"/>
         </scene>
     </scenes>
 </document>
