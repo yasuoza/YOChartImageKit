@@ -1,60 +1,71 @@
 import UIKit
-import YOGraphImageKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPageViewControllerDataSource {
 
-    @IBOutlet weak var imageView: UIImageView!
+    private weak var pageViewController: UIPageViewController!
+
+    let chartTypes: [ChartType] = [.LineChart, .BarChart, .DonutChart]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
+        pageController.dataSource = self
+
+        let vc = self.getItemController(0)!
+        pageController.setViewControllers([vc], direction: .Forward, animated: false, completion: nil)
+
+        self.pageViewController = pageController
+        addChildViewController(pageViewController!)
+        self.view.addSubview(pageViewController!.view)
+        pageViewController!.didMoveToParentViewController(self)
+
+        let appearance = UIPageControl.appearance()
+        appearance.pageIndicatorTintColor = UIColor.grayColor()
+        appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
+        appearance.backgroundColor = UIColor.darkGrayColor()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // MARK: - UIPageViewControllerDataSource
 
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
 
-        let scale = UIScreen.mainScreen().scale
-
-        imageView.image = pieChartImage().drawImage(imageView.frame, scale: scale)
-    }
-
-    func pieChartImage() -> YOGraphDonutChartImage {
-        let image = YOGraphDonutChartImage()
-        image.lineWidth = 8.0
-        image.labelText = "10.0%"
-        image.labelColor = UIColor.whiteColor()
-        image.values = [10.0, 20.0, 70.0]
-        image.colors = (0..<3).map { _ in
-            let hue = ( CGFloat(arc4random() % 256) / 256.0 )               //  0.0 to 1.0
-            let saturation = ( CGFloat(arc4random() % 128) / 256.0 ) + 0.5  //  0.5 to 1.0, away from white
-            let brightness = ( CGFloat(arc4random() % 128) / 256.0 ) + 0.5  //  0.5 to 1.0, away from black
-            return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+        let chartImageVC = viewController as! ChartImageViewController
+        if let currentIndex = chartTypes.indexOf(chartImageVC.chartType) {
+            let beforeIndex = Int(currentIndex) - 1
+            return getItemController(beforeIndex)
         }
-        return image
+        return nil
     }
 
-    func barChartImage() -> YOGraphBarChartImage {
-        let image = YOGraphBarChartImage()
-        image.barFillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
-        image.values = (0..<15).map { _ in CGFloat(arc4random_uniform(50) + 1) }
-        return image
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+
+        let chartImageVC = viewController as! ChartImageViewController
+        if let currentIndex = chartTypes.indexOf(chartImageVC.chartType) {
+            let afterIndex = Int(currentIndex) + 1
+            return getItemController(afterIndex)
+        }
+        return nil
     }
 
-    func lineChartImage() -> YOGraphLineChartImage {
-        let image = YOGraphLineChartImage()
-        image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
-        image.values = (0...10).map { _ in
-            CGFloat(arc4random_uniform(50))
-            }.reduce([CGFloat](), combine: { (arr: [CGFloat], value) in
-                let lastY = arr.last ?? 0.0
-                return arr + [lastY + value]
-            })
-        return image
+    func getItemController(itemIndex: Int) -> ChartImageViewController? {
+        guard itemIndex >= 0 && itemIndex < 3 else { return nil }
+
+        let types: [ChartType] = [.LineChart, .BarChart, .DonutChart]
+        let chartImageVC = self.storyboard!.instantiateViewControllerWithIdentifier("ChartImageViewController") as! ChartImageViewController
+
+        chartImageVC.chartType = types[itemIndex]
+        return chartImageVC
+    }
+
+    // MARK: - Page Indicator
+
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 3
+    }
+
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
     }
 
 }

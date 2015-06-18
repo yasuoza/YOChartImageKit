@@ -26,6 +26,7 @@
 		A872CC201B328A750086554F /* LineChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC1F1B328A750086554F /* LineChartInterfaceController.swift */; };
 		A872CC221B328A900086554F /* BarChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC211B328A900086554F /* BarChartInterfaceController.swift */; };
 		A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */; };
+		A872CC261B328EFA0086554F /* ChartImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC251B328EFA0086554F /* ChartImageViewController.swift */; };
 		A8C876961B2AAA050092E5FF /* YOGraphImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOGraphImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B01B2AAA5F0092E5FF /* YOGraphDonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B11B2AAA5F0092E5FF /* YOGraphDonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */; };
@@ -136,6 +137,7 @@
 		A872CC1F1B328A750086554F /* LineChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC211B328A900086554F /* BarChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonutChartInterfaceController.swift; sourceTree = "<group>"; };
+		A872CC251B328EFA0086554F /* ChartImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartImageViewController.swift; sourceTree = "<group>"; };
 		A8C0FF6E1B29831E00BA4E81 /* YOGraphDonutChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphDonutChartImage.h; sourceTree = "<group>"; };
 		A8C0FF6F1B29831E00BA4E81 /* YOGraphDonutChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGraphDonutChartImage.m; sourceTree = "<group>"; };
 		A8C0FF731B29888E00BA4E81 /* YOGraphBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGraphBarChartImage.h; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */,
 				A8D9D6211B28703400E4BCEC /* ViewController.swift */,
+				A872CC251B328EFA0086554F /* ChartImageViewController.swift */,
 				A8D9D6231B28703400E4BCEC /* Main.storyboard */,
 				A8D9D6261B28703400E4BCEC /* Assets.xcassets */,
 				A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */,
@@ -554,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D9D6221B28703400E4BCEC /* ViewController.swift in Sources */,
+				A872CC261B328EFA0086554F /* ChartImageViewController.swift in Sources */,
 				A8D9D6201B28703400E4BCEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
