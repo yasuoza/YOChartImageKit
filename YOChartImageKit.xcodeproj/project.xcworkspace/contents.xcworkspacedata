@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/ozaki/Projects/Cocoa/SampleBeziePath/YOGraphImageKit.xcodeproj">
+      location = "self:/Users/ozaki/Projects/Cocoa/YOGraphImageKit/YOChartImageKit.xcodeproj">
    </FileRef>
 </Workspace>

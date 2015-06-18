@@ -1,6 +1,6 @@
-#import "YOGraphBarChartImage.h"
+#import "YOBarChartImage.h"
 
-@implementation YOGraphBarChartImage
+@implementation YOBarChartImage
 
 const CGFloat kBarPadding = 50.0f;
 

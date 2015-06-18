@@ -1,4 +1,4 @@
-# YOGraphImageKit
+# YOChartImageKit
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
@@ -10,7 +10,7 @@
 
 - Xcode >= 7.0
 
-## Example 
+## Example
 
 Example application is available for both iOS and watchOS.  
-Open `YOGraphImageKit.xcodeproj` with Xcode and build demo app.
+Open `YOChartImageKit.xcodeproj` with Xcode and build demo app.

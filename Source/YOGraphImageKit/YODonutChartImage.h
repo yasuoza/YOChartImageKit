@@ -1,6 +1,6 @@
 @import UIKit;
 
-@interface YOGraphDonutChartImage : NSObject
+@interface YODonutChartImage : NSObject
 
 @property (nonnull) NSArray<NSNumber *> *values;
 

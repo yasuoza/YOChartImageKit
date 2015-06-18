@@ -1,13 +1,13 @@
 import WatchKit
 import Foundation
-import YOGraphImageKit
+import YOChartImageKit
 
 class BaseInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var imageView: WKInterfaceImage!
 
     func lineChartImage(frame: CGRect) -> UIImage {
-        let image = YOGraphLineChartImage()
+        let image = YOLineChartImage()
         image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
         image.values = (0...10).map { _ in
             CGFloat(arc4random_uniform(50))
@@ -19,14 +19,14 @@ class BaseInterfaceController: WKInterfaceController {
     }
 
     func barChartImage(frame: CGRect) -> UIImage {
-        let image = YOGraphBarChartImage()
+        let image = YOBarChartImage()
         image.barFillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
         image.values = (0..<15).map { _ in CGFloat(arc4random_uniform(50) + 1) }
         return image.drawImage(frame, scale: WKInterfaceDevice.currentDevice().screenScale)
     }
 
     func donutChartImage(frame: CGRect) -> UIImage {
-        let image = YOGraphDonutChartImage()
+        let image = YODonutChartImage()
         image.lineWidth = 8.0
         image.labelText = "LABEL"
         image.labelColor = UIColor.whiteColor()

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-               BuildableName = "YOGraphImageKit.framework"
-               BlueprintName = "YOGraphImageKit (iOS)"
-               ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
+               BuildableName = "YOChartImageKit.framework"
+               BlueprintName = "YOChartImageKit (iOS)"
+               ReferencedContainer = "container:YOChartImageKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-            BuildableName = "YOGraphImageKit.framework"
-            BlueprintName = "YOGraphImageKit (iOS)"
-            ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
+            BuildableName = "YOChartImageKit.framework"
+            BlueprintName = "YOChartImageKit (iOS)"
+            ReferencedContainer = "container:YOChartImageKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8C876921B2AAA050092E5FF"
-            BuildableName = "YOGraphImageKit.framework"
-            BlueprintName = "YOGraphImageKit (iOS)"
-            ReferencedContainer = "container:YOGraphImageKit.xcodeproj">
+            BuildableName = "YOChartImageKit.framework"
+            BlueprintName = "YOChartImageKit (iOS)"
+            ReferencedContainer = "container:YOChartImageKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

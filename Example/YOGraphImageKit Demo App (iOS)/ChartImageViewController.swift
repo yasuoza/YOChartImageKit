@@ -1,5 +1,5 @@
 import UIKit
-import YOGraphImageKit
+import YOChartImageKit
 
 enum ChartType {
     case LineChart, BarChart, DonutChart
@@ -8,7 +8,7 @@ enum ChartType {
         let scale = UIScreen.mainScreen().scale
         switch self {
         case .LineChart:
-            let image = YOGraphLineChartImage()
+            let image = YOLineChartImage()
             image.fillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
             image.values = (0...10).map { _ in
                 CGFloat(arc4random_uniform(50))
@@ -18,12 +18,12 @@ enum ChartType {
                 })
             return image.drawImage(frame, scale: scale)
         case .BarChart:
-            let image = YOGraphBarChartImage()
+            let image = YOBarChartImage()
             image.barFillColor = UIColor.whiteColor().colorWithAlphaComponent(0.6)
             image.values = (0..<15).map { _ in CGFloat(arc4random_uniform(50) + 1) }
             return image.drawImage(frame, scale: scale)
         case .DonutChart:
-            let image = YOGraphDonutChartImage()
+            let image = YODonutChartImage()
             image.lineWidth = 16.0
             image.labelText = "LABEL"
             image.labelColor = UIColor.whiteColor()

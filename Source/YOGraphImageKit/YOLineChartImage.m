@@ -1,6 +1,6 @@
-#import "YOGraphLineChartImage.h"
+#import "YOLineChartImage.h"
 
-@implementation YOGraphLineChartImage
+@implementation YOLineChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YOGraphBarChartImage // must assign values property which is an array of NSNumber");

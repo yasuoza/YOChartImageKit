@@ -8,7 +8,7 @@
         <!--Line Chart Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="LineChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
+                <controller id="AgC-eL-Hgc" customClass="LineChartInterfaceController" customModule="YOChartImageKit_Demo">
                     <items>
                         <imageView alignment="center" verticalAlignment="center" id="Fst-AR-mdu"/>
                     </items>
@@ -23,7 +23,7 @@
         <!--Bar Chart Interface Controller-->
         <scene sceneID="3hH-ra-Oq4">
             <objects>
-                <controller id="4qn-9b-EgK" customClass="BarChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
+                <controller id="4qn-9b-EgK" customClass="BarChartInterfaceController" customModule="YOChartImageKit_Demo">
                     <items>
                         <imageView alignment="center" verticalAlignment="center" id="2Yv-Av-ZCt"/>
                     </items>
@@ -38,7 +38,7 @@
         <!--Donut Chart Interface Controller-->
         <scene sceneID="8jP-0f-amr">
             <objects>
-                <controller id="bTT-pO-Kfx" customClass="DonutChartInterfaceController" customModule="YOGraphImageKit_Demo_App__watchOS__Extension">
+                <controller id="bTT-pO-Kfx" customClass="DonutChartInterfaceController" customModule="YOChartImageKit_Demo">
                     <items>
                         <imageView alignment="center" verticalAlignment="center" id="bwX-ff-TQu"/>
                     </items>
