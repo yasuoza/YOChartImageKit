@@ -12,5 +12,5 @@
 
 ## Example
 
-Example application is available for both iOS and watchOS.  
+Example applications are available for both iOS and watchOS.  
 Open `YOChartImageKit.xcodeproj` with Xcode and build demo app.
