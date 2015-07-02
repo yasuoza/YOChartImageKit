@@ -3,7 +3,7 @@
 @implementation YODonutChartImage
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
-    NSAssert(_values.count > 0, @"YOGraphPieChartImage // must assign values property which is an array of NSNumber");
+    NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
     NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
 
     CGFloat totalValue = [[_values valueForKeyPath:@"@sum.self"] floatValue];
