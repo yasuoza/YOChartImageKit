@@ -4,7 +4,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     private weak var pageViewController: UIPageViewController!
 
-    let chartTypes: [ChartType] = [.LineChart, .BarChart, .DonutChart]
+    let charts: [YOChart] = [.SolidLineChart, .SmoothLineChart, .BarChart, .DonutChart]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
 
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = chartTypes.indexOf(chartImageVC.chartType) {
+        if let currentIndex = charts.indexOf(chartImageVC.chart) {
             let beforeIndex = Int(currentIndex) - 1
             return getItemController(beforeIndex)
         }
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
 
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = chartTypes.indexOf(chartImageVC.chartType) {
+        if let currentIndex = charts.indexOf(chartImageVC.chart) {
             let afterIndex = Int(currentIndex) + 1
             return getItemController(afterIndex)
         }
@@ -49,19 +49,17 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
 
     func getItemController(itemIndex: Int) -> ChartImageViewController? {
-        guard itemIndex >= 0 && itemIndex < 3 else { return nil }
+        guard itemIndex >= 0 && itemIndex < charts.count else { return nil }
 
-        let types: [ChartType] = [.LineChart, .BarChart, .DonutChart]
         let chartImageVC = self.storyboard!.instantiateViewControllerWithIdentifier("ChartImageViewController") as! ChartImageViewController
-
-        chartImageVC.chartType = types[itemIndex]
+        chartImageVC.chart = charts[itemIndex]
         return chartImageVC
     }
 
     // MARK: - Page Indicator
 
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 3
+        return charts.count
     }
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {

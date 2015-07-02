@@ -2,6 +2,13 @@
 
 @implementation YOLineChartImage
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.smooth = YES;
+    }
+    return self;
+}
+
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YOGraphBarChartImage // must assign values property which is an array of NSNumber");
     
@@ -12,9 +19,10 @@
 
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat ratioY = number.floatValue / maxValue;
+        CGFloat offsetY = ratioY == 0.0 ? -_strokeWidth : _strokeWidth;
         NSValue *pointValue = [NSValue valueWithCGPoint:(CGPoint){
             (float)idx * pointX,
-            frame.size.height * (1 - ratioY)
+            frame.size.height * (1 - ratioY) + offsetY
         }];
         [points addObject:pointValue];
     }];
@@ -57,20 +65,26 @@
     [points enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL *_) {
         CGPoint p2 = value.CGPointValue;
 
-        CGFloat deltaX = p2.x - p1.x;
-        CGFloat controlPointX = p1.x + (deltaX / 2);
+        if (_smooth) {
+            CGFloat deltaX = p2.x - p1.x;
+            CGFloat controlPointX = p1.x + (deltaX / 2);
+            CGPoint controlPoint1 = (CGPoint){controlPointX, p1.y};
+            CGPoint controlPoint2 = (CGPoint){controlPointX, p2.y};
 
-        CGPoint controlPoint1 = (CGPoint){controlPointX, p1.y};
-        CGPoint controlPoint2 = (CGPoint){controlPointX, p2.y};
-
-        [linePath addCurveToPoint:p2 controlPoint1:controlPoint1 controlPoint2:controlPoint2];
-        [fillBottom addCurveToPoint:p2 controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+            [linePath addCurveToPoint:p2 controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+            [fillBottom addCurveToPoint:p2 controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+        } else {
+            [linePath addLineToPoint:p2];
+            [fillBottom addLineToPoint:p2];
+        }
 
         p1 = p2;
     }];
 
-    [_fillColor setFill];
-    [fillBottom fill];
+    if (_fillColor) {
+        [_fillColor setFill];
+        [fillBottom fill];
+    }
 
     return linePath;
 }

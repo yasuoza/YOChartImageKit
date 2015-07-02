@@ -10,6 +10,8 @@
 
 @property (nullable) UIColor *fillColor;
 
+@property BOOL smooth;
+
 - (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end
