@@ -14,8 +14,8 @@ const CGFloat kBarPadding = 50.0f;
     CGFloat totalPadding = (dataCount - 1.0f) * barPadding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
 
-    self.barFillColor = _barFillColor ? _barFillColor : [UIColor whiteColor];
-    self.barStrokeColor = _barStrokeColor ? _barStrokeColor : [UIColor clearColor];
+    self.fillColor = _fillColor ? _fillColor : [UIColor whiteColor];
+    self.strokeColor = _strokeColor ? _strokeColor : [UIColor clearColor];
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
@@ -29,10 +29,10 @@ const CGFloat kBarPadding = 50.0f;
         };
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
         path.lineWidth = _strokeWidth;
-        [_barFillColor setFill];
+        [_fillColor setFill];
         [path fill];
 
-        [_barStrokeColor setStroke];
+        [_strokeColor setStroke];
         [path stroke];
     }];
 

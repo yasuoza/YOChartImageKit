@@ -6,9 +6,9 @@
 
 @property CGFloat strokeWidth;
 
-@property (nullable) UIColor *barFillColor;
+@property (nullable) UIColor *fillColor;
 
-@property (nullable) UIColor *barStrokeColor;
+@property (nullable) UIColor *strokeColor;
 
 - (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 

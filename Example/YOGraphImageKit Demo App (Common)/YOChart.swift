@@ -20,7 +20,9 @@ enum YOChart {
             return image.drawImage(frame, scale: scale)
         case .BarChart:
             let image = YOBarChartImage()
-            image.barFillColor = randomColor()
+            image.fillColor = randomColor()
+            image.strokeWidth = 2.0
+            image.strokeColor = randomColor()
             image.values = (0..<15).map { _ in CGFloat(arc4random_uniform(50) + 1) }
             return image.drawImage(frame, scale: scale)
         case .DonutChart:
