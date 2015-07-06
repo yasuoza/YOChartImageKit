@@ -2,16 +2,21 @@
 
 @implementation YOBarChartImage
 
-const CGFloat kBarPadding = 50.0f;
+const CGFloat kBarPaddingMultipler = 20.0f;
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YOBarChartImage // must assign values property which is an array of NSNumber");
 
-    NSUInteger valuesCount = _values.count;
     CGFloat maxValue = [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
-    CGFloat dataCount = (CGFloat)valuesCount;
-    CGFloat barPadding = ceil(1.0/dataCount * kBarPadding);
-    CGFloat totalPadding = (dataCount - 1.0f) * barPadding;
+    CGFloat dataCount = (CGFloat)_values.count;
+
+    CGFloat padding;
+    if (_barPadding > 0.0f) {
+        padding = _barPadding;
+    } else {
+        padding = ceil(1.0f / dataCount * kBarPaddingMultipler);
+    }
+    CGFloat totalPadding = (dataCount - 1.0f) * padding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
 
     self.fillColor = _fillColor ? _fillColor : [UIColor whiteColor];
@@ -22,9 +27,9 @@ const CGFloat kBarPadding = 50.0f;
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / maxValue;
         CGRect rect = {
-            (CGFloat)idx * (barWidth + barPadding),
-            frame.size.height * (1.0 - normalizedValue),
-            barWidth,
+            (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
+            frame.size.height * (1.0 - normalizedValue) + _strokeWidth / 2,
+            barWidth - _strokeWidth,
             frame.size.height / normalizedValue
         };
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
