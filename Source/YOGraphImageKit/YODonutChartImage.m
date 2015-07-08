@@ -2,6 +2,16 @@
 
 @implementation YODonutChartImage
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _donutWidth = 1.0;
+        _labelColor = [UIColor blackColor];
+        _labelFont = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    }
+    return self;
+}
+
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
     NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
@@ -13,13 +23,11 @@
     };
 
     CGFloat maxLength = MIN(frame.size.width, frame.size.height);
-    CGFloat radius = maxLength / 2 - _lineWidth / 2;
+    CGFloat radius = maxLength / 2 - _donutWidth / 2;
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
     if (_labelText) {
-        _labelColor = _labelColor ? _labelColor : [UIColor blackColor];
-        _labelFont = _labelFont ? _labelFont : [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
         NSDictionary *attributes = @{
                                      NSForegroundColorAttributeName: _labelColor,
                                      NSFontAttributeName: _labelFont,
@@ -37,14 +45,14 @@
         UIColor *strokeColor = _colors[idx];
 
         CGFloat endAngle = startAngle + 2.0 * M_PI * normalizedValue;
-        UIBezierPath *backGroundPath = [UIBezierPath bezierPathWithArcCenter:center
+        UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
                                                                       radius:radius
                                                                   startAngle:startAngle
                                                                     endAngle:endAngle
                                                                    clockwise:YES];
-        backGroundPath.lineWidth = _lineWidth;
+        donutPath.lineWidth = _donutWidth;
         [strokeColor setStroke];
-        [backGroundPath stroke];
+        [donutPath stroke];
 
         startAngle = endAngle;
     }];

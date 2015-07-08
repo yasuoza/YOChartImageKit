@@ -3,8 +3,11 @@
 @implementation YOLineChartImage
 
 - (instancetype)init {
-    if (self = [super init]) {
-        self.smooth = YES;
+    self = [super init];
+    if (self) {
+        _strokeWidth = 1.0;
+        _strokeColor = [UIColor whiteColor];
+        _smooth = YES;
     }
     return self;
 }
@@ -19,7 +22,7 @@
 
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat ratioY = number.floatValue / maxValue;
-        CGFloat offsetY = ratioY == 0.0 ? -_strokeWidth : _strokeWidth;
+        CGFloat offsetY = ratioY == 0.0 ? -_strokeWidth / 2 : _strokeWidth / 2;
         NSValue *pointValue = [NSValue valueWithCGPoint:(CGPoint){
             (float)idx * pointX,
             frame.size.height * (1 - ratioY) + offsetY
@@ -32,8 +35,10 @@
     UIBezierPath *path = [self quadCurvedPathWithPoints:points frame:frame];
     path.lineWidth = _strokeWidth;
 
-    [_strokeColor setStroke];
-    [path stroke];
+    if (_strokeColor) {
+        [_strokeColor setStroke];
+        [path stroke];
+    }
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

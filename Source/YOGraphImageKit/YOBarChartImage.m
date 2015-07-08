@@ -2,6 +2,19 @@
 
 @implementation YOBarChartImage
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _barPadding = 0.0;
+        _strokeWidth = 0.0;
+
+        _fillColor = [UIColor whiteColor];
+        _strokeColor = nil;
+    }
+    return self;
+}
+
 const CGFloat kBarPaddingMultipler = 20.0f;
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
@@ -18,9 +31,6 @@ const CGFloat kBarPaddingMultipler = 20.0f;
     }
     CGFloat totalPadding = (dataCount - 1.0f) * padding;
     CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
-
-    self.fillColor = _fillColor ? _fillColor : [UIColor whiteColor];
-    self.strokeColor = _strokeColor ? _strokeColor : [UIColor clearColor];
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 

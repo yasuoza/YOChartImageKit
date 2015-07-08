@@ -1,19 +1,56 @@
 @import UIKit;
 
+/**
+ *  A donut chart image generator provides a donut chart image without `QuartzCore.framework` and `UIView`.
+ */
 @interface YODonutChartImage : NSObject
 
+/** @name Donut chart rendering properties */
+
+/**
+ *  The array of values for the donut chart. `values` should be an array of NSNumber.
+ *  You must provide `values`, otherwise raises an exception.
+ */
 @property (nonnull) NSArray<NSNumber *> *values;
 
+/**
+ *  The array of colors for the donut chart. `colors` should be an array of UIColor.
+ *  You must provide `colors`, otherwise raises an exception.
+ */
 @property (nonnull) NSArray<UIColor *> *colors;
 
-@property CGFloat lineWidth;
+/**
+ *  The width of donut.
+ *  The default width is `1.0`.
+ */
+@property CGFloat donutWidth;
 
-@property (nonnull) NSString *labelText;
+/**
+ *  The text of center label in donut chart.
+ *  The default text is `nil`.
+ */
+@property (nullable) NSString *labelText;
 
+/**
+ *  The color of center label in donut chart.
+ *  The default color is black.
+ */
 @property (nonnull) UIColor *labelColor;
 
+/**
+ *  The font of center label in donut chart.
+ *  The default font is UIFont with UIFontTextStyleBody.
+ */
 @property (nonnull) UIFont *labelFont;
 
+/**
+ *  Draws a image of donut chart.
+ *
+ *  @param frame The frame rectangle for the chart image.
+ *  @param scale The scale factor for chart image.
+ *
+ *  @return An donut chart drawed `UIImage` object.
+ */
 - (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end

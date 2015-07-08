@@ -26,7 +26,7 @@ enum YOChart {
             return image.drawImage(frame, scale: scale)
         case .DonutChart:
             let image = YODonutChartImage()
-            image.lineWidth = 16.0
+            image.donutWidth = 16.0
             image.labelText = "LABEL"
             image.labelColor = UIColor.whiteColor()
             image.values = [10.0, 20.0, 70.0]
