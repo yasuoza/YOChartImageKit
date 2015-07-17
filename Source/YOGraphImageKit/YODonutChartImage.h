@@ -29,7 +29,7 @@
  *  The text of center label in donut chart.
  *  The default text is `nil`.
  */
-@property (nullable) NSString *labelText;
+@property (nullable, copy) NSString *labelText;
 
 /**
  *  The color of center label in donut chart.
