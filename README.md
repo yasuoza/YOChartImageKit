@@ -36,7 +36,7 @@ image.drawImage(frame, scale: scale) // draw a image
 ```swift
 let image = YOLineChartImage()
 image.strokeWidth = 4.0              // width of line
-image.fill = randomColor()           // color of area
+image.fillColor = randomColor()      // color of area
 image.values = [0.0, 1.0, 2.0]       // chart values
 // image.smooth = true               // [default] draws a smooth line
 image.drawImage(frame, scale: scale) // draw a image
