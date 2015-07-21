@@ -1,6 +1,10 @@
 # YOChartImageKit
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/YOChartImageKit.svg?style=flat)](http://cocoadocs.org/docsets/YOChartImageKit)
+[![License](https://img.shields.io/cocoapods/l/YOChartImageKit.svg?style=flat)](http://cocoadocs.org/docsets/YOChartImageKit)
+[![Platform](https://img.shields.io/cocoapods/p/YOChartImageKit.svg?style=flat)](http://cocoadocs.org/docsets/YOChartImageKit)
+
 
 Since watchOS does not have _UIView_ class, YOChartImageKit draws a _UIImage_ of a chart with given values.  
 Values and colors can be customized.
