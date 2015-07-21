@@ -47,6 +47,6 @@
  *
  *  @return An line chart drawed `UIImage` object.
  */
-- (__nonnull UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale;
+- (UIImage * _Nonnull)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 @end
