@@ -645,7 +645,7 @@
 				INFOPLIST_FILE = "Source/YOGraphImageKit (watchOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--watchOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.watchosframework.YOChartImageKit;
 				PRODUCT_NAME = YOChartImageKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -668,7 +668,7 @@
 				INFOPLIST_FILE = "Source/YOGraphImageKit (watchOS)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.watchosframework.YOGraphImageKit--watchOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.watchosframework.YOChartImageKit;
 				PRODUCT_NAME = YOChartImageKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -685,7 +685,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -700,7 +700,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -717,7 +717,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = YOChartImageKit_Demo_App__watchOS__Extension;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS)/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -734,7 +734,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = YOChartImageKit_Demo_App__watchOS__Extension;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS)/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -756,7 +756,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.iosframework.YOGraphImageKit--iOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.iosframework.YOChartImageKit;
 				PRODUCT_NAME = YOChartImageKit;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -778,7 +778,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuoza.iosframework.YOGraphImageKit--iOS-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.iosframework.YOChartImageKit;
 				PRODUCT_NAME = YOChartImageKit;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -874,7 +874,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 			};
 			name = Debug;
@@ -885,7 +885,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yographimagekit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
 				PRODUCT_NAME = "YOChartImageKit Demo";
 			};
 			name = Release;
