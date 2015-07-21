@@ -83,4 +83,9 @@ image.drawImage(frame, scale: scale)              // draw a image
 ## Example Application
 
 Example applications are available for both iOS and watchOS.  
-Open `YOChartImageKit.xcodeproj` with Xcode and build demo app.
+
+```
+pod try YOChartImageKit
+```
+
+or open `YOChartImageKit.xcodeproj` with Xcode and build demo app.
