@@ -15,8 +15,8 @@ Values and colors can be customized.
 
 ## Configuration
 
-Followng section describes the way to draw charts.  
-If you want to try YOChartImageKit, open `YOChartImageKit.xcodeproj`. Eample applications are available for iOS and watchOS.
+Following section describes the way to draw charts.  
+If you want to try YOChartImageKit, open `YOChartImageKit.xcodeproj`. Example applications are available for iOS and watchOS.
 
 ### Line chart
 
@@ -30,7 +30,7 @@ image.strokeWidth = 4.0              // width of line
 image.strokeColor = randomColor()    // color of line
 image.values = [0.0, 1.0, 2.0]       // chart values
 image.smooth = false                 // disable smooth line
-image.drawImage(frame, scale: scale) // draw a image
+image.drawImage(frame, scale: scale) // draw an image
 ```
 
 #### smooth
@@ -43,7 +43,7 @@ image.strokeWidth = 4.0              // width of line
 image.fillColor = randomColor()      // color of area
 image.values = [0.0, 1.0, 2.0]       // chart values
 // image.smooth = true               // [default] draws a smooth line
-image.drawImage(frame, scale: scale) // draw a image
+image.drawImage(frame, scale: scale) // draw an image
 ```
 
 ### Bar chart
@@ -55,7 +55,7 @@ let image = YOBarChartImage()
 image.fillColor = randomColor()      // color of bars
 // image.barPadding = 2.0            // [optional] padding of bars. 
 image.values = [0.0, 1.0, 2.0]       // chart values
-image.drawImage(frame, scale: scale) // draw a image
+image.drawImage(frame, scale: scale) // draw an image
 ```
 
 ### Donut chart
@@ -69,7 +69,7 @@ image.donutWidth = 16.0                           // width of donut
 // image.labelColor = UIColor.whiteColor()        // [optional] center label color
 image.values = [10.0, 20.0, 70.0]                 // chart values
 image.colors = (0..<3).map { _ in randomColor() } // colors of pieces
-image.drawImage(frame, scale: scale)              // draw a image
+image.drawImage(frame, scale: scale)              // draw an image
 ```
 
 ## Framework Requirements
