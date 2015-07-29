@@ -6,6 +6,8 @@
 {
     self = [super init];
     if (self) {
+        _barStyle = YOBarChartImageBarStyleVertical;
+
         _barPadding = 0.0;
         _strokeWidth = 0.0;
 
@@ -30,18 +32,31 @@ const CGFloat kBarPaddingMultipler = 20.0f;
         padding = ceil(1.0f / dataCount * kBarPaddingMultipler);
     }
     CGFloat totalPadding = (dataCount - 1.0f) * padding;
-    CGFloat barWidth = (frame.size.width - totalPadding) / dataCount;
+    CGFloat totalWidth = _barStyle == YOBarChartImageBarStyleVertical ? (frame.size.width - totalPadding) : (frame.size.height - totalPadding);
+    CGFloat barWidth = totalWidth / dataCount;
 
     UIGraphicsBeginImageContextWithOptions(frame.size, false, scale);
 
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / maxValue;
-        CGRect rect = {
-            (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
-            frame.size.height * (1.0 - normalizedValue) + _strokeWidth / 2,
-            barWidth - _strokeWidth,
-            frame.size.height / normalizedValue
-        };
+
+        CGRect rect;
+        if (_barStyle == YOBarChartImageBarStyleVertical) {
+            rect = (CGRect) {
+                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
+                frame.size.height * (1.0 - normalizedValue) + _strokeWidth / 2,
+                barWidth - _strokeWidth,
+                frame.size.height / normalizedValue
+            };
+        } else {
+            rect = (CGRect) {
+                -_strokeWidth,
+                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
+                frame.size.width * normalizedValue + _strokeWidth / 2,
+                barWidth - _strokeWidth
+            };
+        }
+
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
         path.lineWidth = _strokeWidth;
         [_fillColor setFill];

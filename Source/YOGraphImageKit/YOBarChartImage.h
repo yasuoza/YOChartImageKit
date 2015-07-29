@@ -5,6 +5,22 @@
  */
 @interface YOBarChartImage : NSObject
 
+/** @name Data Types **/
+
+/**
+ *  Defines the stylistic appearance of different types of images.
+ */
+typedef NS_ENUM(NSInteger, YOBarChartImageBarStyle){
+    /**
+     *  Use the vertical growing style.
+     */
+    YOBarChartImageBarStyleVertical,
+    /**
+     *  Use the horizontal growing style.
+     */
+    YOBarChartImageBarStyleHorizontal
+};
+
 /** @name Bar chart rendering properties */
 
 /**
@@ -12,6 +28,11 @@
  *  You must provide `values`, otherwise raises an exception.
  */
 @property (nonnull) NSArray<NSNumber *> *values;
+
+/**
+ *  The style of the bar chart.
+ */
+@property YOBarChartImageBarStyle barStyle;
 
 /**
  *  The padding of each bars.
