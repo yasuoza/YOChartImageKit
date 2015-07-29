@@ -4,7 +4,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     private weak var pageViewController: UIPageViewController!
 
-    let charts: [YOChart] = [.SolidLineChart, .SmoothLineChart, .BarChart, .DonutChart]
+    let charts: [YOChart] = [.SolidLineChart, .SmoothLineChart, .VerticalBarChart, .HorizontalBarChart, .DonutChart]
 
     override func viewDidLoad() {
         super.viewDidLoad()

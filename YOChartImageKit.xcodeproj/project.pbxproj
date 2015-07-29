@@ -25,9 +25,10 @@
 		A86251451B4532C60036BC13 /* YOChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86251431B4532C60036BC13 /* YOChart.swift */; };
 		A86251471B4534400036BC13 /* SmoothLineChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86251461B4534400036BC13 /* SmoothLineChartInterfaceController.swift */; };
 		A872CC201B328A750086554F /* SolidLineChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC1F1B328A750086554F /* SolidLineChartInterfaceController.swift */; };
-		A872CC221B328A900086554F /* BarChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC211B328A900086554F /* BarChartInterfaceController.swift */; };
+		A872CC221B328A900086554F /* VerticalBarChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */; };
 		A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */; };
 		A872CC261B328EFA0086554F /* ChartImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872CC251B328EFA0086554F /* ChartImageViewController.swift */; };
+		A8B509661B688E6700F596ED /* HorizontalBarChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */; };
 		A8C876961B2AAA050092E5FF /* YOChartImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOChartImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B01B2AAA5F0092E5FF /* YODonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YODonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C876B11B2AAA5F0092E5FF /* YODonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YODonutChartImage.m */; };
@@ -140,9 +141,10 @@
 		A86251431B4532C60036BC13 /* YOChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YOChart.swift; path = "Example/YOGraphImageKit Demo App (Common)/YOChart.swift"; sourceTree = "<group>"; };
 		A86251461B4534400036BC13 /* SmoothLineChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothLineChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC1F1B328A750086554F /* SolidLineChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidLineChartInterfaceController.swift; sourceTree = "<group>"; };
-		A872CC211B328A900086554F /* BarChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartInterfaceController.swift; sourceTree = "<group>"; };
+		A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalBarChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonutChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC251B328EFA0086554F /* ChartImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartImageViewController.swift; sourceTree = "<group>"; };
+		A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartInterfaceController.swift; sourceTree = "<group>"; };
 		A8C0FF6E1B29831E00BA4E81 /* YODonutChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YODonutChartImage.h; sourceTree = "<group>"; };
 		A8C0FF6F1B29831E00BA4E81 /* YODonutChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YODonutChartImage.m; sourceTree = "<group>"; };
 		A8C0FF731B29888E00BA4E81 /* YOBarChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOBarChartImage.h; sourceTree = "<group>"; };
@@ -222,7 +224,8 @@
 				A81AB57D1B2B074100FE8B93 /* BaseInterfaceController.swift */,
 				A872CC1F1B328A750086554F /* SolidLineChartInterfaceController.swift */,
 				A86251461B4534400036BC13 /* SmoothLineChartInterfaceController.swift */,
-				A872CC211B328A900086554F /* BarChartInterfaceController.swift */,
+				A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */,
+				A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */,
 				A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */,
 				A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */,
 				A81AB5811B2B074100FE8B93 /* Assets.xcassets */,
@@ -550,9 +553,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86251471B4534400036BC13 /* SmoothLineChartInterfaceController.swift in Sources */,
-				A872CC221B328A900086554F /* BarChartInterfaceController.swift in Sources */,
+				A872CC221B328A900086554F /* VerticalBarChartInterfaceController.swift in Sources */,
 				A86251451B4532C60036BC13 /* YOChart.swift in Sources */,
 				A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */,
+				A8B509661B688E6700F596ED /* HorizontalBarChartInterfaceController.swift in Sources */,
 				A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */,
 				A81AB57E1B2B074100FE8B93 /* BaseInterfaceController.swift in Sources */,
 				A872CC201B328A750086554F /* SolidLineChartInterfaceController.swift in Sources */,

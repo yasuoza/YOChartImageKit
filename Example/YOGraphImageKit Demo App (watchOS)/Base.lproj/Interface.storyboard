@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8083.2"/>
     </dependencies>
     <scenes>
         <!--Solid Line Chart Interface Controller-->
@@ -20,16 +20,16 @@
             </objects>
             <point key="canvasLocation" x="216" y="331"/>
         </scene>
-        <!--Bar Chart Interface Controller-->
+        <!--Vertical Bar Chart Interface Controller-->
         <scene sceneID="3hH-ra-Oq4">
             <objects>
-                <controller id="4qn-9b-EgK" customClass="BarChartInterfaceController" customModule="YOChartImageKit_Demo">
+                <controller id="4qn-9b-EgK" customClass="VerticalBarChartInterfaceController" customModule="YOChartImageKit_Demo">
                     <items>
                         <imageView alignment="center" verticalAlignment="center" id="2Yv-Av-ZCt"/>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="2Yv-Av-ZCt" id="1c8-k5-JJq"/>
-                        <segue destination="bTT-pO-Kfx" kind="relationship" relationship="nextPage" id="4XP-ww-ey0"/>
+                        <segue destination="qk8-NW-G2o" kind="relationship" relationship="nextPage" id="RgP-hO-Ys7"/>
                     </connections>
                 </controller>
             </objects>
@@ -62,7 +62,22 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="703" y="331"/>
+            <point key="canvasLocation" x="849" y="331"/>
+        </scene>
+        <!--Horizontal Bar Chart Interface Controller-->
+        <scene sceneID="N2e-7j-XBb">
+            <objects>
+                <controller hidesWhenLoading="NO" id="qk8-NW-G2o" customClass="HorizontalBarChartInterfaceController" customModule="YOChartImageKit_Demo">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="81V-z1-bx7"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="81V-z1-bx7" id="8Wf-N2-El9"/>
+                        <segue destination="bTT-pO-Kfx" kind="relationship" relationship="nextPage" id="k0T-J4-EEs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="693" y="331"/>
         </scene>
     </scenes>
 </document>
