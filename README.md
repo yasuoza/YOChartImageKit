@@ -48,13 +48,29 @@ image.drawImage(frame, scale: scale) // draw an image
 
 ### Bar chart
 
+#### Vertical
+
 ![](https://raw.githubusercontent.com/yasuoza/YOChartImageKit/assets/images/watchos/1_bar.png)
 
 ```swift
-let image = YOBarChartImage() 
-image.fillColor = randomColor()      // color of bars
-// image.barPadding = 2.0            // [optional] padding of bars. 
+let image = YOBarChartImage()
 image.values = [0.0, 1.0, 2.0]       // chart values
+image.fillColor = randomColor()      // color of bars
+// image.barPadding = 2.0            // [optional] padding of bars
+// image.barStyle = .Vertical        // [default] draws a vertical bars
+image.drawImage(frame, scale: scale) // draw an image
+```
+
+#### Horizontal
+
+![](https://raw.githubusercontent.com/yasuoza/YOChartImageKit/assets/images/watchos/1_horizontal_bar.png)
+
+```swift
+let image = YOBarChartImage()
+image.values = [0.0, 1.0, 2.0]       // chart values
+image.fillColor = randomColor()      // color of bars
+// image.barPadding = 2.0            // [optional] padding of bars
+image.barStyle = .Horizontal         // draws a horizontal bars
 image.drawImage(frame, scale: scale) // draw an image
 ```
 
