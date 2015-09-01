@@ -64,6 +64,11 @@
     if (points.count == 2) {
         CGPoint p2 = [points[1] CGPointValue];
         [linePath addLineToPoint:p2];
+        [fillBottom addLineToPoint:p2];
+        if (_fillColor) {
+            [_fillColor setFill];
+            [fillBottom fill];
+        }
         return linePath;
     }
 
