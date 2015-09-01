@@ -13,6 +13,10 @@ Values and colors can be customized.
 
 ![ios](https://raw.githubusercontent.com/yasuoza/YOChartImageKit/assets/images/ios/all.png)
 
+## Installation
+
+_To be documented after Xcode 7 GM released._
+
 ## Configuration
 
 Following section describes the way to draw charts.  
