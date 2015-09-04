@@ -20,6 +20,8 @@
 		A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */; };
 		A81AB5821B2B074100FE8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81AB5811B2B074100FE8B93 /* Assets.xcassets */; };
 		A81AB5861B2B074100FE8B93 /* YOChartImageKit Demo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A81AB56C1B2B074000FE8B93 /* YOChartImageKit Demo.app */; };
+		A851576C1B99CF0600CA58EF /* YOChartImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A851576B1B99CF0600CA58EF /* YOChartImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A851576E1B99CF1300CA58EF /* YOChartImageWatchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A851576D1B99CF1300CA58EF /* YOChartImageWatchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A86251441B4532C60036BC13 /* YOChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86251431B4532C60036BC13 /* YOChart.swift */; };
 		A86251451B4532C60036BC13 /* YOChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86251431B4532C60036BC13 /* YOChart.swift */; };
 		A86251471B4534400036BC13 /* SmoothLineChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86251461B4534400036BC13 /* SmoothLineChartInterfaceController.swift */; };
@@ -36,15 +38,13 @@
 		A8C876B51B2AAA5F0092E5FF /* YOLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF791B29A02C00BA4E81 /* YOLineChartImage.m */; };
 		A8C876BB1B2AAA930092E5FF /* YOChartImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOChartImageKit.framework */; };
 		A8C876BC1B2AAA930092E5FF /* YOChartImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8C876931B2AAA050092E5FF /* YOChartImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A8D2BA3F1B32B2F700BE1175 /* YOChartImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */; };
-		A8D2BA401B32B2F700BE1175 /* YOChartImageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8D2BA3F1B32B2F700BE1175 /* YOChartImageWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOChartImageWatchKit.framework */; };
+		A8D2BA401B32B2F700BE1175 /* YOChartImageWatchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8154AB01B2A5917001B3024 /* YOChartImageWatchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8D9D6201B28703400E4BCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */; };
 		A8D9D6221B28703400E4BCEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9D6211B28703400E4BCEC /* ViewController.swift */; };
 		A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6231B28703400E4BCEC /* Main.storyboard */; };
 		A8D9D6271B28703400E4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6261B28703400E4BCEC /* Assets.xcassets */; };
 		A8D9D62A1B28703400E4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */; };
-		A8FA5E861B952CA00027D386 /* YOChartImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOChartImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8FA5E871B952CC50027D386 /* YOChartImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C876951B2AAA050092E5FF /* YOChartImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +118,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A8D2BA401B32B2F700BE1175 /* YOChartImageKit.framework in Embed Frameworks */,
+				A8D2BA401B32B2F700BE1175 /* YOChartImageWatchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +126,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOChartImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8154AB01B2A5917001B3024 /* YOChartImageWatchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOChartImageWatchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AB56C1B2B074000FE8B93 /* YOChartImageKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOChartImageKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AB56F1B2B074000FE8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A81AB5711B2B074000FE8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +136,8 @@
 		A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A81AB5811B2B074100FE8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81AB5831B2B074100FE8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A851576B1B99CF0600CA58EF /* YOChartImageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOChartImageKit.h; path = Source/YOChartImageKit/YOChartImageKit.h; sourceTree = SOURCE_ROOT; };
+		A851576D1B99CF1300CA58EF /* YOChartImageWatchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOChartImageWatchKit.h; path = Source/YOChartImageKit/YOChartImageWatchKit.h; sourceTree = SOURCE_ROOT; };
 		A86251431B4532C60036BC13 /* YOChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YOChart.swift; path = "Example/YOGraphImageKit Demo App (Common)/YOChart.swift"; sourceTree = "<group>"; };
 		A86251461B4534400036BC13 /* SmoothLineChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothLineChartInterfaceController.swift; sourceTree = "<group>"; };
 		A872CC1F1B328A750086554F /* SolidLineChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidLineChartInterfaceController.swift; sourceTree = "<group>"; };
@@ -152,7 +154,6 @@
 		A8C0FF781B29A02C00BA4E81 /* YOLineChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOLineChartImage.h; sourceTree = "<group>"; };
 		A8C0FF791B29A02C00BA4E81 /* YOLineChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOLineChartImage.m; sourceTree = "<group>"; };
 		A8C876931B2AAA050092E5FF /* YOChartImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOChartImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C876951B2AAA050092E5FF /* YOChartImageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOChartImageKit.h; sourceTree = "<group>"; };
 		A8D9D61C1B28703400E4BCEC /* YOChartImageKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOChartImageKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D9D61F1B28703400E4BCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D9D6211B28703400E4BCEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D2BA3F1B32B2F700BE1175 /* YOChartImageKit.framework in Frameworks */,
+				A8D2BA3F1B32B2F700BE1175 /* YOChartImageWatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +200,7 @@
 		A8154AB11B2A5917001B3024 /* YOChartImageKit (watchOS) */ = {
 			isa = PBXGroup;
 			children = (
+				A851576D1B99CF1300CA58EF /* YOChartImageWatchKit.h */,
 				A8BEFF741B95AA750024C476 /* Info.plist */,
 			);
 			name = "YOChartImageKit (watchOS)";
@@ -265,7 +267,6 @@
 		A8C0FF511B2982F700BA4E81 /* YOChartImageKit (Common) */ = {
 			isa = PBXGroup;
 			children = (
-				A8C876951B2AAA050092E5FF /* YOChartImageKit.h */,
 				A8C0FF781B29A02C00BA4E81 /* YOLineChartImage.h */,
 				A8C0FF791B29A02C00BA4E81 /* YOLineChartImage.m */,
 				A8C0FF731B29888E00BA4E81 /* YOBarChartImage.h */,
@@ -280,6 +281,7 @@
 		A8C876941B2AAA050092E5FF /* YOChartImageKit (iOS) */ = {
 			isa = PBXGroup;
 			children = (
+				A851576B1B99CF0600CA58EF /* YOChartImageKit.h */,
 				A8BEFF731B95AA6D0024C476 /* Info.plist */,
 			);
 			name = "YOChartImageKit (iOS)";
@@ -299,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D9D61C1B28703400E4BCEC /* YOChartImageKit Demo.app */,
-				A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */,
+				A8154AB01B2A5917001B3024 /* YOChartImageWatchKit.framework */,
 				A8C876931B2AAA050092E5FF /* YOChartImageKit.framework */,
 				A81AB56C1B2B074000FE8B93 /* YOChartImageKit Demo.app */,
 				A81AB5781B2B074100FE8B93 /* YOChartImageKit Demo.appex */,
@@ -329,7 +331,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FA5E871B952CC50027D386 /* YOChartImageKit.h in Headers */,
+				A851576E1B99CF1300CA58EF /* YOChartImageWatchKit.h in Headers */,
 				A8154ABC1B2A594B001B3024 /* YOLineChartImage.h in Headers */,
 				A8154AB81B2A594B001B3024 /* YODonutChartImage.h in Headers */,
 				A8154ABA1B2A594B001B3024 /* YOBarChartImage.h in Headers */,
@@ -340,7 +342,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FA5E861B952CA00027D386 /* YOChartImageKit.h in Headers */,
+				A851576C1B99CF0600CA58EF /* YOChartImageKit.h in Headers */,
 				A8C876B41B2AAA5F0092E5FF /* YOLineChartImage.h in Headers */,
 				A8C876B21B2AAA5F0092E5FF /* YOBarChartImage.h in Headers */,
 				A8C876B01B2AAA5F0092E5FF /* YODonutChartImage.h in Headers */,
@@ -365,7 +367,7 @@
 			);
 			name = "YOChartImageKit (watchOS)";
 			productName = "YOGraphImageKit (watchOS)";
-			productReference = A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */;
+			productReference = A8154AB01B2A5917001B3024 /* YOChartImageWatchKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A81AB56B1B2B074000FE8B93 /* YOChartImageKit Demo App (watchOS) */ = {
@@ -648,7 +650,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.watchosframework.YOChartImageKit;
-				PRODUCT_NAME = YOChartImageKit;
+				PRODUCT_NAME = YOChartImageWatchKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -671,7 +673,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.watchosframework.YOChartImageKit;
-				PRODUCT_NAME = YOChartImageKit;
+				PRODUCT_NAME = YOChartImageWatchKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

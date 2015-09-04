@@ -1,5 +1,9 @@
 import UIKit
+#if os(iOS)
 import YOChartImageKit
+#else
+import YOChartImageWatchKit
+#endif
 
 enum YOChart {
     case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart
