@@ -15,7 +15,38 @@ Values and colors can be customized.
 
 ## Installation
 
-_To be documented after Xcode 7 GM released._
+### CocoaPods
+
+```ruby
+use_frameworks!
+
+pod 'YOChartImageKit', '~> 1.0'
+```
+
+### Carthage
+
+```
+github "yasuoza/YOChartImageKit" ~> 1.0
+```
+
+I'm not sure carthage installation makes it succeed to submit an app to iTunes Connect, but you can install this framework in this way.  
+If you could submit your watchOS app to iTunes Connect with Carthage installation, please tell me.
+
+### CocoaSeeds
+
+```ruby
+# For watchApp framework
+target 'YOChartImageWatchKit' do
+  github 'yasuoza/YOChartImageKit', '1.0.0', files: 'Source/YOChartImageKit/*.{h,m}'
+end
+
+# For iOS framework
+target 'YOChartImageKit' do
+  github 'yasuoza/YOChartImageKit', '1.0.0', files: 'Source/YOChartImageKit/*.{h,m}'
+end
+```
+
+This is the recommended way to install this framework. I have installed this framework in this way and the app is now on App Store.
 
 ## Configuration
 
