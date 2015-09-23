@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
-               BuildableName = "YOChartImageWatchKit.framework"
+               BuildableName = "YOChartImageKit.framework"
                BlueprintName = "YOChartImageKit (watchOS)"
                ReferencedContainer = "container:YOChartImageKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
-            BuildableName = "YOChartImageWatchKit.framework"
+            BuildableName = "YOChartImageKit.framework"
             BlueprintName = "YOChartImageKit (watchOS)"
             ReferencedContainer = "container:YOChartImageKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A8154AAF1B2A5917001B3024"
-            BuildableName = "YOChartImageWatchKit.framework"
+            BuildableName = "YOChartImageKit.framework"
             BlueprintName = "YOChartImageKit (watchOS)"
             ReferencedContainer = "container:YOChartImageKit.xcodeproj">
          </BuildableReference>
