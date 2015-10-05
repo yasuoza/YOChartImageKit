@@ -20,29 +20,26 @@ Values and colors can be customized.
 ```ruby
 use_frameworks!
 
-pod 'YOChartImageKit', '~> 1.0'
+pod 'YOChartImageKit', '~> 1.0.1'
 ```
 
 ### Carthage
 
 ```
-github "yasuoza/YOChartImageKit" ~> 1.0
+github "yasuoza/YOChartImageKit" ~> 1.0.1
 ```
-
-I'm not sure carthage installation makes it succeed to submit an app to iTunes Connect, but you can install this framework in this way.  
-If you could submit your watchOS app to iTunes Connect with Carthage installation, please tell me.
 
 ### CocoaSeeds
 
 ```ruby
 # For watchApp framework
 target 'YOChartImageWatchKit' do
-  github 'yasuoza/YOChartImageKit', '1.0.0', files: 'Source/YOChartImageKit/*.{h,m}'
+  github 'yasuoza/YOChartImageKit', '1.0.1', files: 'Source/YOChartImageKit/*.{h,m}'
 end
 
 # For iOS framework
 target 'YOChartImageKit' do
-  github 'yasuoza/YOChartImageKit', '1.0.0', files: 'Source/YOChartImageKit/*.{h,m}'
+  github 'yasuoza/YOChartImageKit', '1.0.1', files: 'Source/YOChartImageKit/*.{h,m}'
 end
 ```
 
