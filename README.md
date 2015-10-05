@@ -43,8 +43,6 @@ target 'YOChartImageKit' do
 end
 ```
 
-This is the recommended way to install this framework. I have installed this framework in this way and the app is now on App Store.
-
 ## Configuration
 
 Following section describes the way to draw charts.  
