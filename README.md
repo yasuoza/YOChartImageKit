@@ -20,26 +20,21 @@ Values and colors can be customized.
 ```ruby
 use_frameworks!
 
-pod 'YOChartImageKit', '~> 1.0.1'
+pod 'YOChartImageKit', '~> 1.1'
 ```
 
 ### Carthage
 
 ```
-github "yasuoza/YOChartImageKit" ~> 1.0.1
+github "yasuoza/YOChartImageKit" ~> 1.1
 ```
 
 ### CocoaSeeds
 
 ```ruby
-# For watchApp framework
-target 'YOChartImageWatchKit' do
-  github 'yasuoza/YOChartImageKit', '1.0.1', files: 'Source/YOChartImageKit/*.{h,m}'
-end
-
-# For iOS framework
+# For both iOS and watchOS framework
 target 'YOChartImageKit' do
-  github 'yasuoza/YOChartImageKit', '1.0.1', files: 'Source/YOChartImageKit/*.{h,m}'
+  github 'yasuoza/YOChartImageKit', '1.1.0', files: 'Source/YOChartImageKit/*.{h,m}'
 end
 ```
 
@@ -124,7 +119,7 @@ image.drawImage(frame, scale: scale)              // draw an image
 
 ## Build Requirements
 
-- Xcode >= 7.0
+- Xcode >= 7.1
 
 ## Example Application
 
