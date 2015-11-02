@@ -470,7 +470,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOChartImageKitDemoApp(iOS)" */;
+			buildConfigurationList = A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOChartImageKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -640,7 +640,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				BITCODE_GENERATION_MODE = bitcode;
+				BITCODE_GENERATION_MODE = marker;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -752,7 +752,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				BITCODE_GENERATION_MODE = bitcode;
+				BITCODE_GENERATION_MODE = marker;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -936,7 +936,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOChartImageKitDemoApp(iOS)" */ = {
+		A8D9D6171B28703300E4BCEC /* Build configuration list for PBXProject "YOChartImageKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8D9D6421B28703400E4BCEC /* Debug */,
