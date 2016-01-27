@@ -20,6 +20,12 @@
 @property (nonnull) NSArray<UIColor *> *colors;
 
 /**
+ *  The point where the donut starts
+ *  The default width is `-M_PI_2`, which means the degree 0 of the circle.
+ */
+@property CGFloat startAngle;
+
+/**
  *  The width of donut.
  *  The default width is `1.0`.
  */

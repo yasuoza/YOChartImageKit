@@ -5,6 +5,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        _startAngle = -M_PI_2;
         _donutWidth = 1.0;
         _labelColor = [UIColor blackColor];
         _labelFont = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
@@ -39,22 +40,22 @@
         [_labelText drawAtPoint:(CGPoint){center.x - size.width/2, center.y - size.height/2} withAttributes:attributes];
     }
 
-    __block CGFloat startAngle = -M_PI_2;
+//    __block CGFloat startAngle = -M_PI_2;
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
         UIColor *strokeColor = _colors[idx];
 
-        CGFloat endAngle = startAngle + 2.0 * M_PI * normalizedValue;
+        CGFloat endAngle = _startAngle + 2.0 * M_PI * normalizedValue;
         UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
                                                                       radius:radius
-                                                                  startAngle:startAngle
+                                                                  startAngle:_startAngle
                                                                     endAngle:endAngle
                                                                    clockwise:YES];
         donutPath.lineWidth = _donutWidth;
         [strokeColor setStroke];
         [donutPath stroke];
 
-        startAngle = endAngle;
+        _startAngle = endAngle;
     }];
 
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
