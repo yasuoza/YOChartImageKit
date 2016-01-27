@@ -18,7 +18,7 @@
     NSUInteger valuesCount = _values.count;
     CGFloat pointX = frame.size.width / (valuesCount - 1);
     NSMutableArray<NSValue *> *points = [NSMutableArray array];
-    CGFloat maxValue = [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat maxValue = _maxValue ? [_maxValue floatValue] : [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
 
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat ratioY = number.floatValue / maxValue;

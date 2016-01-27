@@ -14,6 +14,12 @@
 @property (nonnull) NSArray<NSNumber *> *values;
 
 /**
+ *  The maximum value to use for the chart. Setting this will override the
+ *  default behavior of using the highest value as maxValue.
+ */
+@property NSNumber* maxValue;
+
+/**
  *  The width of chart's stroke. 
  *  The default width is `1.0`.
  */

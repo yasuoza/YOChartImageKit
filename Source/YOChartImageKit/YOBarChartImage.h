@@ -30,6 +30,12 @@ typedef NS_ENUM(NSInteger, YOBarChartImageBarStyle){
 @property (nonnull) NSArray<NSNumber *> *values;
 
 /**
+ *  The maximum value to use for the chart. Setting this will override the 
+ *  default behavior of using the highest value as maxValue.
+ */
+@property NSNumber* maxValue;
+
+/**
  *  The style of the bar chart.
  */
 @property YOBarChartImageBarStyle barStyle;
