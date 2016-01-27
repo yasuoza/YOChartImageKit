@@ -39,8 +39,6 @@
                                          context:nil].size;
         [_labelText drawAtPoint:(CGPoint){center.x - size.width/2, center.y - size.height/2} withAttributes:attributes];
     }
-
-//    __block CGFloat startAngle = -M_PI_2;
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
         UIColor *strokeColor = _colors[idx];
@@ -54,7 +52,6 @@
         donutPath.lineWidth = _donutWidth;
         [strokeColor setStroke];
         [donutPath stroke];
-
         _startAngle = endAngle;
     }];
 
