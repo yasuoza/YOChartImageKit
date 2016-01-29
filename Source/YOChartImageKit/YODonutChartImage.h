@@ -11,43 +11,43 @@
  *  The array of values for the donut chart. `values` should be an array of NSNumber.
  *  You must provide `values`, otherwise raises an exception.
  */
-@property (nonnull) NSArray<NSNumber *> *values;
+@property (nonnull, nonatomic) NSArray<NSNumber *> *values;
 
 /**
  *  The array of colors for the donut chart. `colors` should be an array of UIColor.
  *  You must provide `colors`, otherwise raises an exception.
  */
-@property (nonnull) NSArray<UIColor *> *colors;
+@property (nonnull, nonatomic) NSArray<UIColor *> *colors;
 
 /**
  *  The point where the donut starts
  *  The default width is `-M_PI_2`, which means the degree 0 of the circle.
  */
-@property CGFloat startAngle;
+@property (nonatomic) CGFloat startAngle;
 
 /**
  *  The width of donut.
  *  The default width is `1.0`.
  */
-@property CGFloat donutWidth;
+@property (nonatomic) CGFloat donutWidth;
 
 /**
  *  The text of center label in donut chart.
  *  The default text is `nil`.
  */
-@property (nullable, copy) NSString *labelText;
+@property (nullable, nonatomic, copy) NSString *labelText;
 
 /**
  *  The color of center label in donut chart.
  *  The default color is black.
  */
-@property (nonnull) UIColor *labelColor;
+@property (nonnull, nonatomic) UIColor *labelColor;
 
 /**
  *  The font of center label in donut chart.
  *  The default font is UIFont with UIFontTextStyleBody.
  */
-@property (nonnull) UIFont *labelFont;
+@property (nonnull, nonatomic) UIFont *labelFont;
 
 /**
  *  Draws a image of donut chart.

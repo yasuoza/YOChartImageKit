@@ -11,31 +11,31 @@
  *  The array of values for the line chart. `values` should be an array of NSNumber.
  *  You must provide `values`, otherwise raises an exception.
  */
-@property (nonnull) NSArray<NSNumber *> *values;
+@property (nonnull, nonatomic) NSArray<NSNumber *> *values;
 
 /**
  *  The width of chart's stroke. 
  *  The default width is `1.0`.
  */
-@property CGFloat strokeWidth;
+@property (nonatomic) CGFloat strokeWidth;
 
 /**
  *  The color of chart's stroke. 
  *  The default color is whiteColor.
  */
-@property (nullable) UIColor *strokeColor;
+@property (nullable, nonatomic) UIColor *strokeColor;
 
 /**
  *  The color of chart's area. 
  *  The default color is `nil`.
  */
-@property (nullable) UIColor *fillColor;
+@property (nullable, nonatomic) UIColor *fillColor;
 
 /**
  *  `YES` draws smooth line chart, `NO` draws a straight line chart.
  *  The default value is `YES`
  */
-@property BOOL smooth;
+@property (nonatomic) BOOL smooth;
 
 /** @name Drawing a chart **/
 
