@@ -17,12 +17,16 @@
     return self;
 }
 
+- (NSNumber *) maxValue {
+    return _maxValue ? _maxValue : [NSNumber numberWithFloat:[[_values valueForKeyPath:@"@max.floatValue"] floatValue]];
+}
+
 const CGFloat kBarPaddingMultipler = 20.0f;
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YOBarChartImage // must assign values property which is an array of NSNumber");
 
-    CGFloat maxValue = [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat maxValue = _maxValue ? [_maxValue floatValue] : [[_values valueForKeyPath:@"@max.floatValue"] floatValue];
     CGFloat dataCount = (CGFloat)_values.count;
 
     CGFloat padding;
