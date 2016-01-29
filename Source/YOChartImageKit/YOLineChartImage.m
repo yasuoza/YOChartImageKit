@@ -12,6 +12,10 @@
     return self;
 }
 
+- (NSNumber *) maxValue {
+    return _maxValue ? _maxValue : [NSNumber numberWithFloat:[[_values valueForKeyPath:@"@max.floatValue"] floatValue]];
+}
+
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YOLineChartImage // must assign values property which is an array of NSNumber");
     
