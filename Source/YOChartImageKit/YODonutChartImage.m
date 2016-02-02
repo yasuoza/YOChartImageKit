@@ -41,17 +41,18 @@
     }
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
-        UIColor *strokeColor = _colors[idx];
-
         CGFloat endAngle = _startAngle + 2.0 * M_PI * normalizedValue;
-        UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
-                                                                      radius:radius
-                                                                  startAngle:_startAngle
-                                                                    endAngle:endAngle
-                                                                   clockwise:YES];
-        donutPath.lineWidth = _donutWidth;
-        [strokeColor setStroke];
-        [donutPath stroke];
+        UIColor *strokeColor = _colors[idx];
+        if (strokeColor != [UIColor clearColor]) {
+          UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
+                                                                        radius:radius
+                                                                    startAngle:_startAngle
+                                                                      endAngle:endAngle
+                                                                     clockwise:YES];
+          donutPath.lineWidth = _donutWidth;
+          [strokeColor setStroke];
+          [donutPath stroke];
+        }
         _startAngle = endAngle;
     }];
 
