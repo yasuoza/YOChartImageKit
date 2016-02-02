@@ -113,6 +113,19 @@ image.colors = (0..<3).map { _ in randomColor() } // colors of pieces
 image.drawImage(frame, scale: scale)              // draw an image
 ```
 
+### Spinning chart (Animated)
+
+```swift
+let image = YOSpinningDonutChartImage()
+image.duration = 4                                // duration — not supported on watchOS yet. 
+                                                  // Always 1 second on watchOS
+image.donutWidth = 16.0                           // width of donut
+image.values = [70.0, 30.0]                       // 70% turning, 30% clear colog
+image.colors = [aColor(), UIColor.clearColor()]   // Define the color + add a clearColor
+view.image = image.drawImage(frame, scale: scale) // set imageView
+view.startAnimating()                             // Animate it!
+```
+
 ## Framework Requirements
 
 - watchOS ~> 2.0
