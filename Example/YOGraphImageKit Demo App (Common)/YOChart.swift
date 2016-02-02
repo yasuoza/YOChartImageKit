@@ -2,7 +2,7 @@ import UIKit
 import YOChartImageKit
 
 enum YOChart {
-    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart
+    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart, SpinningDonutChart
 
     func drawImage(frame: CGRect, scale: CGFloat) -> UIImage {
         switch self {
@@ -38,6 +38,13 @@ enum YOChart {
             image.labelColor = UIColor.whiteColor()
             image.values = [10.0, 20.0, 70.0]
             image.colors = (0..<3).map { _ in randomColor() }
+            return image.drawImage(frame, scale: scale)
+        case .SpinningDonutChart:
+            let image = YOSpinningDonutChartImage()
+            image.duration = 4
+            image.donutWidth = 16.0
+            image.values = [70.0, 30.0]
+            image.colors = [randomColor(), UIColor.clearColor()]
             return image.drawImage(frame, scale: scale)
         }
     }
