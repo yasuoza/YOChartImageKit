@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C847B521C60B60F008EF00A /* SpinningDonutChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C847B4F1C60B60F008EF00A /* SpinningDonutChartInterfaceController.swift */; };
+		4C847B561C60BB06008EF00A /* YOSpinningDonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C847B541C60BB06008EF00A /* YOSpinningDonutChartImage.m */; };
+		4C847B581C60BB06008EF00A /* YOSpinningDonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C847B541C60BB06008EF00A /* YOSpinningDonutChartImage.m */; };
+		4C847B5A1C60BB0F008EF00A /* YOSpinningDonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C847B591C60BB0F008EF00A /* YOSpinningDonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C847B5B1C60BB0F008EF00A /* YOSpinningDonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C847B591C60BB0F008EF00A /* YOSpinningDonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8154AB81B2A594B001B3024 /* YODonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF6E1B29831E00BA4E81 /* YODonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8154AB91B2A594B001B3024 /* YODonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0FF6F1B29831E00BA4E81 /* YODonutChartImage.m */; };
 		A8154ABA1B2A594B001B3024 /* YOBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C0FF731B29888E00BA4E81 /* YOBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +131,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C847B4F1C60B60F008EF00A /* SpinningDonutChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningDonutChartInterfaceController.swift; sourceTree = "<group>"; };
+		4C847B541C60BB06008EF00A /* YOSpinningDonutChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSpinningDonutChartImage.m; sourceTree = "<group>"; };
+		4C847B591C60BB0F008EF00A /* YOSpinningDonutChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSpinningDonutChartImage.h; sourceTree = "<group>"; };
 		A8154AB01B2A5917001B3024 /* YOChartImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOChartImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AB56C1B2B074000FE8B93 /* YOChartImageKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOChartImageKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81AB56F1B2B074000FE8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -225,6 +233,7 @@
 				A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */,
 				A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */,
 				A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */,
+				4C847B4F1C60B60F008EF00A /* SpinningDonutChartInterfaceController.swift */,
 				A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */,
 				A81AB5811B2B074100FE8B93 /* Assets.xcassets */,
 				A81AB5831B2B074100FE8B93 /* Info.plist */,
@@ -272,6 +281,8 @@
 				A8C0FF741B29888E00BA4E81 /* YOBarChartImage.m */,
 				A8C0FF6E1B29831E00BA4E81 /* YODonutChartImage.h */,
 				A8C0FF6F1B29831E00BA4E81 /* YODonutChartImage.m */,
+				4C847B591C60BB0F008EF00A /* YOSpinningDonutChartImage.h */,
+				4C847B541C60BB06008EF00A /* YOSpinningDonutChartImage.m */,
 			);
 			name = "YOChartImageKit (Common)";
 			path = Source/YOChartImageKit;
@@ -331,6 +342,7 @@
 			files = (
 				A836D41A1BB244ED00169EC7 /* YOChartImageKit.h in Headers */,
 				A8154ABC1B2A594B001B3024 /* YOLineChartImage.h in Headers */,
+				4C847B5B1C60BB0F008EF00A /* YOSpinningDonutChartImage.h in Headers */,
 				A8154AB81B2A594B001B3024 /* YODonutChartImage.h in Headers */,
 				A8154ABA1B2A594B001B3024 /* YOBarChartImage.h in Headers */,
 			);
@@ -342,6 +354,7 @@
 			files = (
 				A851576C1B99CF0600CA58EF /* YOChartImageKit.h in Headers */,
 				A8C876B41B2AAA5F0092E5FF /* YOLineChartImage.h in Headers */,
+				4C847B5A1C60BB0F008EF00A /* YOSpinningDonutChartImage.h in Headers */,
 				A8C876B21B2AAA5F0092E5FF /* YOBarChartImage.h in Headers */,
 				A8C876B01B2AAA5F0092E5FF /* YODonutChartImage.h in Headers */,
 			);
@@ -544,6 +557,7 @@
 				A8154ABB1B2A594B001B3024 /* YOBarChartImage.m in Sources */,
 				A8154ABD1B2A594B001B3024 /* YOLineChartImage.m in Sources */,
 				A8154AB91B2A594B001B3024 /* YODonutChartImage.m in Sources */,
+				4C847B581C60BB06008EF00A /* YOSpinningDonutChartImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +569,7 @@
 				A872CC221B328A900086554F /* VerticalBarChartInterfaceController.swift in Sources */,
 				A86251451B4532C60036BC13 /* YOChart.swift in Sources */,
 				A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */,
+				4C847B521C60B60F008EF00A /* SpinningDonutChartInterfaceController.swift in Sources */,
 				A8B509661B688E6700F596ED /* HorizontalBarChartInterfaceController.swift in Sources */,
 				A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */,
 				A81AB57E1B2B074100FE8B93 /* BaseInterfaceController.swift in Sources */,
@@ -569,6 +584,7 @@
 				A8C876B11B2AAA5F0092E5FF /* YODonutChartImage.m in Sources */,
 				A8C876B51B2AAA5F0092E5FF /* YOLineChartImage.m in Sources */,
 				A8C876B31B2AAA5F0092E5FF /* YOBarChartImage.m in Sources */,
+				4C847B561C60BB06008EF00A /* YOSpinningDonutChartImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
