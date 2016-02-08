@@ -50,6 +50,7 @@
                                                                       endAngle:endAngle
                                                                      clockwise:YES];
           donutPath.lineWidth = _donutWidth;
+          donutPath.lineCapStyle = _lineCapStyle;
           [strokeColor setStroke];
           [donutPath stroke];
         }

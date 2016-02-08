@@ -32,6 +32,12 @@
 @property CGFloat donutWidth;
 
 /**
+ *  The default `lineCapStyle` of the internal `UIBezierPath`.
+ *  The default width is `kCGLineCapSquare` for historical reasons but `kCGLineCapSquare` is way cooler!
+ */
+@property CGLineCap lineCapStyle;
+
+/**
  *  The text of center label in donut chart.
  *  The default text is `nil`.
  */

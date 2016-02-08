@@ -42,6 +42,7 @@ enum YOChart {
         case .SpinningDonutChart:
             let image = YOSpinningDonutChartImage()
             image.duration = 4
+            image.value = 10
             image.donutWidth = 16.0
             image.color = randomColor()
             return image.drawImage(frame, scale: scale)

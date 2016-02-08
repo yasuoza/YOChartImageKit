@@ -13,7 +13,8 @@
       startAngle = self.startAngle;
       _duration = 2;
       _useGradient = YES;
-      self.value = 70; // Need to call `self` to invoke the setter
+      self.value = 40; // Need to call `self` to invoke the setter
+      self.lineCapStyle = kCGLineCapRound;
     }
     return self;
 }
@@ -44,10 +45,11 @@
   [values removeLastObject];
   [colors removeLastObject];
   UIColor *gradientColor = [colors lastObject];
+  const CGFloat multiplicator = (self.lineCapStyle == kCGLineCapRound) ? 1.2 : 1;
   
   for (NSUInteger ai = 0; ai < last; ai++) {
     [values addObject:@1];
-    const CGFloat currentAlpha = 1 - (ai * alpha);
+    const CGFloat currentAlpha = 1 - (ai * alpha * multiplicator);
     [colors addObject:[gradientColor colorWithAlphaComponent:currentAlpha]];
   }
   self.values = values;
