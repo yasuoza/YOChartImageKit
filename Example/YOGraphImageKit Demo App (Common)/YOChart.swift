@@ -43,8 +43,7 @@ enum YOChart {
             let image = YOSpinningDonutChartImage()
             image.duration = 4
             image.donutWidth = 16.0
-            image.values = [70.0, 30.0]
-            image.colors = [randomColor(), UIColor.clearColor()]
+            image.color = randomColor()
             return image.drawImage(frame, scale: scale)
         }
     }
