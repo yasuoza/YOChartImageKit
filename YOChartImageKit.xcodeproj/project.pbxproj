@@ -450,7 +450,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = yasuoza.com;
 				TargetAttributes = {
 					A8154AAF1B2A5917001B3024 = {
@@ -461,12 +461,14 @@
 					};
 					A81AB5771B2B074100FE8B93 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					A8C876921B2AAA050092E5FF = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					A8D9D61B1B28703400E4BCEC = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -687,6 +689,7 @@
 		A81AB5881B2B074100FE8B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -694,6 +697,7 @@
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -702,6 +706,7 @@
 		A81AB5891B2B074100FE8B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS) Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -709,6 +714,8 @@
 				PRODUCT_NAME = "YOChartImageKit Demo";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -717,9 +724,9 @@
 		A81AB58C1B2B074100FE8B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = YOChartImageKit_Demo_App__watchOS__Extension;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp;
@@ -734,9 +741,9 @@
 		A81AB58D1B2B074100FE8B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = YOChartImageKit_Demo_App__watchOS__Extension;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (watchOS)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit.watchkitapp;
@@ -883,6 +890,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
 				PRODUCT_NAME = "YOChartImageKit Demo";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -894,6 +902,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
 				PRODUCT_NAME = "YOChartImageKit Demo";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
