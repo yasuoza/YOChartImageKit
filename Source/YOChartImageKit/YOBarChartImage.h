@@ -65,6 +65,24 @@ typedef NS_ENUM(NSInteger, YOBarChartImageBarStyle){
  */
 @property (nullable, nonatomic) UIColor *fillColor;
 
+///------CUSTOMIZATION START------///
+
+@property (nullable, nonatomic) UIColor *positiveColor;
+
+@property (nullable, nonatomic) UIColor *positiveGradientColor;
+
+@property (nullable, nonatomic) UIColor *negativeColor;
+
+@property (nullable, nonatomic) UIColor *negativeGradientColor;
+
+@property (nonatomic) BOOL onlyPositiveBars;
+
+@property (nonatomic) BOOL roundedCaps;
+
+///------CUSTOMIZATION STOP------///
+
+
+
 /** @name Drawing a chart **/
 
 /**
