@@ -43,6 +43,27 @@
  */
 @property (nonatomic) BOOL smooth;
 
+
+//-------Gradient settings-------//
+/**
+ *  YES fills the chart's area with a gradient
+ *  NO fills it with the plain color in 'fillColor'.
+ */
+@property (nonatomic) BOOL gradientFill;
+
+/*
+ * First color used for gradient fill
+ */
+@property (nullable, nonatomic) UIColor *firstGradientColor;
+
+/*
+ * Second color used for gradient fill
+ */
+@property (nullable, nonatomic) UIColor *secondGradientColor;
+
+
+
+
 /** @name Drawing a chart **/
 
 /**

@@ -45,6 +45,9 @@
 		A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6231B28703400E4BCEC /* Main.storyboard */; };
 		A8D9D6271B28703400E4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6261B28703400E4BCEC /* Assets.xcassets */; };
 		A8D9D62A1B28703400E4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */; };
+		C5836F531DC0E2AB00EC86D8 /* SmoothLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */; };
+		C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */; };
+		C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +163,9 @@
 		A8D9D6261B28703400E4BCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D9D6291B28703400E4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8D9D62B1B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
+		C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
+		C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalBarGradientChartInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,9 @@
 				A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */,
 				A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */,
 				A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */,
+				C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */,
+				C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */,
+				C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */,
 				A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */,
 				A81AB5811B2B074100FE8B93 /* Assets.xcassets */,
 				A81AB5831B2B074100FE8B93 /* Info.plist */,
@@ -556,10 +565,13 @@
 				A86251471B4534400036BC13 /* SmoothLineChartInterfaceController.swift in Sources */,
 				A872CC221B328A900086554F /* VerticalBarChartInterfaceController.swift in Sources */,
 				A86251451B4532C60036BC13 /* YOChart.swift in Sources */,
+				C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */,
 				A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */,
+				C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */,
 				A8B509661B688E6700F596ED /* HorizontalBarChartInterfaceController.swift in Sources */,
 				A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */,
 				A81AB57E1B2B074100FE8B93 /* BaseInterfaceController.swift in Sources */,
+				C5836F531DC0E2AB00EC86D8 /* SmoothLineGradientChartInterfaceController.swift in Sources */,
 				A872CC201B328A750086554F /* SolidLineChartInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

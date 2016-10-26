@@ -95,23 +95,24 @@
         p1 = p2;
     }];
 
-    if (_fillColor) {
+    if (_gradientFill) {
         CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
         CGContextRef context = UIGraphicsGetCurrentContext();
         
-        NSArray *gradientColors = [NSArray arrayWithObjects: (id)_strokeColor.CGColor, (id)_fillColor.CGColor, nil];
-        CGFloat gradientLocations[] = {0, 0.75, 1};
+        NSArray *gradientColors = [NSArray arrayWithObjects: (id)_firstGradientColor.CGColor, (id)_secondGradientColor.CGColor, nil];
+        CGFloat gradientLocations[] = {0, 0.75};
         CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (CFArrayRef)gradientColors, gradientLocations);
 
         CGContextSaveGState(context);
         [fillBottom fill];
         [fillBottom addClip];
-        CGContextDrawLinearGradient(context, gradient, CGPointMake(1, 1), CGPointMake(1, 55), 0);
+        CGContextDrawLinearGradient(context, gradient, CGPointMake(1, 1), CGPointMake(1, frame.size.height), 0);
         CGColorSpaceRelease(colorSpace);
         CGGradientRelease(gradient);
-        
-//        [_fillColor setFill];
-//        [fillBottom fill];
+    }
+    else {
+        [_fillColor setFill];
+        [fillBottom fill];
     }
 
     return linePath;

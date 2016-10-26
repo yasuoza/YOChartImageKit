@@ -65,21 +65,46 @@ typedef NS_ENUM(NSInteger, YOBarChartImageBarStyle){
  */
 @property (nullable, nonatomic) UIColor *fillColor;
 
-///------CUSTOMIZATION START------///
 
-@property (nullable, nonatomic) UIColor *positiveColor;
-
-@property (nullable, nonatomic) UIColor *positiveGradientColor;
-
-@property (nullable, nonatomic) UIColor *negativeColor;
-
-@property (nullable, nonatomic) UIColor *negativeGradientColor;
-
+//-------Positive bars settings-------//
+/**
+ *  If TRUE, the graph will show the absolute value of every bar
+ */
 @property (nonatomic) BOOL onlyPositiveBars;
 
+/*
+ * Primary color used for positive values
+ */
+@property (nullable, nonatomic) UIColor *positiveColor;
+
+/*
+ * Gradient color used for positive values
+ */
+@property (nullable, nonatomic) UIColor *positiveGradientColor;
+
+/*
+ * Primary color used for negative values
+ */
+@property (nullable, nonatomic) UIColor *negativeColor;
+
+/*
+ * Gradient color used for negative values
+ */
+@property (nullable, nonatomic) UIColor *negativeGradientColor;
+
+
+//-------Rounded caps settings-------//
+/**
+ *  If TRUE, the bars will end with rounded caps
+ */
 @property (nonatomic) BOOL roundedCaps;
 
-///------CUSTOMIZATION STOP------///
+/**
+ *  The corner radius for the bars rounded caps
+ *  (used only if "roundedCaps" property is true
+ */
+@property (nonatomic) CGFloat capsCornerRadius;
+
 
 
 
