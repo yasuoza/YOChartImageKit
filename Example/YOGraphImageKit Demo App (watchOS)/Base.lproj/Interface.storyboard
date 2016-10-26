@@ -107,6 +107,7 @@
                     </items>
                     <connections>
                         <outlet property="imageView" destination="jEG-LI-EIu" id="TUs-9E-QuV"/>
+                        <segue destination="wfK-c6-m8z" kind="relationship" relationship="nextPage" id="vkL-os-Fkx"/>
                     </connections>
                 </controller>
             </objects>
@@ -126,6 +127,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1333" y="331"/>
+        </scene>
+        <!--Gear Chart Interface Controller-->
+        <scene sceneID="vhn-Vq-E5D">
+            <objects>
+                <controller id="wfK-c6-m8z" customClass="GearChartInterfaceController" customModule="YOChartImageKit_Demo">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="U1F-hx-boG"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="U1F-hx-boG" id="DaP-m2-f2m"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1855" y="331"/>
         </scene>
     </scenes>
 </document>

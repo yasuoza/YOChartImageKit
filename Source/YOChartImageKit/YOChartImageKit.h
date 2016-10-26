@@ -9,3 +9,4 @@ FOUNDATION_EXPORT const unsigned char YOChartImageKitVersionString[];
 #import "YODonutChartImage.h"
 #import "YOBarChartImage.h"
 #import "YOLineChartImage.h"
+#import "YOGearChartImage.h"

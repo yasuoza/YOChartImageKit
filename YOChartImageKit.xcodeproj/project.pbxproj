@@ -45,6 +45,11 @@
 		A8D9D6251B28703400E4BCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6231B28703400E4BCEC /* Main.storyboard */; };
 		A8D9D6271B28703400E4BCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6261B28703400E4BCEC /* Assets.xcassets */; };
 		A8D9D62A1B28703400E4BCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D9D6281B28703400E4BCEC /* LaunchScreen.storyboard */; };
+		C526FC0B1DC101EE0048711F /* YOGearChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = C526FC081DC0FD2C0048711F /* YOGearChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C526FC0C1DC101F90048711F /* YOGearChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = C526FC081DC0FD2C0048711F /* YOGearChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C526FC0D1DC103C00048711F /* YOGearChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C526FC091DC0FD2C0048711F /* YOGearChartImage.m */; };
+		C526FC0E1DC103C20048711F /* YOGearChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C526FC091DC0FD2C0048711F /* YOGearChartImage.m */; };
+		C526FC111DC1041C0048711F /* GearChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526FC0F1DC104150048711F /* GearChartInterfaceController.swift */; };
 		C5836F531DC0E2AB00EC86D8 /* SmoothLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */; };
 		C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */; };
 		C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */; };
@@ -163,6 +168,9 @@
 		A8D9D6261B28703400E4BCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D9D6291B28703400E4BCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8D9D62B1B28703400E4BCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C526FC081DC0FD2C0048711F /* YOGearChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGearChartImage.h; sourceTree = "<group>"; };
+		C526FC091DC0FD2C0048711F /* YOGearChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGearChartImage.m; sourceTree = "<group>"; };
+		C526FC0F1DC104150048711F /* GearChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalBarGradientChartInterfaceController.swift; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 				A872CC211B328A900086554F /* VerticalBarChartInterfaceController.swift */,
 				A8B509651B688E6700F596ED /* HorizontalBarChartInterfaceController.swift */,
 				A872CC231B328A9F0086554F /* DonutChartInterfaceController.swift */,
+				C526FC0F1DC104150048711F /* GearChartInterfaceController.swift */,
 				C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */,
 				C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */,
 				C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */,
@@ -281,6 +290,8 @@
 				A8C0FF741B29888E00BA4E81 /* YOBarChartImage.m */,
 				A8C0FF6E1B29831E00BA4E81 /* YODonutChartImage.h */,
 				A8C0FF6F1B29831E00BA4E81 /* YODonutChartImage.m */,
+				C526FC081DC0FD2C0048711F /* YOGearChartImage.h */,
+				C526FC091DC0FD2C0048711F /* YOGearChartImage.m */,
 			);
 			name = "YOChartImageKit (Common)";
 			path = Source/YOChartImageKit;
@@ -341,6 +352,7 @@
 				A836D41A1BB244ED00169EC7 /* YOChartImageKit.h in Headers */,
 				A8154ABC1B2A594B001B3024 /* YOLineChartImage.h in Headers */,
 				A8154AB81B2A594B001B3024 /* YODonutChartImage.h in Headers */,
+				C526FC0C1DC101F90048711F /* YOGearChartImage.h in Headers */,
 				A8154ABA1B2A594B001B3024 /* YOBarChartImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +364,7 @@
 				A851576C1B99CF0600CA58EF /* YOChartImageKit.h in Headers */,
 				A8C876B41B2AAA5F0092E5FF /* YOLineChartImage.h in Headers */,
 				A8C876B21B2AAA5F0092E5FF /* YOBarChartImage.h in Headers */,
+				C526FC0B1DC101EE0048711F /* YOGearChartImage.h in Headers */,
 				A8C876B01B2AAA5F0092E5FF /* YODonutChartImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +490,7 @@
 					};
 					A8D9D61B1B28703400E4BCEC = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -553,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8154ABB1B2A594B001B3024 /* YOBarChartImage.m in Sources */,
+				C526FC0D1DC103C00048711F /* YOGearChartImage.m in Sources */,
 				A8154ABD1B2A594B001B3024 /* YOLineChartImage.m in Sources */,
 				A8154AB91B2A594B001B3024 /* YODonutChartImage.m in Sources */,
 			);
@@ -565,6 +579,7 @@
 				A86251471B4534400036BC13 /* SmoothLineChartInterfaceController.swift in Sources */,
 				A872CC221B328A900086554F /* VerticalBarChartInterfaceController.swift in Sources */,
 				A86251451B4532C60036BC13 /* YOChart.swift in Sources */,
+				C526FC111DC1041C0048711F /* GearChartInterfaceController.swift in Sources */,
 				C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */,
 				A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */,
 				C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */,
@@ -581,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C876B11B2AAA5F0092E5FF /* YODonutChartImage.m in Sources */,
+				C526FC0E1DC103C20048711F /* YOGearChartImage.m in Sources */,
 				A8C876B51B2AAA5F0092E5FF /* YOLineChartImage.m in Sources */,
 				A8C876B31B2AAA5F0092E5FF /* YOBarChartImage.m in Sources */,
 			);
@@ -900,10 +916,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
 				PRODUCT_NAME = "YOChartImageKit Demo";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -912,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Example/YOGraphImageKit Demo App (iOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuoza.demo.yochartimagekit;
