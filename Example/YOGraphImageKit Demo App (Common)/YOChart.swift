@@ -2,7 +2,7 @@ import UIKit
 import YOChartImageKit
 
 enum YOChart {
-    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart, SolidLineChartGradient, SmoothLineChartGradient, VerticalBarChartGradient, GearChart, AnimatedDonutChart
+    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart, SolidLineChartGradient, SmoothLineChartGradient, VerticalBarChartGradient, GearChart, AnimatedDonutChart, AnimatedGearChart
 
     func drawImage(frame: CGRect, scale: CGFloat) -> Any {
         switch self {
@@ -87,6 +87,17 @@ enum YOChart {
             image.colors = (0...5).map { _ in randomColor() }
             image.animationSteps = 50
             image.animationBackgroundColor = UIColor.darkGrayColor()
+            return image.drawAnimationImages(frame, scale: scale)
+        case .AnimatedGearChart:
+            let image = YOGearChartImage()
+            image.gearWidth = 15.0
+            image.labelText = "75%"
+            image.labelColor = UIColor.whiteColor()
+            image.value = 75.0
+            image.color = randomColor()
+            image.backgroundColor = image.color
+            image.backgroundColorAlpha = 0.2
+            image.animationSteps = 50
             return image.drawAnimationImages(frame, scale: scale)
         }
     }

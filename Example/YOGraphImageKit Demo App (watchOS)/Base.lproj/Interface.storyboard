@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wfK-c6-m8z">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="216" y="331"/>
+            <point key="canvasLocation" x="-77" y="331"/>
         </scene>
         <!--Vertical Bar Chart Interface Controller-->
         <scene sceneID="3hH-ra-Oq4">
@@ -36,7 +36,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="537" y="331"/>
+            <point key="canvasLocation" x="244" y="331"/>
         </scene>
         <!--Smooth Line Chart Interface Controller-->
         <scene sceneID="HIq-fC-33p">
@@ -51,7 +51,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="373" y="331"/>
+            <point key="canvasLocation" x="80" y="331"/>
         </scene>
         <!--Donut Chart Interface Controller-->
         <scene sceneID="8jP-0f-amr">
@@ -66,7 +66,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="849" y="331"/>
+            <point key="canvasLocation" x="556" y="331"/>
         </scene>
         <!--Horizontal Bar Chart Interface Controller-->
         <scene sceneID="N2e-7j-XBb">
@@ -81,7 +81,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="693" y="331"/>
+            <point key="canvasLocation" x="400" y="331"/>
         </scene>
         <!--Vertical Bar Gradient Chart Interface Controller-->
         <scene sceneID="TU0-aj-a9P">
@@ -96,7 +96,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1078" y="331"/>
+            <point key="canvasLocation" x="785" y="331"/>
         </scene>
         <!--Solid Line Gradient Chart Interface Controller-->
         <scene sceneID="Xxt-yz-cxb">
@@ -111,7 +111,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1578" y="331"/>
+            <point key="canvasLocation" x="1349" y="331"/>
         </scene>
         <!--Smooth Line Gradient Chart Interface Controller-->
         <scene sceneID="YGi-Bd-dHo">
@@ -126,7 +126,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1333" y="331"/>
+            <point key="canvasLocation" x="1040" y="331"/>
         </scene>
         <!--Gear Chart Interface Controller-->
         <scene sceneID="vhn-Vq-E5D">
@@ -152,10 +152,25 @@
                     </items>
                     <connections>
                         <outlet property="imageView" destination="di9-m9-Gy8" id="ACP-PN-UBL"/>
+                        <segue destination="y5e-j9-S13" kind="relationship" relationship="nextPage" id="jrZ-DU-kEc"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="2134" y="331"/>
+            <point key="canvasLocation" x="2127" y="331"/>
+        </scene>
+        <!--Animated Gear Chart Interface Controller-->
+        <scene sceneID="FbQ-1X-JsB">
+            <objects>
+                <controller id="y5e-j9-S13" customClass="AnimatedGearChartInterfaceController" customModule="YOChartImageKit_Demo">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="M4I-x2-7Qo"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="M4I-x2-7Qo" id="4oP-oI-Z3c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2445" y="331"/>
         </scene>
     </scenes>
 </document>

@@ -2,6 +2,7 @@
 
 @implementation YOGearChartImage
 
+NSMutableArray<UIImage *> *animImages;
 
 - (instancetype)init {
     self = [super init];
@@ -96,6 +97,38 @@
     donutPath.lineCapStyle = kCGLineCapRound;
     [strokeColor setStroke];
     [donutPath stroke];
+}
+
+
+
+
+- (NSArray<UIImage *> *)drawAnimationImages:(CGRect)frame scale:(CGFloat)scale {
+    NSAssert(_animationSteps != 0, @"YOGearChartImage // must assign animationSteps property wich is an int");
+    
+    animImages = [NSMutableArray array];
+    
+    double sliceSize = _value.doubleValue/_animationSteps;
+    
+    for(int i = 0; i<_animationSteps; i++){
+        NSNumber *progressiveValue = [NSNumber numberWithDouble:(sliceSize*i)];
+        [animImages addObject:[self generateGearImageWithValue:progressiveValue inframe:frame withScale:scale]];
+    }
+    return animImages;
+}
+
+-(UIImage *)generateGearImageWithValue:(NSNumber *)inputValue inframe:(CGRect)frame withScale:(CGFloat)scale
+{
+    YOGearChartImage* image = [[YOGearChartImage alloc] init];
+    image.value = inputValue;
+    image.color = _color;
+    image.gearWidth = _gearWidth;
+    image.backgroundColor = _backgroundColor;
+    image.backgroundColorAlpha = _backgroundColorAlpha;
+    image.labelFont = _labelFont;
+    image.labelText = _labelText;
+    image.labelColor = _labelColor;
+    
+    return [image drawImage:frame scale:scale];
 }
 
 @end
