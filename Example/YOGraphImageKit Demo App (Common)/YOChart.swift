@@ -2,9 +2,9 @@ import UIKit
 import YOChartImageKit
 
 enum YOChart {
-    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart, SolidLineChartGradient, SmoothLineChartGradient, VerticalBarChartGradient, GearChart
+    case SolidLineChart, SmoothLineChart, VerticalBarChart, HorizontalBarChart, DonutChart, SolidLineChartGradient, SmoothLineChartGradient, VerticalBarChartGradient, GearChart, AnimatedDonutChart
 
-    func drawImage(frame: CGRect, scale: CGFloat) -> UIImage {
+    func drawImage(frame: CGRect, scale: CGFloat) -> Any {
         switch self {
         case .SolidLineChart:
             let image = YOLineChartImage()
@@ -80,6 +80,14 @@ enum YOChart {
             image.backgroundColor = image.color
             image.backgroundColorAlpha = 0.2
             return image.drawImage(frame, scale: scale)
+        case .AnimatedDonutChart:
+            let image = YODonutChartImage()
+            image.donutWidth = 24.0
+            image.values = [40.0, 10.0, 15.0, 5.0, 30.0]
+            image.colors = (0...5).map { _ in randomColor() }
+            image.animationSteps = 50
+            image.animationBackgroundColor = UIColor.darkGrayColor()
+            return image.drawAnimationImages(frame, scale: scale)
         }
     }
 

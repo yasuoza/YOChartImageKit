@@ -49,6 +49,17 @@
  */
 @property (nonnull, nonatomic) UIFont *labelFont;
 
+/*
+ *  The number of animation steps
+ *  (used only if 'drawAnimationImages' is called)
+ */
+@property (nonatomic) int animationSteps;
+
+/*
+ *  The background color that will be shown when the pie is filling up
+ *  (used only if 'drawAnimationImages' is called)
+ **/
+@property (nonnull, nonatomic) UIColor *animationBackgroundColor;
 /**
  *  Draws a image of donut chart.
  *
@@ -58,5 +69,15 @@
  *  @return An donut chart drawed `UIImage` object.
  */
 - (UIImage * _Nonnull)drawImage:(CGRect)frame scale:(CGFloat)scale;
+
+/**
+ *  Fills an array of images for the animated donut chart
+ *
+ *  @param frame The frame rectangle for the chart image.
+ *  @param scale The scale factor for chart image.
+ *
+ *  @return An array of `UIImage` objects, animating the donut chart drawing.
+ */
+- (NSArray<UIImage *>* _Nonnull)drawAnimationImages:(CGRect)frame scale:(CGFloat)scale;
 
 @end

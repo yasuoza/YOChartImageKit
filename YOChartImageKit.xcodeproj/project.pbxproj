@@ -50,6 +50,7 @@
 		C526FC0D1DC103C00048711F /* YOGearChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C526FC091DC0FD2C0048711F /* YOGearChartImage.m */; };
 		C526FC0E1DC103C20048711F /* YOGearChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C526FC091DC0FD2C0048711F /* YOGearChartImage.m */; };
 		C526FC111DC1041C0048711F /* GearChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526FC0F1DC104150048711F /* GearChartInterfaceController.swift */; };
+		C555947D1DC218D4003E2B6E /* AnimatedDonutChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C555947B1DC218CD003E2B6E /* AnimatedDonutChartInterfaceController.swift */; };
 		C5836F531DC0E2AB00EC86D8 /* SmoothLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */; };
 		C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */; };
 		C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */; };
@@ -171,6 +172,7 @@
 		C526FC081DC0FD2C0048711F /* YOGearChartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOGearChartImage.h; sourceTree = "<group>"; };
 		C526FC091DC0FD2C0048711F /* YOGearChartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOGearChartImage.m; sourceTree = "<group>"; };
 		C526FC0F1DC104150048711F /* GearChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearChartInterfaceController.swift; sourceTree = "<group>"; };
+		C555947B1DC218CD003E2B6E /* AnimatedDonutChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDonutChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidLineGradientChartInterfaceController.swift; sourceTree = "<group>"; };
 		C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalBarGradientChartInterfaceController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				C5836F4D1DC0E1F800EC86D8 /* SmoothLineGradientChartInterfaceController.swift */,
 				C5836F4E1DC0E1F800EC86D8 /* SolidLineGradientChartInterfaceController.swift */,
 				C5836F4F1DC0E1F800EC86D8 /* VerticalBarGradientChartInterfaceController.swift */,
+				C555947B1DC218CD003E2B6E /* AnimatedDonutChartInterfaceController.swift */,
 				A81AB57F1B2B074100FE8B93 /* ExtensionDelegate.swift */,
 				A81AB5811B2B074100FE8B93 /* Assets.xcassets */,
 				A81AB5831B2B074100FE8B93 /* Info.plist */,
@@ -582,6 +585,7 @@
 				C526FC111DC1041C0048711F /* GearChartInterfaceController.swift in Sources */,
 				C5836F551DC0E2AB00EC86D8 /* VerticalBarGradientChartInterfaceController.swift in Sources */,
 				A872CC241B328A9F0086554F /* DonutChartInterfaceController.swift in Sources */,
+				C555947D1DC218D4003E2B6E /* AnimatedDonutChartInterfaceController.swift in Sources */,
 				C5836F541DC0E2AB00EC86D8 /* SolidLineGradientChartInterfaceController.swift in Sources */,
 				A8B509661B688E6700F596ED /* HorizontalBarChartInterfaceController.swift in Sources */,
 				A81AB5801B2B074100FE8B93 /* ExtensionDelegate.swift in Sources */,

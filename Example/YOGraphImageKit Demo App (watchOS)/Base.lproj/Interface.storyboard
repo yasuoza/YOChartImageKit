@@ -137,10 +137,25 @@
                     </items>
                     <connections>
                         <outlet property="imageView" destination="U1F-hx-boG" id="DaP-m2-f2m"/>
+                        <segue destination="eS5-b8-4c6" kind="relationship" relationship="nextPage" id="Nkn-rL-NeH"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="1855" y="331"/>
+        </scene>
+        <!--Animated Donut Chart Interface Controller-->
+        <scene sceneID="3S6-2T-fAd">
+            <objects>
+                <controller id="eS5-b8-4c6" customClass="AnimatedDonutChartInterfaceController" customModule="YOChartImageKit_Demo">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="di9-m9-Gy8"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="di9-m9-Gy8" id="ACP-PN-UBL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2134" y="331"/>
         </scene>
     </scenes>
 </document>

@@ -2,6 +2,10 @@
 
 @implementation YODonutChartImage
 
+NSMutableArray<UIImage *> *animationImages;
+NSMutableArray<UIColor *> *animationColors;
+NSMutableArray<NSNumber *> *animationValues;
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -23,6 +27,7 @@
     return [self drawImageForGeneral:frame scale:scale];
 #endif
 }
+
 
 #pragma mark - Draw Image(Private)
 
@@ -47,7 +52,6 @@
 }
 
 #pragma mark - Draw Paths(Private)
-
 - (void)drawPathIn:(CGRect)frame {
     CGFloat totalValue = [[_values valueForKeyPath:@"@sum.self"] floatValue];
     CGPoint center = {
@@ -85,6 +89,65 @@
         [donutPath stroke];
         _startAngle = endAngle;
     }];
+}
+
+- (NSArray<UIImage *> *)drawAnimationImages:(CGRect)frame scale:(CGFloat)scale {
+    NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
+    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
+    NSAssert(_animationSteps != 0, @"YODonutChartImage // must assign animationSteps property wich is an int");
+    
+    animationImages = [NSMutableArray array];
+    animationColors = [NSMutableArray array];
+    animationValues = [NSMutableArray array];
+    
+    int numberOfSlices = _animationSteps;
+    double threshold = 0.0;
+    int sliceIndex = 0;
+    [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
+    double nextColorChange = [_values objectAtIndex:sliceIndex].doubleValue;
+    
+    for(int i = 0; i< numberOfSlices; i++){
+        threshold = threshold + 100.0/numberOfSlices;
+        
+        NSMutableArray<NSNumber*> *valuesForGraph = [NSMutableArray array];
+        NSMutableArray<UIColor*> *colorsForGraph = [NSMutableArray array];
+        
+        if (threshold > nextColorChange) {
+            [animationValues addObject:[_values objectAtIndex:sliceIndex]];
+            sliceIndex ++;
+            nextColorChange = nextColorChange + [_values objectAtIndex:sliceIndex].doubleValue;
+            [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
+            [colorsForGraph removeAllObjects];
+            [colorsForGraph addObjectsFromArray:animationColors];
+            [colorsForGraph addObject:_animationBackgroundColor];
+        }
+        
+        [colorsForGraph removeAllObjects];
+        [colorsForGraph addObjectsFromArray:animationColors];
+        [colorsForGraph addObject:_animationBackgroundColor];
+        [valuesForGraph removeAllObjects];
+        [valuesForGraph addObjectsFromArray:animationValues];
+        
+        double visiblePerc = 0.0;
+        for (NSNumber *value in valuesForGraph) {
+            visiblePerc = visiblePerc+value.doubleValue;
+        }
+        [valuesForGraph addObject:[NSNumber numberWithDouble:(threshold-visiblePerc)]];
+        [valuesForGraph addObject:[NSNumber numberWithDouble:(100.0-threshold)]];
+        
+        [animationImages addObject:[self generateDonutImageWithValues:valuesForGraph andColors:colorsForGraph inframe:frame withScale:scale]];
+    }
+    return animationImages;
+}
+
+-(UIImage *)generateDonutImageWithValues:(NSArray<NSNumber *>*)inputValues andColors:(NSArray<UIColor *>*)inputColors inframe:(CGRect)frame withScale:(CGFloat)scale
+{
+    YODonutChartImage* image = [[YODonutChartImage alloc] init];
+    image.donutWidth = _donutWidth;
+    image.values = inputValues;
+    image.colors = inputColors;
+    
+    return [image drawImage:frame scale:scale];
 }
 
 @end
