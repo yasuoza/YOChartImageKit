@@ -20,7 +20,7 @@ NSMutableArray<NSNumber *> *animationValues;
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
     NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
-
+    
 #if TARGET_OS_IOS
     return [self drawImagePreferringImageRenderer:frame scale:scale];
 #else
@@ -58,10 +58,10 @@ NSMutableArray<NSNumber *> *animationValues;
         frame.size.width / 2,
         frame.size.height / 2
     };
-
+    
     CGFloat maxLength = MIN(frame.size.width, frame.size.height);
     CGFloat radius = maxLength / 2 - _donutWidth / 2;
-
+    
     if (_labelText) {
         NSDictionary *attributes = @{
                                      NSForegroundColorAttributeName: _labelColor,
@@ -73,11 +73,11 @@ NSMutableArray<NSNumber *> *animationValues;
                                                    context:nil].size;
         [_labelText drawAtPoint:(CGPoint){center.x - size.width/2, center.y - size.height/2} withAttributes:attributes];
     }
-
+    
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
         UIColor *strokeColor = _colors[idx];
-
+        
         CGFloat endAngle = _startAngle + 2.0 * M_PI * normalizedValue;
         UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
                                                                  radius:radius
@@ -103,7 +103,7 @@ NSMutableArray<NSNumber *> *animationValues;
     for(int i=0; i<normalizedValues.count; i++) {
         double val = normalizedValues[i].doubleValue;
         if (val < animationSlice) {
-            normalizedValues[i] = [NSNumber numberWithInteger:animationSlice];
+            normalizedValues[i] = [NSNumber numberWithDouble:animationSlice];
             NSNumber *max = [normalizedValues valueForKeyPath:@"@max.doubleValue"];
             normalizedValues[[normalizedValues indexOfObject:max]] = [NSNumber numberWithDouble:(max.doubleValue - (animationSlice-val))];
         }
@@ -125,7 +125,7 @@ NSMutableArray<NSNumber *> *animationValues;
         NSMutableArray<NSNumber*> *valuesForGraph = [NSMutableArray array];
         NSMutableArray<UIColor*> *colorsForGraph = [NSMutableArray array];
         
-        if (threshold > nextColorChange) {
+        if (threshold > nextColorChange && threshold < 100) {
             [animationValues addObject:[normalizedValues objectAtIndex:sliceIndex]];
             sliceIndex ++;
             nextColorChange = nextColorChange + [normalizedValues objectAtIndex:sliceIndex].doubleValue;
