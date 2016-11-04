@@ -97,7 +97,7 @@ NSMutableArray<NSNumber *> *animationValues;
     NSAssert(_animationSteps != 0, @"YODonutChartImage // must assign animationSteps property wich is an int");
     
     //Normalization of values smaller then the minimum slice size
-    int animationSlice = 100.0/_animationSteps;
+    double animationSlice = 100.0/_animationSteps;
     NSMutableArray<NSNumber*> *normalizedValues = [NSMutableArray arrayWithArray:_values];
     
     for(int i=0; i<normalizedValues.count; i++) {
