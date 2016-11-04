@@ -96,26 +96,39 @@ NSMutableArray<NSNumber *> *animationValues;
     NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
     NSAssert(_animationSteps != 0, @"YODonutChartImage // must assign animationSteps property wich is an int");
     
+    //Normalization of values smaller then the minimum slice size
+    int animationSlice = 100.0/_animationSteps;
+    NSMutableArray<NSNumber*> *normalizedValues = [NSMutableArray arrayWithArray:_values];
+    
+    for(int i=0; i<normalizedValues.count; i++) {
+        double val = normalizedValues[i].doubleValue;
+        if (val < animationSlice) {
+            normalizedValues[i] = [NSNumber numberWithInteger:animationSlice];
+            NSNumber *max = [normalizedValues valueForKeyPath:@"@max.doubleValue"];
+            normalizedValues[[normalizedValues indexOfObject:max]] = [NSNumber numberWithDouble:(max.doubleValue - (animationSlice-val))];
+        }
+    }
+    
+    //Images creation
     animationImages = [NSMutableArray array];
     animationColors = [NSMutableArray array];
     animationValues = [NSMutableArray array];
     
-    int numberOfSlices = _animationSteps;
     double threshold = 0.0;
     int sliceIndex = 0;
     [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
-    double nextColorChange = [_values objectAtIndex:sliceIndex].doubleValue;
+    double nextColorChange = [normalizedValues objectAtIndex:sliceIndex].doubleValue;
     
-    for(int i = 0; i< numberOfSlices; i++){
-        threshold = threshold + 100.0/numberOfSlices;
+    for(int i = 0; i< _animationSteps; i++){
+        threshold = threshold + animationSlice;
         
         NSMutableArray<NSNumber*> *valuesForGraph = [NSMutableArray array];
         NSMutableArray<UIColor*> *colorsForGraph = [NSMutableArray array];
         
         if (threshold > nextColorChange) {
-            [animationValues addObject:[_values objectAtIndex:sliceIndex]];
+            [animationValues addObject:[normalizedValues objectAtIndex:sliceIndex]];
             sliceIndex ++;
-            nextColorChange = nextColorChange + [_values objectAtIndex:sliceIndex].doubleValue;
+            nextColorChange = nextColorChange + [normalizedValues objectAtIndex:sliceIndex].doubleValue;
             [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
             [colorsForGraph removeAllObjects];
             [colorsForGraph addObjectsFromArray:animationColors];
