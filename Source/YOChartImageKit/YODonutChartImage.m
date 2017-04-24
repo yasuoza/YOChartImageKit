@@ -127,7 +127,11 @@ NSMutableArray<NSNumber *> *animationValues;
         
         if (threshold > nextColorChange && threshold <= 100) {
             [animationValues addObject:[normalizedValues objectAtIndex:sliceIndex]];
-            sliceIndex ++;
+            
+            if(sliceIndex < [normalizedValues count]-1){
+               sliceIndex ++;
+            }
+            
             nextColorChange = nextColorChange + [normalizedValues objectAtIndex:sliceIndex].doubleValue;
             [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
             [colorsForGraph removeAllObjects];
