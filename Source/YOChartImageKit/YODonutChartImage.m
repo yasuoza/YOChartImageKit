@@ -19,7 +19,7 @@ NSMutableArray<NSNumber *> *animationValues;
 
 - (UIImage *)drawImage:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
-    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
+    //    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
     
 #if TARGET_OS_IOS
     return [self drawImagePreferringImageRenderer:frame scale:scale];
@@ -76,7 +76,13 @@ NSMutableArray<NSNumber *> *animationValues;
     
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
-        UIColor *strokeColor = _colors[idx];
+        UIColor *strokeColor = nil;
+        if(idx < _colors.count){
+            strokeColor = _colors[idx];
+        }
+        else{
+            strokeColor = _colors[idx % _colors.count];
+        }
         
         CGFloat endAngle = _startAngle + 2.0 * M_PI * normalizedValue;
         UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
@@ -93,7 +99,7 @@ NSMutableArray<NSNumber *> *animationValues;
 
 - (NSArray<UIImage *> *)drawAnimationImages:(CGRect)frame scale:(CGFloat)scale {
     NSAssert(_values.count > 0, @"YODonutChartImage // must assign values property which is an array of NSNumber");
-    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
+    //    NSAssert(_colors.count >= _values.count, @"YOGraphPieChartImage // must assign colors property which is an array of UIColor");
     NSAssert(_animationSteps != 0, @"YODonutChartImage // must assign animationSteps property wich is an int");
     
     //Normalization of values smaller then the minimum slice size
@@ -116,7 +122,16 @@ NSMutableArray<NSNumber *> *animationValues;
     
     double threshold = 0.0;
     int sliceIndex = 0;
-    [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
+    
+    UIColor *color = nil;
+    if(sliceIndex < _colors.count){
+        color = [_colors objectAtIndex:sliceIndex];
+    }
+    else{
+        color = [_colors objectAtIndex:sliceIndex % _colors.count];
+    }
+    
+    [animationColors addObject:color];
     double nextColorChange = [normalizedValues objectAtIndex:sliceIndex].doubleValue;
     
     for(int i = 0; i< _animationSteps; i++){
@@ -127,11 +142,7 @@ NSMutableArray<NSNumber *> *animationValues;
         
         if (threshold > nextColorChange && threshold <= 100) {
             [animationValues addObject:[normalizedValues objectAtIndex:sliceIndex]];
-            
-            if(sliceIndex < [normalizedValues count]-1){
-               sliceIndex ++;
-            }
-            
+            sliceIndex ++;
             nextColorChange = nextColorChange + [normalizedValues objectAtIndex:sliceIndex].doubleValue;
             [animationColors addObject:[_colors objectAtIndex:sliceIndex]];
             [colorsForGraph removeAllObjects];
@@ -168,3 +179,4 @@ NSMutableArray<NSNumber *> *animationValues;
 }
 
 @end
+
