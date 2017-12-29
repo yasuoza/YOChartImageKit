@@ -3,21 +3,27 @@
 /**
  *  A donut chart image generator provides a donut chart image without `QuartzCore.framework` and `UIView`.
  */
-@interface YODonutChartImage : NSObject
-
-/** @name Donut chart rendering properties */
+@interface YOGearChartImage : NSObject
 
 /**
- *  The array of values for the donut chart. `values` should be an array of NSNumber.
- *  You must provide `values`, otherwise raises an exception.
+ *  The value for the gear chart. Must be an NSNumber.
  */
-@property (nonnull, nonatomic) NSArray<NSNumber *> *values;
+@property (nonnull, nonatomic) NSNumber *value;
 
 /**
- *  The array of colors for the donut chart. `colors` should be an array of UIColor.
- *  You must provide `colors`, otherwise raises an exception.
+ *  The color for the gear chart.
  */
-@property (nonnull, nonatomic) NSArray<UIColor *> *colors;
+@property (nonnull, nonatomic) UIColor *color;
+
+/**
+ *  The color for the unfilled chart.
+ */
+@property (nonnull, nonatomic) UIColor *backgroundColor;
+
+/**
+ *  The alpha for the unfilled chart.
+ */
+@property (nonatomic) CGFloat backgroundColorAlpha;
 
 /**
  *  The point where the donut starts
@@ -29,7 +35,7 @@
  *  The width of donut.
  *  The default width is `1.0`.
  */
-@property (nonatomic) CGFloat donutWidth;
+@property (nonatomic) CGFloat gearWidth;
 
 /**
  *  The text of center label in donut chart.
@@ -55,28 +61,25 @@
  */
 @property (nonatomic) int animationSteps;
 
-/*
- *  The background color that will be shown when the pie is filling up
- *  (used only if 'drawAnimationImages' is called)
- **/
-@property (nonnull, nonatomic) UIColor *animationBackgroundColor;
+
+
 /**
- *  Draws a image of donut chart.
+ *  Draws a image of gear chart.
  *
  *  @param frame The frame rectangle for the chart image.
  *  @param scale The scale factor for chart image.
  *
- *  @return An donut chart drawed `UIImage` object.
+ *  @return An gear chart drawed `UIImage` object.
  */
 - (UIImage * _Nonnull)drawImage:(CGRect)frame scale:(CGFloat)scale;
 
 /**
- *  Fills an array of images for the animated donut chart
+ *  Fills an array of images for the animated gear chart
  *
  *  @param frame The frame rectangle for the chart image.
  *  @param scale The scale factor for chart image.
  *
- *  @return An array of `UIImage` objects, animating the donut chart drawing.
+ *  @return An array of `UIImage` objects, animating the gear chart drawing.
  */
 - (NSArray<UIImage *>* _Nonnull)drawAnimationImages:(CGRect)frame scale:(CGFloat)scale;
 

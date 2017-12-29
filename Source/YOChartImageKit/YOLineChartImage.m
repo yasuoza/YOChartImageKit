@@ -95,7 +95,22 @@
         p1 = p2;
     }];
 
-    if (_fillColor) {
+    if (_gradientFill) {
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        
+        NSArray *gradientColors = [NSArray arrayWithObjects: (id)_firstGradientColor.CGColor, (id)_secondGradientColor.CGColor, nil];
+        CGFloat gradientLocations[] = {0, 0.75};
+        CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (CFArrayRef)gradientColors, gradientLocations);
+
+        CGContextSaveGState(context);
+        [fillBottom fill];
+        [fillBottom addClip];
+        CGContextDrawLinearGradient(context, gradient, CGPointMake(1, 1), CGPointMake(1, frame.size.height), 0);
+        CGColorSpaceRelease(colorSpace);
+        CGGradientRelease(gradient);
+    }
+    else {
         [_fillColor setFill];
         [fillBottom fill];
     }
