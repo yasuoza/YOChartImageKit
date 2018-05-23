@@ -45,28 +45,28 @@ const CGFloat kBarPaddingMultipler = 20.0f;
         CGFloat normalizedValue = number.floatValue / maxValue;
 
         CGRect rect;
-        if (_barStyle == YOBarChartImageBarStyleVertical) {
+        if (self.barStyle == YOBarChartImageBarStyleVertical) {
             rect = (CGRect) {
-                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
-                frame.size.height * (1.0 - normalizedValue) + _strokeWidth / 2,
-                barWidth - _strokeWidth,
+                (CGFloat)idx * (barWidth + padding) + self.strokeWidth / 2,
+                frame.size.height * (1.0 - normalizedValue) + self.strokeWidth / 2,
+                barWidth - self.strokeWidth,
                 frame.size.height / normalizedValue
             };
         } else {
             rect = (CGRect) {
-                -_strokeWidth,
-                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
-                frame.size.width * normalizedValue + _strokeWidth / 2,
-                barWidth - _strokeWidth
+                -self.strokeWidth,
+                (CGFloat)idx * (barWidth + padding) + self.strokeWidth / 2,
+                frame.size.width * normalizedValue + self.strokeWidth / 2,
+                barWidth - self.strokeWidth
             };
         }
 
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
-        path.lineWidth = _strokeWidth;
-        [_fillColor setFill];
+        path.lineWidth = self.strokeWidth;
+        [self.fillColor setFill];
         [path fill];
 
-        [_strokeColor setStroke];
+        [self.strokeColor setStroke];
         [path stroke];
     }];
 

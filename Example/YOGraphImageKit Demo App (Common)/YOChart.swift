@@ -10,35 +10,35 @@ enum YOChart {
             let image = YOLineChartImage()
             image.strokeWidth = 4.0
             image.strokeColor = randomColor()
-            image.values = (0...10).map { _ in CGFloat(arc4random_uniform(8)) }
+            image.values = (0...10).map { _ in NSNumber(value: arc4random_uniform(8)) }
             image.smooth = false
-            return image.drawImage(frame, scale: scale)
+            return image.draw(frame, scale: scale)
         case .SmoothLineChart:
             let image = YOLineChartImage()
             image.fillColor = randomColor()
-            image.values = (0...10).map { _ in CGFloat(arc4random_uniform(8)) }
-            return image.drawImage(frame, scale: scale)
+            image.values = (0...10).map { _ in NSNumber(value: arc4random_uniform(8)) }
+            return image.draw(frame, scale: scale)
         case .VerticalBarChart:
             let image = YOBarChartImage()
             image.fillColor = randomColor()
             image.barPadding = 2.0
-            image.values = (0..<15).map { _ in CGFloat(arc4random_uniform(50) + 1) }
-            return image.drawImage(frame, scale: scale)
+            image.values = (0..<15).map { _ in NSNumber(value: arc4random_uniform(8)) }
+            return image.draw(frame, scale: scale)
         case .HorizontalBarChart:
             let image = YOBarChartImage()
             image.fillColor = randomColor()
             image.barPadding = 2.0
-            image.barStyle = .Horizontal
-            image.values = (0..<8).map { _ in CGFloat(arc4random_uniform(50) + 1) }
-            return image.drawImage(frame, scale: scale)
+            image.barStyle = .horizontal
+            image.values = (0..<8).map { _ in NSNumber(value: arc4random_uniform(8)) }
+            return image.draw(frame, scale: scale)
         case .DonutChart:
             let image = YODonutChartImage()
             image.donutWidth = 16.0
             image.labelText = "LABEL"
-            image.labelColor = UIColor.whiteColor()
+            image.labelColor = UIColor.white
             image.values = [10.0, 20.0, 70.0]
             image.colors = (0..<3).map { _ in randomColor() }
-            return image.drawImage(frame, scale: scale)
+            return image.draw(frame, scale: scale)
         }
     }
 

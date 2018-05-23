@@ -6,9 +6,9 @@ class ChartImageViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        imageView.image = chart.drawImage(self.imageView.frame, scale: UIScreen.mainScreen().scale)
+        imageView.image = chart.drawImage(frame: self.imageView.frame, scale: UIScreen.main.scale)
     }
 }

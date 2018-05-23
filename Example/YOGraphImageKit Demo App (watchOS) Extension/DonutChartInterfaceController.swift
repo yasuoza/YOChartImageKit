@@ -7,8 +7,8 @@ class DonutChartInterfaceController: BaseInterfaceController {
         super.willActivate()
 
         let chart = YOChart.DonutChart
-        let frame = CGRectMake(0, 0, contentFrame.width, contentFrame.height / 1.5)
-        let image = chart.drawImage(frame, scale: WKInterfaceDevice.currentDevice().screenScale)
+        let frame = CGRect(x: 0, y: 0, width: contentFrame.width, height: contentFrame.height / 1.5)
+        let image = chart.drawImage(frame: frame, scale: WKInterfaceDevice.current().screenScale)
         self.imageView.setImage(image)
     }
 

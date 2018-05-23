@@ -9,41 +9,39 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
+        let pageController = self.storyboard!.instantiateViewController(withIdentifier: "PageController") as! UIPageViewController
         pageController.dataSource = self
 
-        let vc = self.getItemController(0)!
-        pageController.setViewControllers([vc], direction: .Forward, animated: false, completion: nil)
+        let vc = self.getItemController(itemIndex: 0)!
+        pageController.setViewControllers([vc], direction: .forward, animated: false, completion: nil)
 
         self.pageViewController = pageController
         addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
-        pageViewController!.didMoveToParentViewController(self)
+        pageViewController!.didMove(toParentViewController: self)
 
         let appearance = UIPageControl.appearance()
-        appearance.pageIndicatorTintColor = UIColor.grayColor()
-        appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
-        appearance.backgroundColor = UIColor.darkGrayColor()
+        appearance.pageIndicatorTintColor = UIColor.gray
+        appearance.currentPageIndicatorTintColor = UIColor.white
+        appearance.backgroundColor = UIColor.darkGray
     }
 
     // MARK: - UIPageViewControllerDataSource
 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = charts.indexOf(chartImageVC.chart) {
+        if let currentIndex = charts.index(of: chartImageVC.chart) {
             let beforeIndex = Int(currentIndex) - 1
-            return getItemController(beforeIndex)
+            return getItemController(itemIndex: beforeIndex)
         }
         return nil
     }
 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = charts.indexOf(chartImageVC.chart) {
+        if let currentIndex = charts.index(of: chartImageVC.chart) {
             let afterIndex = Int(currentIndex) + 1
-            return getItemController(afterIndex)
+            return getItemController(itemIndex: afterIndex)
         }
         return nil
     }
@@ -51,7 +49,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     func getItemController(itemIndex: Int) -> ChartImageViewController? {
         guard itemIndex >= 0 && itemIndex < charts.count else { return nil }
 
-        let chartImageVC = self.storyboard!.instantiateViewControllerWithIdentifier("ChartImageViewController") as! ChartImageViewController
+        let chartImageVC = self.storyboard!.instantiateViewController(withIdentifier: "ChartImageViewController") as! ChartImageViewController
         chartImageVC.chart = charts[itemIndex]
         return chartImageVC
     }
