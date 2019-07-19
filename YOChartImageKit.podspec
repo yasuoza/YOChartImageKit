@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "YOChartImageKit"
-  s.version          = "1.2.12"
+  s.version          = "1.2.13"
   s.summary          = "ChartKit for watchOS"
   s.description      = <<-DESC
                        Chart image framework for watchOS
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.author           = { "Yasuharu Ozaki" => "yasuharu.ozaki@gmail.com" }
   s.source           = { :git => "https://github.com/yasuoza/YOChartImageKit.git", :tag => s.version.to_s }
 
-  s.ios.deployment_target = "7.0"
-  s.watchos.deployment_target = "2.0"
+  s.ios.deployment_target = "11.0"
+  s.watchos.deployment_target = "4.0"
 
   s.requires_arc = true
 

@@ -45,7 +45,7 @@ const CGFloat kBarPaddingMultipler = 20.0f;
         CGFloat normalizedValue = number.floatValue / maxValue;
         
         if (_onlyPositiveBars) {
-            normalizedValue = fabsf(normalizedValue);
+			normalizedValue = fabs(normalizedValue);
         }
 
         CGRect rect;
