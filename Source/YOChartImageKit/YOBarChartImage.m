@@ -44,36 +44,36 @@ const CGFloat kBarPaddingMultipler = 20.0f;
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / maxValue;
         
-        if (_onlyPositiveBars) {
+        if (self.onlyPositiveBars) {
 			normalizedValue = fabs(normalizedValue);
         }
 
         CGRect rect;
-        if (_barStyle == YOBarChartImageBarStyleVertical) {
+        if (self.barStyle == YOBarChartImageBarStyleVertical) {
             rect = (CGRect) {
-                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
-                frame.size.height * (1.0 - normalizedValue) + _strokeWidth / 2,
-                barWidth - _strokeWidth,
+                (CGFloat)idx * (barWidth + padding) + self.strokeWidth / 2,
+                frame.size.height * (1.0 - normalizedValue) + self.strokeWidth / 2,
+                barWidth - self.strokeWidth,
                 frame.size.height / normalizedValue
             };
         } else {
             rect = (CGRect) {
-                -_strokeWidth,
-                (CGFloat)idx * (barWidth + padding) + _strokeWidth / 2,
-                frame.size.width * normalizedValue + _strokeWidth / 2,
-                barWidth - _strokeWidth
+                -self.strokeWidth,
+                (CGFloat)idx * (barWidth + padding) + self.strokeWidth / 2,
+                frame.size.width * normalizedValue + self.strokeWidth / 2,
+                barWidth - self.strokeWidth
             };
         }
 
-        int cornerRadius = (_roundedCaps) ? _capsCornerRadius : 0.0;
+        int cornerRadius = (self.roundedCaps) ? self.capsCornerRadius : 0.0;
         UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
-        path.lineWidth = _strokeWidth;
+        path.lineWidth = self.strokeWidth;
         
         NSArray *gradientColors;
-        if ([_values objectAtIndex:idx].doubleValue > 0) {
-            gradientColors = [NSArray arrayWithObjects: (id)_positiveColor.CGColor, (id)_positiveGradientColor.CGColor, nil];
+        if ([self.values objectAtIndex:idx].doubleValue > 0) {
+            gradientColors = [NSArray arrayWithObjects: (id)self.positiveColor.CGColor, (id)self.positiveGradientColor.CGColor, nil];
         } else {
-            gradientColors = [NSArray arrayWithObjects: (id)_negativeColor.CGColor, (id)_negativeGradientColor.CGColor, nil];
+            gradientColors = [NSArray arrayWithObjects: (id)self.negativeColor.CGColor, (id)self.negativeGradientColor.CGColor, nil];
         }
         
         CGContextRef context = UIGraphicsGetCurrentContext();

@@ -77,23 +77,23 @@ NSMutableArray<NSNumber *> *animationValues;
     [_values enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL *_) {
         CGFloat normalizedValue = number.floatValue / totalValue;
         UIColor *strokeColor = nil;
-        if(idx < _colors.count){
-            strokeColor = _colors[idx];
+        if(idx < self.colors.count){
+            strokeColor = self.colors[idx];
         }
         else{
-            strokeColor = _colors[idx % _colors.count];
+            strokeColor = self.colors[idx % self.colors.count];
         }
         
-        CGFloat endAngle = _startAngle + 2.0 * M_PI * normalizedValue;
+        CGFloat endAngle = self.startAngle + 2.0 * M_PI * normalizedValue;
         UIBezierPath *donutPath = [UIBezierPath bezierPathWithArcCenter:center
                                                                  radius:radius
-                                                             startAngle:_startAngle
+                                                             startAngle:self.startAngle
                                                                endAngle:endAngle
                                                               clockwise:YES];
-        donutPath.lineWidth = _donutWidth;
+        donutPath.lineWidth = self.donutWidth;
         [strokeColor setStroke];
         [donutPath stroke];
-        _startAngle = endAngle;
+        self.startAngle = endAngle;
     }];
 }
 
