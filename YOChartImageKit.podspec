@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "YOChartImageKit"
-  s.version          = "1.2.13"
+  s.version          = "1.2.14"
   s.summary          = "ChartKit for watchOS"
   s.description      = <<-DESC
                        Chart image framework for watchOS
