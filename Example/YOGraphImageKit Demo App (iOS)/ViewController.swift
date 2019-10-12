@@ -16,9 +16,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         pageController.setViewControllers([vc], direction: .forward, animated: false, completion: nil)
 
         self.pageViewController = pageController
-        addChildViewController(pageViewController!)
+        addChild(pageViewController!)
         self.view.addSubview(pageViewController!.view)
-        pageViewController!.didMove(toParentViewController: self)
+        pageViewController!.didMove(toParent: self)
 
         let appearance = UIPageControl.appearance()
         appearance.pageIndicatorTintColor = UIColor.gray
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = charts.index(of: chartImageVC.chart) {
+        if let currentIndex = charts.firstIndex(of: chartImageVC.chart) {
             let beforeIndex = Int(currentIndex) - 1
             return getItemController(itemIndex: beforeIndex)
         }
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let chartImageVC = viewController as! ChartImageViewController
-        if let currentIndex = charts.index(of: chartImageVC.chart) {
+        if let currentIndex = charts.firstIndex(of: chartImageVC.chart) {
             let afterIndex = Int(currentIndex) + 1
             return getItemController(itemIndex: afterIndex)
         }
